@@ -1,0 +1,5 @@
+entity max9 is
+	port (
+		in_vec 	: std_logic_vector(3 downto 0);
+		out_vec 	: std_logic_vector(3 downto 0));
+end max9;

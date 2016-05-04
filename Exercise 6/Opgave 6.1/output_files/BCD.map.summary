@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 06 16:13:36 2013
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : BCD
+Top-level Entity Name : multiCounter
+Family : Cyclone II
+Total logic elements : 19
+    Total combinational functions : 19
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 16
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

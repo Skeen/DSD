@@ -1,0 +1,56 @@
+|Exercise2Structural
+INPUT1 => halfadder_2:u1.INPUT1
+INPUT2 => halfadder_2:u1.INPUT2
+CARRY_IN => halfadder_2:u2.INPUT1
+SUM <= halfadder_2:u2.SUM
+CARRY_OUT <= or_2:u3.c
+
+
+|Exercise2Structural|HalfAdder_2:u1
+INPUT1 => xor_2:u1.a
+INPUT1 => and_2:u2.a
+INPUT2 => xor_2:u1.b
+INPUT2 => and_2:u2.b
+SUM <= xor_2:u1.c
+CARRY <= and_2:u2.c
+
+
+|Exercise2Structural|HalfAdder_2:u1|xor_2:u1
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exercise2Structural|HalfAdder_2:u1|and_2:u2
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exercise2Structural|HalfAdder_2:u2
+INPUT1 => xor_2:u1.a
+INPUT1 => and_2:u2.a
+INPUT2 => xor_2:u1.b
+INPUT2 => and_2:u2.b
+SUM <= xor_2:u1.c
+CARRY <= and_2:u2.c
+
+
+|Exercise2Structural|HalfAdder_2:u2|xor_2:u1
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exercise2Structural|HalfAdder_2:u2|and_2:u2
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exercise2Structural|or_2:u3
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

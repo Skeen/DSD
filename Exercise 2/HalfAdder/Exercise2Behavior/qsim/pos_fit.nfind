@@ -1,0 +1,11 @@
+Exercise2Behavior
+CARRY,output,user_entered
+INPUT1,input,user_entered
+INPUT2,input,user_entered
+process_0~0,comb,compiler_generated
+SUM,output,user_entered
+SUM~0,comb,compiler_generated
+~ASDO~,input,compiler_generated
+~LVDS150p/nCEO~,output,compiler_generated
+~nCSO~,input,compiler_generated
+,hierarchy,user_entered

@@ -1,0 +1,15 @@
+BCD
+binary_unsigned,bus,user_entered
+binary_unsigned[0],reg,user_entered
+binary_unsigned[1],reg,user_entered
+binary_unsigned~0,comb,compiler_generated
+binary_unsigned~1,comb,compiler_generated
+clock,input,user_entered
+mode,input,user_entered
+modeFlag,reg,user_entered
+modeFlag~0,comb,compiler_generated
+modeFlag~1,comb,compiler_generated
+reset,input,user_entered
+x,output,user_entered
+y,output,user_entered
+,hierarchy,user_entered

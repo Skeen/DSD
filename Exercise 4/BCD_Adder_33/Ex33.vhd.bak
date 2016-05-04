@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.NUMERIC_STD.ALL; 
+
+entity Ex33 is
+	port (
+		binary_input1 : in  std_logic_vector(3 downto 0);
+		binary_input2 : in  std_logic_vector(3 downto 0);
+		
+		SEG7_1 		  : out std_logic_vector(6 downto 0);
+		SEG7_2 		  : out std_logic_vector(6 downto 0));
+		
+		SEG7_1 		  : out std_logic_vector(6 downto 0));
+		SEG7_10 		  : out std_logic_vector(6 downto 0));
+end Ex33;
+
+architecture structural of Ex33 is
+	signal 
+begin
+	u2: entity work.BCD9 port map(binary_input=>binary_input1, decoder_output=>SEG7_1);	
+   u3: entity work.BCD9 port map(binary_input=>binary_input2, decoder_output=>SEG7_2);
+   u4: entity work.Bin2Dec port map(binary_input=>std_logic_vector(unsigned(binary_input1) + unsigned(binary_input2)),
+												binary_output_1=>SEG7_1, binary_output_2=>SEG7_10);
+end structural;

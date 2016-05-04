@@ -1,0 +1,12 @@
+|StateCounter
+clock => modeFlag.CLK
+clock => binary_unsigned[0].CLK
+clock => binary_unsigned[1].CLK
+reset => binary_unsigned[0].ACLR
+reset => binary_unsigned[1].ACLR
+reset => modeFlag.ENA
+mode => modeFlag~0.DATAB
+x <= binary_unsigned[1].DB_MAX_OUTPUT_PORT_TYPE
+y <= binary_unsigned[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

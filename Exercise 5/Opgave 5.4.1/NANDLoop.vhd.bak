@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity NANDLoop is
+	port
+	(
+		input : in std_logic_vector(7 downto 0);
+		nand_8 : out std_logic;
+end NANDLoop;
+
+architecture magic of NANDLoop is
+begin
+	process(to_be_saved,save_now) begin
+		if (save_now = '1') then
+			saved_state <= to_be_saved;
+		end if;
+	end process;
+end magic;

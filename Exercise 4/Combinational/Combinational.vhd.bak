@@ -1,0 +1,16 @@
+
+ 
+ X <= (
+		((((NOT A) AND C) OR D) AND B)
+         OR
+	   ((NOT B) AND C))
+		);
+		
+ Y <= NOT (
+      (D NAND B)
+			AND
+		((NOT B) NAND C)
+			AND
+		(C NAND (NOT A))
+		);
+		

@@ -1,0 +1,112 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Skeen\Dropbox\DSD\Exercise2Structural\simulation\modelsim
+Eand_2
+Z1 w1380717214
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Skeen\Dropbox\DSD\Exercise2Structural\simulation\modelsim
+Z5 8C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/and2.vhd
+Z6 FC:/Users/Skeen/Dropbox/DSD/Exercise2Structural/and2.vhd
+l0
+L4
+VzDCzj]T`4Jb8B>[I2XUoZ1
+Z7 OV;C;10.1b;51
+31
+Z8 !s108 1380717656.783000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/and2.vhd|
+Z10 !s107 C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/and2.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 8>>aTJL@EAHnUhNlIUM^>1
+!i10b 1
+Abehavior
+R2
+R3
+Z13 DEx4 work 5 and_2 0 22 zDCzj]T`4Jb8B>[I2XUoZ1
+l12
+L11
+VbP7FY8PVEh?^1@i34B^XK2
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 RO4L?o`<Z7kN69Rz]0[3>3
+!i10b 1
+Eexercise2structural
+Z14 w1380717239
+R2
+R3
+R4
+Z15 8C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/Exercise2Structural.vhd
+Z16 FC:/Users/Skeen/Dropbox/DSD/Exercise2Structural/Exercise2Structural.vhd
+l0
+L4
+Vhd?Ahe1F2hI955W[RCT]W3
+!s100 Y6E;f3Sj_]4GUdAYkNOLT3
+R7
+31
+!i10b 1
+Z17 !s108 1380717657.313000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/Exercise2Structural.vhd|
+Z19 !s107 C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/Exercise2Structural.vhd|
+R11
+R12
+Astructural
+R13
+Z20 DEx4 work 5 xor_2 0 22 gVSJ5Zo>Z1EWGVe5VB@z;0
+R2
+R3
+DEx4 work 19 exercise2structural 0 22 hd?Ahe1F2hI955W[RCT]W3
+l13
+L12
+V1:c=K1I]R?6iF?XQ`o0k[1
+!s100 >2<G2EIY4]`h@8C4C5ElA3
+R7
+31
+!i10b 1
+R17
+R18
+R19
+R11
+R12
+Exor_2
+Z21 w1380717368
+R2
+R3
+R4
+Z22 8C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/xor2.vhd
+Z23 FC:/Users/Skeen/Dropbox/DSD/Exercise2Structural/xor2.vhd
+l0
+L4
+VgVSJ5Zo>Z1EWGVe5VB@z;0
+R7
+31
+Z24 !s108 1380717657.156000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/xor2.vhd|
+Z26 !s107 C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/xor2.vhd|
+R11
+R12
+!s100 MbcoXYgQg25NW6>JU86X_2
+!i10b 1
+Abehavior
+R2
+R3
+R20
+l12
+L11
+V]1HG=OCX_l4H9:F14279Q1
+R7
+31
+R24
+R25
+R26
+R11
+R12
+!s100 >Rc]LL<H:kW9V44I5_4[c0
+!i10b 1

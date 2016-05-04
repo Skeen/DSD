@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Oct 02 14:04:43 2013
+Quartus II 32-bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : Exercise2Behavior
+Top-level Entity Name : Exercise2Behavior
+Family : Cyclone II
+Total logic elements : 2
+    Total combinational functions : 2
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

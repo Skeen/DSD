@@ -1,0 +1,9 @@
+Exercise2
+CARRY_IN,input,user_entered
+CARRY_OUT,output,user_entered
+CARRY_OUT~0,comb,compiler_generated
+INPUT1,input,user_entered
+INPUT2,input,user_entered
+SUM,output,user_entered
+SUM~0,comb,compiler_generated
+,hierarchy,user_entered

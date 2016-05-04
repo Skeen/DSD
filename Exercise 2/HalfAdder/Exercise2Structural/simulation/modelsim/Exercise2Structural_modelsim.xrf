@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/Exercise2Structural.vhd
+source_file = 1, C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/and2.vhd
+source_file = 1, C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/xor2.vhd
+source_file = 1, C:/Users/Skeen/Dropbox/DSD/Exercise2Structural/db/Exercise2Structural.cbx.xml
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Exercise2Structural
+instance = comp, \INPUT1~I\, INPUT1, Exercise2Structural, 1
+instance = comp, \INPUT2~I\, INPUT2, Exercise2Structural, 1
+instance = comp, \u1|c\, u1|c, Exercise2Structural, 1
+instance = comp, \u2|c\, u2|c, Exercise2Structural, 1
+instance = comp, \SUM~I\, SUM, Exercise2Structural, 1
+instance = comp, \CARRY~I\, CARRY, Exercise2Structural, 1

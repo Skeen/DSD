@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Oct 03 22:28:52 2013
+Quartus II 32-bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : BCD_Adder
+Top-level Entity Name : Ex31
+Family : Cyclone II
+Total logic elements : 14
+    Total combinational functions : 14
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

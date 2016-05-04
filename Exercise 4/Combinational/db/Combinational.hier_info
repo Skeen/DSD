@@ -1,0 +1,22 @@
+|Combinational
+A => Mux0.IN16
+A => X.IN0
+A => Y.IN0
+B => X.IN1
+B => Y.IN0
+B => Mux0.IN17
+B => X.IN0
+B => Y.IN0
+C => X.IN1
+C => X.IN1
+C => Y.IN1
+C => Y.IN1
+C => Mux0.IN18
+D => X.IN1
+D => Y.IN1
+D => Mux0.IN19
+X <= X.DB_MAX_OUTPUT_PORT_TYPE
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

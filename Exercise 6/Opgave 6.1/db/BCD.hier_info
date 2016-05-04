@@ -1,0 +1,68 @@
+|multiCounter
+clock => cout~reg0.CLK
+clock => binary_unsigned[0].CLK
+clock => binary_unsigned[1].CLK
+clock => binary_unsigned[2].CLK
+clock => binary_unsigned[3].CLK
+mode[0] => Mux0.IN5
+mode[0] => Mux1.IN5
+mode[1] => Mux0.IN4
+mode[1] => Mux1.IN4
+mode[1] => LessThan0.IN6
+reset => binary_unsigned[0].ACLR
+reset => binary_unsigned[1].ACLR
+reset => binary_unsigned[2].ACLR
+reset => binary_unsigned[3].ACLR
+reset => cout~reg0.ENA
+seg[0] <= bcd9:u1.decoder_output[0]
+seg[1] <= bcd9:u1.decoder_output[1]
+seg[2] <= bcd9:u1.decoder_output[2]
+seg[3] <= bcd9:u1.decoder_output[3]
+seg[4] <= bcd9:u1.decoder_output[4]
+seg[5] <= bcd9:u1.decoder_output[5]
+seg[6] <= bcd9:u1.decoder_output[6]
+cout <= cout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+bin_val[0] <= binary_unsigned[0].DB_MAX_OUTPUT_PORT_TYPE
+bin_val[1] <= binary_unsigned[1].DB_MAX_OUTPUT_PORT_TYPE
+bin_val[2] <= binary_unsigned[2].DB_MAX_OUTPUT_PORT_TYPE
+bin_val[3] <= binary_unsigned[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiCounter|BCD9:u1
+binary_input[0] => Mux0.IN19
+binary_input[0] => Mux1.IN19
+binary_input[0] => Mux2.IN19
+binary_input[0] => Mux3.IN19
+binary_input[0] => Mux4.IN19
+binary_input[0] => Mux5.IN19
+binary_input[0] => Mux6.IN19
+binary_input[1] => Mux0.IN18
+binary_input[1] => Mux1.IN18
+binary_input[1] => Mux2.IN18
+binary_input[1] => Mux3.IN18
+binary_input[1] => Mux4.IN18
+binary_input[1] => Mux5.IN18
+binary_input[1] => Mux6.IN18
+binary_input[2] => Mux0.IN17
+binary_input[2] => Mux1.IN17
+binary_input[2] => Mux2.IN17
+binary_input[2] => Mux3.IN17
+binary_input[2] => Mux4.IN17
+binary_input[2] => Mux5.IN17
+binary_input[2] => Mux6.IN17
+binary_input[3] => Mux0.IN16
+binary_input[3] => Mux1.IN16
+binary_input[3] => Mux2.IN16
+binary_input[3] => Mux3.IN16
+binary_input[3] => Mux4.IN16
+binary_input[3] => Mux5.IN16
+binary_input[3] => Mux6.IN16
+decoder_output[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+decoder_output[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+decoder_output[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+decoder_output[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+decoder_output[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+decoder_output[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+decoder_output[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

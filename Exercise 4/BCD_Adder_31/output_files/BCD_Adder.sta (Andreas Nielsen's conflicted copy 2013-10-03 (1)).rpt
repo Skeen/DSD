@@ -1,0 +1,630 @@
+TimeQuest Timing Analyzer report for BCD_Adder
+Thu Oct 03 22:38:56 2013
+Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                      ;
++--------------------+---------------------------------------------------+
+; Quartus II Version ; Version 12.1 Build 177 11/07/2012 SJ Full Version ;
+; Revision Name      ; BCD_Adder                                         ;
+; Device Family      ; Cyclone II                                        ;
+; Device Name        ; EP2C35F672C6                                      ;
+; Timing Models      ; Final                                             ;
+; Delay Model        ; Combined                                          ;
+; Rise/Fall Delays   ; Unavailable                                       ;
++--------------------+---------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------+
+; Propagation Delay                                              ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 7.089 ;       ;       ; 7.089 ;
+; binary_input1[0] ; SEG7_1[1]   ; 7.095 ;       ;       ; 7.095 ;
+; binary_input1[0] ; SEG7_1[2]   ; 7.105 ;       ;       ; 7.105 ;
+; binary_input1[0] ; SEG7_1[3]   ; 7.109 ; 7.109 ; 7.109 ; 7.109 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 7.298 ; 7.298 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 7.298 ; 7.298 ; 7.298 ; 7.298 ;
+; binary_input1[0] ; SEG7_1[6]   ; 7.364 ; 7.364 ; 7.364 ; 7.364 ;
+; binary_input1[1] ; SEG7_1[0]   ; 7.229 ; 7.229 ; 7.229 ; 7.229 ;
+; binary_input1[1] ; SEG7_1[1]   ; 7.231 ;       ;       ; 7.231 ;
+; binary_input1[1] ; SEG7_1[2]   ; 7.241 ; 7.241 ; 7.241 ; 7.241 ;
+; binary_input1[1] ; SEG7_1[3]   ; 7.210 ; 7.210 ; 7.210 ; 7.210 ;
+; binary_input1[1] ; SEG7_1[4]   ; 7.467 ;       ;       ; 7.467 ;
+; binary_input1[1] ; SEG7_1[5]   ; 7.422 ; 7.422 ; 7.422 ; 7.422 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 7.450 ; 7.450 ;       ;
+; binary_input1[2] ; SEG7_1[0]   ; 6.613 ; 6.613 ; 6.613 ; 6.613 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 6.615 ; 6.615 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 6.625 ;       ;       ; 6.625 ;
+; binary_input1[2] ; SEG7_1[3]   ; 6.630 ; 6.630 ; 6.630 ; 6.630 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 6.859 ; 6.859 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 6.849 ;       ;       ; 6.849 ;
+; binary_input1[2] ; SEG7_1[6]   ; 6.886 ; 6.886 ; 6.886 ; 6.886 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 5.879 ; 5.879 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 5.911 ; 5.911 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 5.916 ;       ;       ; 5.916 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 5.922 ; 5.922 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 6.152 ; 6.152 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 6.142 ; 6.142 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 6.179 ; 6.179 ;       ;
+; binary_input2[0] ; SEG7_2[0]   ; 6.510 ;       ;       ; 6.510 ;
+; binary_input2[0] ; SEG7_2[1]   ; 6.547 ;       ;       ; 6.547 ;
+; binary_input2[0] ; SEG7_2[2]   ; 6.333 ;       ;       ; 6.333 ;
+; binary_input2[0] ; SEG7_2[3]   ; 6.264 ; 6.264 ; 6.264 ; 6.264 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 6.263 ; 6.263 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 6.708 ; 6.708 ; 6.708 ; 6.708 ;
+; binary_input2[0] ; SEG7_2[6]   ; 6.747 ; 6.747 ; 6.747 ; 6.747 ;
+; binary_input2[1] ; SEG7_2[0]   ; 6.234 ; 6.234 ; 6.234 ; 6.234 ;
+; binary_input2[1] ; SEG7_2[1]   ; 6.275 ;       ;       ; 6.275 ;
+; binary_input2[1] ; SEG7_2[2]   ; 6.050 ; 6.050 ; 6.050 ; 6.050 ;
+; binary_input2[1] ; SEG7_2[3]   ; 5.986 ; 5.986 ; 5.986 ; 5.986 ;
+; binary_input2[1] ; SEG7_2[4]   ; 6.027 ;       ;       ; 6.027 ;
+; binary_input2[1] ; SEG7_2[5]   ; 6.429 ; 6.429 ; 6.429 ; 6.429 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 6.476 ; 6.476 ;       ;
+; binary_input2[2] ; SEG7_2[0]   ; 6.446 ; 6.446 ; 6.446 ; 6.446 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 6.488 ; 6.488 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 6.279 ;       ;       ; 6.279 ;
+; binary_input2[2] ; SEG7_2[3]   ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 6.257 ; 6.257 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 6.656 ;       ;       ; 6.656 ;
+; binary_input2[2] ; SEG7_2[6]   ; 6.696 ; 6.696 ; 6.696 ; 6.696 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 7.188 ; 7.188 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 7.190 ; 7.190 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 7.017 ;       ;       ; 7.017 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 6.912 ; 6.912 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 6.955 ; 6.955 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 7.356 ; 7.356 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 7.397 ; 7.397 ;       ;
++------------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------+
+; Minimum Propagation Delay                                      ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 7.089 ;       ;       ; 7.089 ;
+; binary_input1[0] ; SEG7_1[1]   ; 7.095 ;       ;       ; 7.095 ;
+; binary_input1[0] ; SEG7_1[2]   ; 7.105 ;       ;       ; 7.105 ;
+; binary_input1[0] ; SEG7_1[3]   ; 7.109 ; 7.109 ; 7.109 ; 7.109 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 7.298 ; 7.298 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 7.298 ; 7.298 ; 7.298 ; 7.298 ;
+; binary_input1[0] ; SEG7_1[6]   ; 7.364 ; 7.364 ; 7.364 ; 7.364 ;
+; binary_input1[1] ; SEG7_1[0]   ; 7.229 ; 7.229 ; 7.229 ; 7.229 ;
+; binary_input1[1] ; SEG7_1[1]   ; 7.231 ;       ;       ; 7.231 ;
+; binary_input1[1] ; SEG7_1[2]   ; 7.241 ; 7.241 ; 7.241 ; 7.241 ;
+; binary_input1[1] ; SEG7_1[3]   ; 7.210 ; 7.210 ; 7.210 ; 7.210 ;
+; binary_input1[1] ; SEG7_1[4]   ; 7.467 ;       ;       ; 7.467 ;
+; binary_input1[1] ; SEG7_1[5]   ; 7.422 ; 7.422 ; 7.422 ; 7.422 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 7.450 ; 7.450 ;       ;
+; binary_input1[2] ; SEG7_1[0]   ; 6.613 ; 6.613 ; 6.613 ; 6.613 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 6.615 ; 6.615 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 6.625 ;       ;       ; 6.625 ;
+; binary_input1[2] ; SEG7_1[3]   ; 6.630 ; 6.630 ; 6.630 ; 6.630 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 6.859 ; 6.859 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 6.849 ;       ;       ; 6.849 ;
+; binary_input1[2] ; SEG7_1[6]   ; 6.886 ; 6.886 ; 6.886 ; 6.886 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 5.879 ; 5.879 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 5.911 ; 5.911 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 5.916 ;       ;       ; 5.916 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 5.922 ; 5.922 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 6.152 ; 6.152 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 6.142 ; 6.142 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 6.179 ; 6.179 ;       ;
+; binary_input2[0] ; SEG7_2[0]   ; 6.510 ;       ;       ; 6.510 ;
+; binary_input2[0] ; SEG7_2[1]   ; 6.547 ;       ;       ; 6.547 ;
+; binary_input2[0] ; SEG7_2[2]   ; 6.333 ;       ;       ; 6.333 ;
+; binary_input2[0] ; SEG7_2[3]   ; 6.264 ; 6.264 ; 6.264 ; 6.264 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 6.263 ; 6.263 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 6.708 ; 6.708 ; 6.708 ; 6.708 ;
+; binary_input2[0] ; SEG7_2[6]   ; 6.747 ; 6.747 ; 6.747 ; 6.747 ;
+; binary_input2[1] ; SEG7_2[0]   ; 6.234 ; 6.234 ; 6.234 ; 6.234 ;
+; binary_input2[1] ; SEG7_2[1]   ; 6.275 ;       ;       ; 6.275 ;
+; binary_input2[1] ; SEG7_2[2]   ; 6.050 ; 6.050 ; 6.050 ; 6.050 ;
+; binary_input2[1] ; SEG7_2[3]   ; 5.986 ; 5.986 ; 5.986 ; 5.986 ;
+; binary_input2[1] ; SEG7_2[4]   ; 6.027 ;       ;       ; 6.027 ;
+; binary_input2[1] ; SEG7_2[5]   ; 6.429 ; 6.429 ; 6.429 ; 6.429 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 6.476 ; 6.476 ;       ;
+; binary_input2[2] ; SEG7_2[0]   ; 6.446 ; 6.446 ; 6.446 ; 6.446 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 6.488 ; 6.488 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 6.279 ;       ;       ; 6.279 ;
+; binary_input2[2] ; SEG7_2[3]   ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 6.257 ; 6.257 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 6.656 ;       ;       ; 6.656 ;
+; binary_input2[2] ; SEG7_2[6]   ; 6.696 ; 6.696 ; 6.696 ; 6.696 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 7.188 ; 7.188 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 7.190 ; 7.190 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 7.017 ;       ;       ; 7.017 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 6.912 ; 6.912 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 6.955 ; 6.955 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 7.356 ; 7.356 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 7.397 ; 7.397 ;       ;
++------------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------+
+; Propagation Delay                                              ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 3.699 ;       ;       ; 3.699 ;
+; binary_input1[0] ; SEG7_1[1]   ; 3.710 ;       ;       ; 3.710 ;
+; binary_input1[0] ; SEG7_1[2]   ; 3.713 ;       ;       ; 3.713 ;
+; binary_input1[0] ; SEG7_1[3]   ; 3.717 ; 3.717 ; 3.717 ; 3.717 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 3.821 ; 3.821 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 3.806 ; 3.806 ; 3.806 ; 3.806 ;
+; binary_input1[0] ; SEG7_1[6]   ; 3.841 ; 3.841 ; 3.841 ; 3.841 ;
+; binary_input1[1] ; SEG7_1[0]   ; 3.799 ; 3.799 ; 3.799 ; 3.799 ;
+; binary_input1[1] ; SEG7_1[1]   ; 3.806 ;       ;       ; 3.806 ;
+; binary_input1[1] ; SEG7_1[2]   ; 3.811 ; 3.811 ; 3.811 ; 3.811 ;
+; binary_input1[1] ; SEG7_1[3]   ; 3.811 ; 3.811 ; 3.811 ; 3.811 ;
+; binary_input1[1] ; SEG7_1[4]   ; 3.913 ;       ;       ; 3.913 ;
+; binary_input1[1] ; SEG7_1[5]   ; 3.900 ; 3.900 ; 3.900 ; 3.900 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 3.932 ; 3.932 ;       ;
+; binary_input1[2] ; SEG7_1[0]   ; 3.512 ; 3.512 ; 3.512 ; 3.512 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 3.514 ; 3.514 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 3.524 ;       ;       ; 3.524 ;
+; binary_input1[2] ; SEG7_1[3]   ; 3.528 ; 3.528 ; 3.528 ; 3.528 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 3.625 ; 3.625 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 3.617 ;       ;       ; 3.617 ;
+; binary_input1[2] ; SEG7_1[6]   ; 3.652 ; 3.652 ; 3.652 ; 3.652 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 3.078 ; 3.078 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 3.080 ; 3.080 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 3.090 ;       ;       ; 3.090 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 3.091 ; 3.091 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 3.191 ; 3.191 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 3.180 ; 3.180 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 3.215 ; 3.215 ;       ;
+; binary_input2[0] ; SEG7_2[0]   ; 3.344 ;       ;       ; 3.344 ;
+; binary_input2[0] ; SEG7_2[1]   ; 3.348 ;       ;       ; 3.348 ;
+; binary_input2[0] ; SEG7_2[2]   ; 3.266 ;       ;       ; 3.266 ;
+; binary_input2[0] ; SEG7_2[3]   ; 3.222 ; 3.222 ; 3.222 ; 3.222 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 3.243 ; 3.243 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 3.471 ; 3.471 ; 3.471 ; 3.471 ;
+; binary_input2[0] ; SEG7_2[6]   ; 3.500 ; 3.500 ; 3.500 ; 3.500 ;
+; binary_input2[1] ; SEG7_2[0]   ; 3.225 ; 3.225 ; 3.225 ; 3.225 ;
+; binary_input2[1] ; SEG7_2[1]   ; 3.230 ;       ;       ; 3.230 ;
+; binary_input2[1] ; SEG7_2[2]   ; 3.138 ; 3.138 ; 3.138 ; 3.138 ;
+; binary_input2[1] ; SEG7_2[3]   ; 3.096 ; 3.096 ; 3.096 ; 3.096 ;
+; binary_input2[1] ; SEG7_2[4]   ; 3.118 ;       ;       ; 3.118 ;
+; binary_input2[1] ; SEG7_2[5]   ; 3.348 ; 3.348 ; 3.348 ; 3.348 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 3.374 ; 3.374 ;       ;
+; binary_input2[2] ; SEG7_2[0]   ; 3.329 ; 3.329 ; 3.329 ; 3.329 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 3.333 ; 3.333 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 3.257 ;       ;       ; 3.257 ;
+; binary_input2[2] ; SEG7_2[3]   ; 3.213 ; 3.213 ; 3.213 ; 3.213 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 3.237 ; 3.237 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 3.491 ;       ;       ; 3.491 ;
+; binary_input2[2] ; SEG7_2[6]   ; 3.489 ; 3.489 ; 3.489 ; 3.489 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 3.777 ; 3.777 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 3.782 ; 3.782 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 3.703 ;       ;       ; 3.703 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 3.657 ; 3.657 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 3.683 ; 3.683 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 3.913 ; 3.913 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 3.942 ; 3.942 ;       ;
++------------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------+
+; Minimum Propagation Delay                                      ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 3.699 ;       ;       ; 3.699 ;
+; binary_input1[0] ; SEG7_1[1]   ; 3.710 ;       ;       ; 3.710 ;
+; binary_input1[0] ; SEG7_1[2]   ; 3.713 ;       ;       ; 3.713 ;
+; binary_input1[0] ; SEG7_1[3]   ; 3.717 ; 3.717 ; 3.717 ; 3.717 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 3.821 ; 3.821 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 3.806 ; 3.806 ; 3.806 ; 3.806 ;
+; binary_input1[0] ; SEG7_1[6]   ; 3.841 ; 3.841 ; 3.841 ; 3.841 ;
+; binary_input1[1] ; SEG7_1[0]   ; 3.799 ; 3.799 ; 3.799 ; 3.799 ;
+; binary_input1[1] ; SEG7_1[1]   ; 3.806 ;       ;       ; 3.806 ;
+; binary_input1[1] ; SEG7_1[2]   ; 3.811 ; 3.811 ; 3.811 ; 3.811 ;
+; binary_input1[1] ; SEG7_1[3]   ; 3.811 ; 3.811 ; 3.811 ; 3.811 ;
+; binary_input1[1] ; SEG7_1[4]   ; 3.913 ;       ;       ; 3.913 ;
+; binary_input1[1] ; SEG7_1[5]   ; 3.900 ; 3.900 ; 3.900 ; 3.900 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 3.932 ; 3.932 ;       ;
+; binary_input1[2] ; SEG7_1[0]   ; 3.512 ; 3.512 ; 3.512 ; 3.512 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 3.514 ; 3.514 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 3.524 ;       ;       ; 3.524 ;
+; binary_input1[2] ; SEG7_1[3]   ; 3.528 ; 3.528 ; 3.528 ; 3.528 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 3.625 ; 3.625 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 3.617 ;       ;       ; 3.617 ;
+; binary_input1[2] ; SEG7_1[6]   ; 3.652 ; 3.652 ; 3.652 ; 3.652 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 3.078 ; 3.078 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 3.080 ; 3.080 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 3.090 ;       ;       ; 3.090 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 3.091 ; 3.091 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 3.191 ; 3.191 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 3.180 ; 3.180 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 3.215 ; 3.215 ;       ;
+; binary_input2[0] ; SEG7_2[0]   ; 3.344 ;       ;       ; 3.344 ;
+; binary_input2[0] ; SEG7_2[1]   ; 3.348 ;       ;       ; 3.348 ;
+; binary_input2[0] ; SEG7_2[2]   ; 3.266 ;       ;       ; 3.266 ;
+; binary_input2[0] ; SEG7_2[3]   ; 3.222 ; 3.222 ; 3.222 ; 3.222 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 3.243 ; 3.243 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 3.471 ; 3.471 ; 3.471 ; 3.471 ;
+; binary_input2[0] ; SEG7_2[6]   ; 3.500 ; 3.500 ; 3.500 ; 3.500 ;
+; binary_input2[1] ; SEG7_2[0]   ; 3.225 ; 3.225 ; 3.225 ; 3.225 ;
+; binary_input2[1] ; SEG7_2[1]   ; 3.230 ;       ;       ; 3.230 ;
+; binary_input2[1] ; SEG7_2[2]   ; 3.138 ; 3.138 ; 3.138 ; 3.138 ;
+; binary_input2[1] ; SEG7_2[3]   ; 3.096 ; 3.096 ; 3.096 ; 3.096 ;
+; binary_input2[1] ; SEG7_2[4]   ; 3.118 ;       ;       ; 3.118 ;
+; binary_input2[1] ; SEG7_2[5]   ; 3.348 ; 3.348 ; 3.348 ; 3.348 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 3.374 ; 3.374 ;       ;
+; binary_input2[2] ; SEG7_2[0]   ; 3.329 ; 3.329 ; 3.329 ; 3.329 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 3.333 ; 3.333 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 3.257 ;       ;       ; 3.257 ;
+; binary_input2[2] ; SEG7_2[3]   ; 3.213 ; 3.213 ; 3.213 ; 3.213 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 3.237 ; 3.237 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 3.491 ;       ;       ; 3.491 ;
+; binary_input2[2] ; SEG7_2[6]   ; 3.489 ; 3.489 ; 3.489 ; 3.489 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 3.777 ; 3.777 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 3.782 ; 3.782 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 3.703 ;       ;       ; 3.703 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 3.657 ; 3.657 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 3.683 ; 3.683 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 3.913 ; 3.913 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 3.942 ; 3.942 ;       ;
++------------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------+
+; Progagation Delay                                              ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 7.089 ;       ;       ; 7.089 ;
+; binary_input1[0] ; SEG7_1[1]   ; 7.095 ;       ;       ; 7.095 ;
+; binary_input1[0] ; SEG7_1[2]   ; 7.105 ;       ;       ; 7.105 ;
+; binary_input1[0] ; SEG7_1[3]   ; 7.109 ; 7.109 ; 7.109 ; 7.109 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 7.298 ; 7.298 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 7.298 ; 7.298 ; 7.298 ; 7.298 ;
+; binary_input1[0] ; SEG7_1[6]   ; 7.364 ; 7.364 ; 7.364 ; 7.364 ;
+; binary_input1[1] ; SEG7_1[0]   ; 7.229 ; 7.229 ; 7.229 ; 7.229 ;
+; binary_input1[1] ; SEG7_1[1]   ; 7.231 ;       ;       ; 7.231 ;
+; binary_input1[1] ; SEG7_1[2]   ; 7.241 ; 7.241 ; 7.241 ; 7.241 ;
+; binary_input1[1] ; SEG7_1[3]   ; 7.210 ; 7.210 ; 7.210 ; 7.210 ;
+; binary_input1[1] ; SEG7_1[4]   ; 7.467 ;       ;       ; 7.467 ;
+; binary_input1[1] ; SEG7_1[5]   ; 7.422 ; 7.422 ; 7.422 ; 7.422 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 7.450 ; 7.450 ;       ;
+; binary_input1[2] ; SEG7_1[0]   ; 6.613 ; 6.613 ; 6.613 ; 6.613 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 6.615 ; 6.615 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 6.625 ;       ;       ; 6.625 ;
+; binary_input1[2] ; SEG7_1[3]   ; 6.630 ; 6.630 ; 6.630 ; 6.630 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 6.859 ; 6.859 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 6.849 ;       ;       ; 6.849 ;
+; binary_input1[2] ; SEG7_1[6]   ; 6.886 ; 6.886 ; 6.886 ; 6.886 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 5.879 ; 5.879 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 5.911 ; 5.911 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 5.916 ;       ;       ; 5.916 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 5.922 ; 5.922 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 6.152 ; 6.152 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 6.142 ; 6.142 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 6.179 ; 6.179 ;       ;
+; binary_input2[0] ; SEG7_2[0]   ; 6.510 ;       ;       ; 6.510 ;
+; binary_input2[0] ; SEG7_2[1]   ; 6.547 ;       ;       ; 6.547 ;
+; binary_input2[0] ; SEG7_2[2]   ; 6.333 ;       ;       ; 6.333 ;
+; binary_input2[0] ; SEG7_2[3]   ; 6.264 ; 6.264 ; 6.264 ; 6.264 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 6.263 ; 6.263 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 6.708 ; 6.708 ; 6.708 ; 6.708 ;
+; binary_input2[0] ; SEG7_2[6]   ; 6.747 ; 6.747 ; 6.747 ; 6.747 ;
+; binary_input2[1] ; SEG7_2[0]   ; 6.234 ; 6.234 ; 6.234 ; 6.234 ;
+; binary_input2[1] ; SEG7_2[1]   ; 6.275 ;       ;       ; 6.275 ;
+; binary_input2[1] ; SEG7_2[2]   ; 6.050 ; 6.050 ; 6.050 ; 6.050 ;
+; binary_input2[1] ; SEG7_2[3]   ; 5.986 ; 5.986 ; 5.986 ; 5.986 ;
+; binary_input2[1] ; SEG7_2[4]   ; 6.027 ;       ;       ; 6.027 ;
+; binary_input2[1] ; SEG7_2[5]   ; 6.429 ; 6.429 ; 6.429 ; 6.429 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 6.476 ; 6.476 ;       ;
+; binary_input2[2] ; SEG7_2[0]   ; 6.446 ; 6.446 ; 6.446 ; 6.446 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 6.488 ; 6.488 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 6.279 ;       ;       ; 6.279 ;
+; binary_input2[2] ; SEG7_2[3]   ; 6.214 ; 6.214 ; 6.214 ; 6.214 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 6.257 ; 6.257 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 6.656 ;       ;       ; 6.656 ;
+; binary_input2[2] ; SEG7_2[6]   ; 6.696 ; 6.696 ; 6.696 ; 6.696 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 7.188 ; 7.188 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 7.190 ; 7.190 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 7.017 ;       ;       ; 7.017 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 6.912 ; 6.912 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 6.955 ; 6.955 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 7.356 ; 7.356 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 7.397 ; 7.397 ;       ;
++------------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------+
+; Minimum Progagation Delay                                      ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 3.699 ;       ;       ; 3.699 ;
+; binary_input1[0] ; SEG7_1[1]   ; 3.710 ;       ;       ; 3.710 ;
+; binary_input1[0] ; SEG7_1[2]   ; 3.713 ;       ;       ; 3.713 ;
+; binary_input1[0] ; SEG7_1[3]   ; 3.717 ; 3.717 ; 3.717 ; 3.717 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 3.821 ; 3.821 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 3.806 ; 3.806 ; 3.806 ; 3.806 ;
+; binary_input1[0] ; SEG7_1[6]   ; 3.841 ; 3.841 ; 3.841 ; 3.841 ;
+; binary_input1[1] ; SEG7_1[0]   ; 3.799 ; 3.799 ; 3.799 ; 3.799 ;
+; binary_input1[1] ; SEG7_1[1]   ; 3.806 ;       ;       ; 3.806 ;
+; binary_input1[1] ; SEG7_1[2]   ; 3.811 ; 3.811 ; 3.811 ; 3.811 ;
+; binary_input1[1] ; SEG7_1[3]   ; 3.811 ; 3.811 ; 3.811 ; 3.811 ;
+; binary_input1[1] ; SEG7_1[4]   ; 3.913 ;       ;       ; 3.913 ;
+; binary_input1[1] ; SEG7_1[5]   ; 3.900 ; 3.900 ; 3.900 ; 3.900 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 3.932 ; 3.932 ;       ;
+; binary_input1[2] ; SEG7_1[0]   ; 3.512 ; 3.512 ; 3.512 ; 3.512 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 3.514 ; 3.514 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 3.524 ;       ;       ; 3.524 ;
+; binary_input1[2] ; SEG7_1[3]   ; 3.528 ; 3.528 ; 3.528 ; 3.528 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 3.625 ; 3.625 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 3.617 ;       ;       ; 3.617 ;
+; binary_input1[2] ; SEG7_1[6]   ; 3.652 ; 3.652 ; 3.652 ; 3.652 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 3.078 ; 3.078 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 3.080 ; 3.080 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 3.090 ;       ;       ; 3.090 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 3.091 ; 3.091 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 3.191 ; 3.191 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 3.180 ; 3.180 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 3.215 ; 3.215 ;       ;
+; binary_input2[0] ; SEG7_2[0]   ; 3.344 ;       ;       ; 3.344 ;
+; binary_input2[0] ; SEG7_2[1]   ; 3.348 ;       ;       ; 3.348 ;
+; binary_input2[0] ; SEG7_2[2]   ; 3.266 ;       ;       ; 3.266 ;
+; binary_input2[0] ; SEG7_2[3]   ; 3.222 ; 3.222 ; 3.222 ; 3.222 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 3.243 ; 3.243 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 3.471 ; 3.471 ; 3.471 ; 3.471 ;
+; binary_input2[0] ; SEG7_2[6]   ; 3.500 ; 3.500 ; 3.500 ; 3.500 ;
+; binary_input2[1] ; SEG7_2[0]   ; 3.225 ; 3.225 ; 3.225 ; 3.225 ;
+; binary_input2[1] ; SEG7_2[1]   ; 3.230 ;       ;       ; 3.230 ;
+; binary_input2[1] ; SEG7_2[2]   ; 3.138 ; 3.138 ; 3.138 ; 3.138 ;
+; binary_input2[1] ; SEG7_2[3]   ; 3.096 ; 3.096 ; 3.096 ; 3.096 ;
+; binary_input2[1] ; SEG7_2[4]   ; 3.118 ;       ;       ; 3.118 ;
+; binary_input2[1] ; SEG7_2[5]   ; 3.348 ; 3.348 ; 3.348 ; 3.348 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 3.374 ; 3.374 ;       ;
+; binary_input2[2] ; SEG7_2[0]   ; 3.329 ; 3.329 ; 3.329 ; 3.329 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 3.333 ; 3.333 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 3.257 ;       ;       ; 3.257 ;
+; binary_input2[2] ; SEG7_2[3]   ; 3.213 ; 3.213 ; 3.213 ; 3.213 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 3.237 ; 3.237 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 3.491 ;       ;       ; 3.491 ;
+; binary_input2[2] ; SEG7_2[6]   ; 3.489 ; 3.489 ; 3.489 ; 3.489 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 3.777 ; 3.777 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 3.782 ; 3.782 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 3.703 ;       ;       ; 3.703 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 3.657 ; 3.657 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 3.683 ; 3.683 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 3.913 ; 3.913 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 3.942 ; 3.942 ;       ;
++------------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 56    ; 56   ;
+; Unconstrained Output Ports      ; 14    ; 14   ;
+; Unconstrained Output Port Paths ; 56    ; 56   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
+    Info: Processing started: Thu Oct 03 22:38:51 2013
+Info: Command: quartus_sta BCD_Adder -c BCD_Adder
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'BCD_Adder.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 319 megabytes
+    Info: Processing ended: Thu Oct 03 22:38:56 2013
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:01
+
+

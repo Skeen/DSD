@@ -1,0 +1,21 @@
+|Exercise2Structural
+INPUT1 => xor_2:u1.a
+INPUT1 => and_2:u2.a
+INPUT2 => xor_2:u1.b
+INPUT2 => and_2:u2.b
+SUM <= xor_2:u1.c
+CARRY <= and_2:u2.c
+
+
+|Exercise2Structural|xor_2:u1
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Exercise2Structural|and_2:u2
+a => c~0.IN0
+b => c~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

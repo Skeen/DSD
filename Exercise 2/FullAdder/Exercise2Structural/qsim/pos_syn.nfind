@@ -1,0 +1,16 @@
+Exercise2Structural
+CARRY_IN,input,user_entered
+CARRY_OUT,output,user_entered
+INPUT1,input,user_entered
+INPUT2,input,user_entered
+SUM,output,user_entered
+or_2:u3|c~0,comb,compiler_generated
+HalfAdder_2:u2|xor_2:u1|c~0,comb,compiler_generated
+,hierarchy,user_entered
+HalfAdder_2:u1,hierarchy,user_entered
+HalfAdder_2:u2,hierarchy,user_entered
+or_2:u3,hierarchy,user_entered
+HalfAdder_2:u1|xor_2:u1,hierarchy,user_entered
+HalfAdder_2:u1|and_2:u2,hierarchy,user_entered
+HalfAdder_2:u2|xor_2:u1,hierarchy,user_entered
+HalfAdder_2:u2|and_2:u2,hierarchy,user_entered

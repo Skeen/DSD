@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.NUMERIC_STD.ALL; 
+
+entity Bin2Dec is
+	port (
+		binary_input : in  std_logic_vector(3 downto 0);
+		SEG7_1		 : out std_logic_vector(3 downto 0);
+		SEG7_10		 : out std_logic_vector(3 downto 0));
+end Bin2Dec;
+
+architecture dataflow of Bin2Dec is
+begin
+end dataflow;

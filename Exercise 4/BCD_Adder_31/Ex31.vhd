@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.NUMERIC_STD.ALL; 
+
+entity Ex31 is
+	port (
+		binary_input1 : in  std_logic_vector(3 downto 0);
+		binary_input2 : in  std_logic_vector(3 downto 0);
+		SEG7_1 		  : out std_logic_vector(6 downto 0);
+		SEG7_2 		  : out std_logic_vector(6 downto 0));
+end Ex31;
+
+architecture structural of Ex31 is
+begin
+	u1: entity work.BCD9 port map(binary_input=>binary_input1, decoder_output=>SEG7_1);	
+   u2: entity work.BCD9 port map(binary_input=>binary_input2, decoder_output=>SEG7_2);
+end structural;

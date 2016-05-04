@@ -1,0 +1,13 @@
+Exercise2Structural
+CARRY,output,user_entered
+INPUT1,input,user_entered
+INPUT2,input,user_entered
+SUM,output,user_entered
+~ASDO~,input,compiler_generated
+~LVDS150p/nCEO~,output,compiler_generated
+~nCSO~,input,compiler_generated
+xor_2:u1|c,comb,user_entered
+and_2:u2|c,comb,user_entered
+,hierarchy,user_entered
+xor_2:u1,hierarchy,user_entered
+and_2:u2,hierarchy,user_entered

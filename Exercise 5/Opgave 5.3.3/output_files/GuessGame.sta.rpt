@@ -1,0 +1,1542 @@
+TimeQuest Timing Analyzer report for GuessGame
+Thu Oct 24 15:49:59 2013
+Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'setP1'
+ 12. Slow Model Setup: 'setP2'
+ 13. Slow Model Hold: 'setP2'
+ 14. Slow Model Hold: 'setP1'
+ 15. Slow Model Minimum Pulse Width: 'player'
+ 16. Slow Model Minimum Pulse Width: 'setP1'
+ 17. Slow Model Minimum Pulse Width: 'setP2'
+ 18. Setup Times
+ 19. Hold Times
+ 20. Clock to Output Times
+ 21. Minimum Clock to Output Times
+ 22. Fast Model Setup Summary
+ 23. Fast Model Hold Summary
+ 24. Fast Model Recovery Summary
+ 25. Fast Model Removal Summary
+ 26. Fast Model Minimum Pulse Width Summary
+ 27. Fast Model Setup: 'setP1'
+ 28. Fast Model Setup: 'setP2'
+ 29. Fast Model Hold: 'setP2'
+ 30. Fast Model Hold: 'setP1'
+ 31. Fast Model Minimum Pulse Width: 'player'
+ 32. Fast Model Minimum Pulse Width: 'setP1'
+ 33. Fast Model Minimum Pulse Width: 'setP2'
+ 34. Setup Times
+ 35. Hold Times
+ 36. Clock to Output Times
+ 37. Minimum Clock to Output Times
+ 38. Multicorner Timing Analysis Summary
+ 39. Setup Times
+ 40. Hold Times
+ 41. Clock to Output Times
+ 42. Minimum Clock to Output Times
+ 43. Setup Transfers
+ 44. Hold Transfers
+ 45. Report TCCS
+ 46. Report RSKM
+ 47. Unconstrained Paths
+ 48. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                      ;
++--------------------+---------------------------------------------------+
+; Quartus II Version ; Version 12.1 Build 177 11/07/2012 SJ Full Version ;
+; Revision Name      ; GuessGame                                         ;
+; Device Family      ; Cyclone II                                        ;
+; Device Name        ; EP2C35F672C6                                      ;
+; Timing Models      ; Final                                             ;
+; Delay Model        ; Combined                                          ;
+; Rise/Fall Delays   ; Unavailable                                       ;
++--------------------+---------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ; < 0.1%      ;
+;     5-8 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                             ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets    ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; player     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { player } ;
+; setP1      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { setP1 }  ;
+; setP2      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { setP2 }  ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; setP1 ; -0.536 ; -2.357        ;
+; setP2 ; -0.139 ; -0.139        ;
++-------+--------+---------------+
+
+
++--------------------------------+
+; Slow Model Hold Summary        ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; setP2 ; -0.280 ; -0.739        ;
+; setP1 ; 0.183  ; 0.000         ;
++-------+--------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++--------+--------+----------------------+
+; Clock  ; Slack  ; End Point TNS        ;
++--------+--------+----------------------+
+; player ; -1.222 ; -1.222               ;
+; setP1  ; 0.500  ; 0.000                ;
+; setP2  ; 0.500  ; 0.000                ;
++--------+--------+----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'setP1'                                                                                                             ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.536 ; inputP1[1] ; GuessGame:u1|StateSaver:u1|saved_state[1] ; player       ; setP1       ; 0.500        ; 0.538      ; 0.397      ;
+; -0.348 ; inputP1[6] ; GuessGame:u1|StateSaver:u1|saved_state[6] ; player       ; setP1       ; 0.500        ; 0.542      ; 0.411      ;
+; -0.345 ; inputP1[4] ; GuessGame:u1|StateSaver:u1|saved_state[4] ; player       ; setP1       ; 0.500        ; 0.543      ; 0.403      ;
+; -0.327 ; inputP1[0] ; GuessGame:u1|StateSaver:u1|saved_state[0] ; player       ; setP1       ; 0.500        ; 0.541      ; 0.415      ;
+; -0.325 ; inputP1[2] ; GuessGame:u1|StateSaver:u1|saved_state[2] ; player       ; setP1       ; 0.500        ; 0.719      ; 0.412      ;
+; -0.177 ; inputP1[5] ; GuessGame:u1|StateSaver:u1|saved_state[5] ; player       ; setP1       ; 0.500        ; 0.712      ; 0.410      ;
+; -0.156 ; inputP1[7] ; GuessGame:u1|StateSaver:u1|saved_state[7] ; player       ; setP1       ; 0.500        ; 0.712      ; 0.411      ;
+; -0.143 ; inputP1[3] ; GuessGame:u1|StateSaver:u1|saved_state[3] ; player       ; setP1       ; 0.500        ; 0.719      ; 0.402      ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'setP2'                                                                                                             ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.139 ; inputP2[6] ; GuessGame:u2|StateSaver:u1|saved_state[6] ; player       ; setP2       ; 1.000        ; 0.266      ; 0.398      ;
+; 0.022  ; inputP2[0] ; GuessGame:u2|StateSaver:u1|saved_state[0] ; player       ; setP2       ; 1.000        ; 0.427      ; 0.420      ;
+; 0.092  ; inputP2[1] ; GuessGame:u2|StateSaver:u1|saved_state[1] ; player       ; setP2       ; 1.000        ; 0.501      ; 0.420      ;
+; 0.095  ; inputP2[5] ; GuessGame:u2|StateSaver:u1|saved_state[5] ; player       ; setP2       ; 1.000        ; 0.502      ; 0.418      ;
+; 0.121  ; inputP2[3] ; GuessGame:u2|StateSaver:u1|saved_state[3] ; player       ; setP2       ; 1.000        ; 0.499      ; 0.412      ;
+; 0.122  ; inputP2[2] ; GuessGame:u2|StateSaver:u1|saved_state[2] ; player       ; setP2       ; 1.000        ; 0.502      ; 0.415      ;
+; 0.158  ; inputP2[4] ; GuessGame:u2|StateSaver:u1|saved_state[4] ; player       ; setP2       ; 1.000        ; 0.530      ; 0.417      ;
+; 0.301  ; inputP2[7] ; GuessGame:u2|StateSaver:u1|saved_state[7] ; player       ; setP2       ; 1.000        ; 0.694      ; 0.414      ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'setP2'                                                                                                              ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.280 ; inputP2[7] ; GuessGame:u2|StateSaver:u1|saved_state[7] ; player       ; setP2       ; 0.000        ; 0.694      ; 0.414      ;
+; -0.113 ; inputP2[4] ; GuessGame:u2|StateSaver:u1|saved_state[4] ; player       ; setP2       ; 0.000        ; 0.530      ; 0.417      ;
+; -0.087 ; inputP2[2] ; GuessGame:u2|StateSaver:u1|saved_state[2] ; player       ; setP2       ; 0.000        ; 0.502      ; 0.415      ;
+; -0.087 ; inputP2[3] ; GuessGame:u2|StateSaver:u1|saved_state[3] ; player       ; setP2       ; 0.000        ; 0.499      ; 0.412      ;
+; -0.084 ; inputP2[5] ; GuessGame:u2|StateSaver:u1|saved_state[5] ; player       ; setP2       ; 0.000        ; 0.502      ; 0.418      ;
+; -0.081 ; inputP2[1] ; GuessGame:u2|StateSaver:u1|saved_state[1] ; player       ; setP2       ; 0.000        ; 0.501      ; 0.420      ;
+; -0.007 ; inputP2[0] ; GuessGame:u2|StateSaver:u1|saved_state[0] ; player       ; setP2       ; 0.000        ; 0.427      ; 0.420      ;
+; 0.132  ; inputP2[6] ; GuessGame:u2|StateSaver:u1|saved_state[6] ; player       ; setP2       ; 0.000        ; 0.266      ; 0.398      ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'setP1'                                                                                                             ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node  ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.183 ; inputP1[3] ; GuessGame:u1|StateSaver:u1|saved_state[3] ; player       ; setP1       ; -0.500       ; 0.719      ; 0.402      ;
+; 0.193 ; inputP1[2] ; GuessGame:u1|StateSaver:u1|saved_state[2] ; player       ; setP1       ; -0.500       ; 0.719      ; 0.412      ;
+; 0.198 ; inputP1[5] ; GuessGame:u1|StateSaver:u1|saved_state[5] ; player       ; setP1       ; -0.500       ; 0.712      ; 0.410      ;
+; 0.199 ; inputP1[7] ; GuessGame:u1|StateSaver:u1|saved_state[7] ; player       ; setP1       ; -0.500       ; 0.712      ; 0.411      ;
+; 0.359 ; inputP1[1] ; GuessGame:u1|StateSaver:u1|saved_state[1] ; player       ; setP1       ; -0.500       ; 0.538      ; 0.397      ;
+; 0.360 ; inputP1[4] ; GuessGame:u1|StateSaver:u1|saved_state[4] ; player       ; setP1       ; -0.500       ; 0.543      ; 0.403      ;
+; 0.369 ; inputP1[6] ; GuessGame:u1|StateSaver:u1|saved_state[6] ; player       ; setP1       ; -0.500       ; 0.542      ; 0.411      ;
+; 0.374 ; inputP1[0] ; GuessGame:u1|StateSaver:u1|saved_state[0] ; player       ; setP1       ; -0.500       ; 0.541      ; 0.415      ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'player'                                                           ;
++--------+--------------+----------------+------------------+--------+------------+------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target           ;
++--------+--------------+----------------+------------------+--------+------------+------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; player ; Rise       ; player           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[0]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[0]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[0]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[0]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[1]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[1]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[1]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[1]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[2]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[2]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[2]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[2]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[3]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[3]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[3]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[3]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[4]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[4]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[4]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[4]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[5]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[5]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[5]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[5]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[6]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[6]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[6]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[6]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[7]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[7]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[7]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[7]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[0]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[0]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[0]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[0]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[1]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[1]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[1]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[1]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[2]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[2]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[2]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[2]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[3]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[3]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[3]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[3]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[4]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[4]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[4]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[4]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[5]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[5]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[5]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[5]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[6]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[6]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[6]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[6]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[7]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[7]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[7]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[7]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; player|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; player|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; setP1            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; setP1            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; setP1|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; setP1|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; setP2            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; setP2            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; setP2|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; setP2|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; showP1           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; showP1           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; showP1|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; showP1|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; showP2           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; showP2           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; showP2|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; showP2|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; tryP1            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; tryP1            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; tryP1|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; tryP1|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; tryP2            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; tryP2            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; tryP2|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; tryP2|datad      ;
++--------+--------------+----------------+------------------+--------+------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'setP1'                                                                                   ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                    ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[0] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[0] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[1] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[1] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[2] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[2] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[3] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[3] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[4] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[4] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[5] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[5] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[6] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[6] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[7] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[7] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; setP1|combout                             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; setP1|combout                             ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; setP1~clkctrl|inclk[0]                    ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; setP1~clkctrl|inclk[0]                    ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; setP1~clkctrl|outclk                      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; setP1~clkctrl|outclk                      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[0]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[0]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[1]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[1]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[2]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[2]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[3]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[3]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[4]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[4]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[5]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[5]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[6]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[6]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[7]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[7]|datac                ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'setP2'                                                                                   ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                    ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[0] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[0] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[1] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[1] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[2] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[2] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[3] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[3] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[4] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[4] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[5] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[5] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[6] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[6] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[7] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[7] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; setP2|combout                             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; setP2|combout                             ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; setP2~clkctrl|inclk[0]                    ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; setP2~clkctrl|inclk[0]                    ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; setP2~clkctrl|outclk                      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; setP2~clkctrl|outclk                      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[0]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[0]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[1]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[1]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[2]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[2]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[3]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[3]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[4]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[4]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[5]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[5]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[6]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[6]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[7]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[7]|datac                ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; input[*]  ; player     ; 3.105 ; 3.105 ; Rise       ; player          ;
+;  input[0] ; player     ; 3.041 ; 3.041 ; Rise       ; player          ;
+;  input[1] ; player     ; 2.971 ; 2.971 ; Rise       ; player          ;
+;  input[2] ; player     ; 3.105 ; 3.105 ; Rise       ; player          ;
+;  input[3] ; player     ; 2.526 ; 2.526 ; Rise       ; player          ;
+;  input[4] ; player     ; 2.389 ; 2.389 ; Rise       ; player          ;
+;  input[5] ; player     ; 2.442 ; 2.442 ; Rise       ; player          ;
+;  input[6] ; player     ; 2.368 ; 2.368 ; Rise       ; player          ;
+;  input[7] ; player     ; 2.832 ; 2.832 ; Rise       ; player          ;
+; set       ; player     ; 4.722 ; 4.722 ; Rise       ; player          ;
+; show      ; player     ; 4.657 ; 4.657 ; Rise       ; player          ;
+; try       ; player     ; 4.837 ; 4.837 ; Rise       ; player          ;
+; input[*]  ; player     ; 3.067 ; 3.067 ; Fall       ; player          ;
+;  input[0] ; player     ; 3.027 ; 3.027 ; Fall       ; player          ;
+;  input[1] ; player     ; 2.653 ; 2.653 ; Fall       ; player          ;
+;  input[2] ; player     ; 3.067 ; 3.067 ; Fall       ; player          ;
+;  input[3] ; player     ; 2.734 ; 2.734 ; Fall       ; player          ;
+;  input[4] ; player     ; 2.394 ; 2.394 ; Fall       ; player          ;
+;  input[5] ; player     ; 2.136 ; 2.136 ; Fall       ; player          ;
+;  input[6] ; player     ; 2.024 ; 2.024 ; Fall       ; player          ;
+;  input[7] ; player     ; 2.832 ; 2.832 ; Fall       ; player          ;
+; set       ; player     ; 4.727 ; 4.727 ; Fall       ; player          ;
+; show      ; player     ; 4.789 ; 4.789 ; Fall       ; player          ;
+; try       ; player     ; 4.834 ; 4.834 ; Fall       ; player          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; input[*]  ; player     ; -1.504 ; -1.504 ; Rise       ; player          ;
+;  input[0] ; player     ; -2.202 ; -2.202 ; Rise       ; player          ;
+;  input[1] ; player     ; -2.091 ; -2.091 ; Rise       ; player          ;
+;  input[2] ; player     ; -2.270 ; -2.270 ; Rise       ; player          ;
+;  input[3] ; player     ; -1.655 ; -1.655 ; Rise       ; player          ;
+;  input[4] ; player     ; -1.561 ; -1.561 ; Rise       ; player          ;
+;  input[5] ; player     ; -1.562 ; -1.562 ; Rise       ; player          ;
+;  input[6] ; player     ; -1.504 ; -1.504 ; Rise       ; player          ;
+;  input[7] ; player     ; -1.956 ; -1.956 ; Rise       ; player          ;
+; set       ; player     ; -4.050 ; -4.050 ; Rise       ; player          ;
+; show      ; player     ; -3.963 ; -3.963 ; Rise       ; player          ;
+; try       ; player     ; -3.967 ; -3.967 ; Rise       ; player          ;
+; input[*]  ; player     ; -1.134 ; -1.134 ; Fall       ; player          ;
+;  input[0] ; player     ; -2.183 ; -2.183 ; Fall       ; player          ;
+;  input[1] ; player     ; -1.809 ; -1.809 ; Fall       ; player          ;
+;  input[2] ; player     ; -2.228 ; -2.228 ; Fall       ; player          ;
+;  input[3] ; player     ; -1.852 ; -1.852 ; Fall       ; player          ;
+;  input[4] ; player     ; -1.556 ; -1.556 ; Fall       ; player          ;
+;  input[5] ; player     ; -1.293 ; -1.293 ; Fall       ; player          ;
+;  input[6] ; player     ; -1.134 ; -1.134 ; Fall       ; player          ;
+;  input[7] ; player     ; -1.953 ; -1.953 ; Fall       ; player          ;
+; set       ; player     ; -4.051 ; -4.051 ; Fall       ; player          ;
+; show      ; player     ; -3.961 ; -3.961 ; Fall       ; player          ;
+; try       ; player     ; -3.963 ; -3.963 ; Fall       ; player          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Clock to Output Times                                                      ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; playerNo[*]  ; player     ; 9.987  ; 9.987  ; Rise       ; player          ;
+;  playerNo[1] ; player     ; 9.918  ; 9.918  ; Rise       ; player          ;
+;  playerNo[2] ; player     ; 9.918  ; 9.918  ; Rise       ; player          ;
+;  playerNo[3] ; player     ; 9.987  ; 9.987  ; Rise       ; player          ;
+;  playerNo[6] ; player     ; 9.936  ; 9.936  ; Rise       ; player          ;
+; seg1[*]      ; player     ; 13.636 ; 13.636 ; Rise       ; player          ;
+;  seg1[0]     ; player     ; 12.254 ; 12.254 ; Rise       ; player          ;
+;  seg1[1]     ; player     ; 11.537 ; 11.537 ; Rise       ; player          ;
+;  seg1[2]     ; player     ; 12.724 ; 12.724 ; Rise       ; player          ;
+;  seg1[3]     ; player     ; 13.636 ; 13.636 ; Rise       ; player          ;
+;  seg1[4]     ; player     ; 13.166 ; 13.166 ; Rise       ; player          ;
+;  seg1[5]     ; player     ; 11.566 ; 11.566 ; Rise       ; player          ;
+;  seg1[6]     ; player     ; 12.847 ; 12.847 ; Rise       ; player          ;
+; seg10[*]     ; player     ; 15.020 ; 15.020 ; Rise       ; player          ;
+;  seg10[0]    ; player     ; 15.020 ; 15.020 ; Rise       ; player          ;
+;  seg10[1]    ; player     ; 13.612 ; 13.612 ; Rise       ; player          ;
+;  seg10[2]    ; player     ; 13.059 ; 13.059 ; Rise       ; player          ;
+;  seg10[3]    ; player     ; 14.216 ; 14.216 ; Rise       ; player          ;
+;  seg10[4]    ; player     ; 13.722 ; 13.722 ; Rise       ; player          ;
+;  seg10[5]    ; player     ; 13.727 ; 13.727 ; Rise       ; player          ;
+;  seg10[6]    ; player     ; 13.338 ; 13.338 ; Rise       ; player          ;
+; playerNo[*]  ; player     ; 9.987  ; 9.987  ; Fall       ; player          ;
+;  playerNo[1] ; player     ; 9.918  ; 9.918  ; Fall       ; player          ;
+;  playerNo[2] ; player     ; 9.918  ; 9.918  ; Fall       ; player          ;
+;  playerNo[3] ; player     ; 9.987  ; 9.987  ; Fall       ; player          ;
+;  playerNo[6] ; player     ; 9.936  ; 9.936  ; Fall       ; player          ;
+; seg1[*]      ; player     ; 13.636 ; 13.636 ; Fall       ; player          ;
+;  seg1[0]     ; player     ; 12.254 ; 12.254 ; Fall       ; player          ;
+;  seg1[1]     ; player     ; 11.537 ; 11.537 ; Fall       ; player          ;
+;  seg1[2]     ; player     ; 12.724 ; 12.724 ; Fall       ; player          ;
+;  seg1[3]     ; player     ; 13.636 ; 13.636 ; Fall       ; player          ;
+;  seg1[4]     ; player     ; 13.166 ; 13.166 ; Fall       ; player          ;
+;  seg1[5]     ; player     ; 11.566 ; 11.566 ; Fall       ; player          ;
+;  seg1[6]     ; player     ; 12.847 ; 12.847 ; Fall       ; player          ;
+; seg10[*]     ; player     ; 15.020 ; 15.020 ; Fall       ; player          ;
+;  seg10[0]    ; player     ; 15.020 ; 15.020 ; Fall       ; player          ;
+;  seg10[1]    ; player     ; 13.612 ; 13.612 ; Fall       ; player          ;
+;  seg10[2]    ; player     ; 13.059 ; 13.059 ; Fall       ; player          ;
+;  seg10[3]    ; player     ; 14.216 ; 14.216 ; Fall       ; player          ;
+;  seg10[4]    ; player     ; 13.722 ; 13.722 ; Fall       ; player          ;
+;  seg10[5]    ; player     ; 13.727 ; 13.727 ; Fall       ; player          ;
+;  seg10[6]    ; player     ; 13.338 ; 13.338 ; Fall       ; player          ;
+; seg1[*]      ; setP1      ; 11.982 ; 11.982 ; Fall       ; setP1           ;
+;  seg1[0]     ; setP1      ; 11.177 ; 11.177 ; Fall       ; setP1           ;
+;  seg1[1]     ; setP1      ; 10.109 ; 10.109 ; Fall       ; setP1           ;
+;  seg1[2]     ; setP1      ; 11.982 ; 11.982 ; Fall       ; setP1           ;
+;  seg1[3]     ; setP1      ; 11.936 ; 11.936 ; Fall       ; setP1           ;
+;  seg1[4]     ; setP1      ; 11.484 ; 11.484 ; Fall       ; setP1           ;
+;  seg1[5]     ; setP1      ; 9.890  ; 9.890  ; Fall       ; setP1           ;
+;  seg1[6]     ; setP1      ; 10.561 ; 10.561 ; Fall       ; setP1           ;
+; seg10[*]     ; setP1      ; 13.283 ; 13.283 ; Fall       ; setP1           ;
+;  seg10[0]    ; setP1      ; 13.283 ; 13.283 ; Fall       ; setP1           ;
+;  seg10[1]    ; setP1      ; 12.228 ; 12.228 ; Fall       ; setP1           ;
+;  seg10[2]    ; setP1      ; 12.008 ; 12.008 ; Fall       ; setP1           ;
+;  seg10[3]    ; setP1      ; 12.168 ; 12.168 ; Fall       ; setP1           ;
+;  seg10[4]    ; setP1      ; 12.071 ; 12.071 ; Fall       ; setP1           ;
+;  seg10[5]    ; setP1      ; 12.261 ; 12.261 ; Fall       ; setP1           ;
+;  seg10[6]    ; setP1      ; 11.289 ; 11.289 ; Fall       ; setP1           ;
+; seg1[*]      ; setP2      ; 12.092 ; 12.092 ; Fall       ; setP2           ;
+;  seg1[0]     ; setP2      ; 11.583 ; 11.583 ; Fall       ; setP2           ;
+;  seg1[1]     ; setP2      ; 10.887 ; 10.887 ; Fall       ; setP2           ;
+;  seg1[2]     ; setP2      ; 12.092 ; 12.092 ; Fall       ; setP2           ;
+;  seg1[3]     ; setP2      ; 11.811 ; 11.811 ; Fall       ; setP2           ;
+;  seg1[4]     ; setP2      ; 11.315 ; 11.315 ; Fall       ; setP2           ;
+;  seg1[5]     ; setP2      ; 9.714  ; 9.714  ; Fall       ; setP2           ;
+;  seg1[6]     ; setP2      ; 10.688 ; 10.688 ; Fall       ; setP2           ;
+; seg10[*]     ; setP2      ; 12.919 ; 12.919 ; Fall       ; setP2           ;
+;  seg10[0]    ; setP2      ; 12.919 ; 12.919 ; Fall       ; setP2           ;
+;  seg10[1]    ; setP2      ; 12.147 ; 12.147 ; Fall       ; setP2           ;
+;  seg10[2]    ; setP2      ; 11.410 ; 11.410 ; Fall       ; setP2           ;
+;  seg10[3]    ; setP2      ; 12.593 ; 12.593 ; Fall       ; setP2           ;
+;  seg10[4]    ; setP2      ; 12.120 ; 12.120 ; Fall       ; setP2           ;
+;  seg10[5]    ; setP2      ; 12.035 ; 12.035 ; Fall       ; setP2           ;
+;  seg10[6]    ; setP2      ; 11.461 ; 11.461 ; Fall       ; setP2           ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                              ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; playerNo[*]  ; player     ; 9.918  ; 9.918  ; Rise       ; player          ;
+;  playerNo[1] ; player     ; 9.918  ; 9.918  ; Rise       ; player          ;
+;  playerNo[2] ; player     ; 9.918  ; 9.918  ; Rise       ; player          ;
+;  playerNo[3] ; player     ; 9.987  ; 9.987  ; Rise       ; player          ;
+;  playerNo[6] ; player     ; 9.936  ; 9.936  ; Rise       ; player          ;
+; seg1[*]      ; player     ; 8.300  ; 8.300  ; Rise       ; player          ;
+;  seg1[0]     ; player     ; 8.618  ; 8.618  ; Rise       ; player          ;
+;  seg1[1]     ; player     ; 8.300  ; 8.300  ; Rise       ; player          ;
+;  seg1[2]     ; player     ; 8.786  ; 8.786  ; Rise       ; player          ;
+;  seg1[3]     ; player     ; 9.075  ; 9.075  ; Rise       ; player          ;
+;  seg1[4]     ; player     ; 8.608  ; 8.608  ; Rise       ; player          ;
+;  seg1[5]     ; player     ; 8.329  ; 8.329  ; Rise       ; player          ;
+;  seg1[6]     ; player     ; 9.550  ; 9.550  ; Rise       ; player          ;
+; seg10[*]     ; player     ; 9.154  ; 9.154  ; Rise       ; player          ;
+;  seg10[0]    ; player     ; 11.199 ; 11.199 ; Rise       ; player          ;
+;  seg10[1]    ; player     ; 9.648  ; 9.648  ; Rise       ; player          ;
+;  seg10[2]    ; player     ; 9.154  ; 9.154  ; Rise       ; player          ;
+;  seg10[3]    ; player     ; 10.387 ; 10.387 ; Rise       ; player          ;
+;  seg10[4]    ; player     ; 9.633  ; 9.633  ; Rise       ; player          ;
+;  seg10[5]    ; player     ; 9.824  ; 9.824  ; Rise       ; player          ;
+;  seg10[6]    ; player     ; 9.989  ; 9.989  ; Rise       ; player          ;
+; playerNo[*]  ; player     ; 9.918  ; 9.918  ; Fall       ; player          ;
+;  playerNo[1] ; player     ; 9.918  ; 9.918  ; Fall       ; player          ;
+;  playerNo[2] ; player     ; 9.918  ; 9.918  ; Fall       ; player          ;
+;  playerNo[3] ; player     ; 9.987  ; 9.987  ; Fall       ; player          ;
+;  playerNo[6] ; player     ; 9.936  ; 9.936  ; Fall       ; player          ;
+; seg1[*]      ; player     ; 8.027  ; 8.027  ; Fall       ; player          ;
+;  seg1[0]     ; player     ; 8.345  ; 8.345  ; Fall       ; player          ;
+;  seg1[1]     ; player     ; 8.027  ; 8.027  ; Fall       ; player          ;
+;  seg1[2]     ; player     ; 8.513  ; 8.513  ; Fall       ; player          ;
+;  seg1[3]     ; player     ; 8.802  ; 8.802  ; Fall       ; player          ;
+;  seg1[4]     ; player     ; 8.335  ; 8.335  ; Fall       ; player          ;
+;  seg1[5]     ; player     ; 8.056  ; 8.056  ; Fall       ; player          ;
+;  seg1[6]     ; player     ; 9.337  ; 9.337  ; Fall       ; player          ;
+; seg10[*]     ; player     ; 8.881  ; 8.881  ; Fall       ; player          ;
+;  seg10[0]    ; player     ; 11.132 ; 11.132 ; Fall       ; player          ;
+;  seg10[1]    ; player     ; 9.375  ; 9.375  ; Fall       ; player          ;
+;  seg10[2]    ; player     ; 8.881  ; 8.881  ; Fall       ; player          ;
+;  seg10[3]    ; player     ; 10.316 ; 10.316 ; Fall       ; player          ;
+;  seg10[4]    ; player     ; 9.360  ; 9.360  ; Fall       ; player          ;
+;  seg10[5]    ; player     ; 9.551  ; 9.551  ; Fall       ; player          ;
+;  seg10[6]    ; player     ; 9.828  ; 9.828  ; Fall       ; player          ;
+; seg1[*]      ; setP1      ; 9.165  ; 9.165  ; Fall       ; setP1           ;
+;  seg1[0]     ; setP1      ; 9.938  ; 9.938  ; Fall       ; setP1           ;
+;  seg1[1]     ; setP1      ; 9.768  ; 9.768  ; Fall       ; setP1           ;
+;  seg1[2]     ; setP1      ; 10.668 ; 10.668 ; Fall       ; setP1           ;
+;  seg1[3]     ; setP1      ; 9.612  ; 9.612  ; Fall       ; setP1           ;
+;  seg1[4]     ; setP1      ; 9.165  ; 9.165  ; Fall       ; setP1           ;
+;  seg1[5]     ; setP1      ; 9.550  ; 9.550  ; Fall       ; setP1           ;
+;  seg1[6]     ; setP1      ; 10.218 ; 10.218 ; Fall       ; setP1           ;
+; seg10[*]     ; setP1      ; 10.511 ; 10.511 ; Fall       ; setP1           ;
+;  seg10[0]    ; setP1      ; 11.667 ; 11.667 ; Fall       ; setP1           ;
+;  seg10[1]    ; setP1      ; 10.914 ; 10.914 ; Fall       ; setP1           ;
+;  seg10[2]    ; setP1      ; 10.633 ; 10.633 ; Fall       ; setP1           ;
+;  seg10[3]    ; setP1      ; 10.855 ; 10.855 ; Fall       ; setP1           ;
+;  seg10[4]    ; setP1      ; 10.832 ; 10.832 ; Fall       ; setP1           ;
+;  seg10[5]    ; setP1      ; 11.022 ; 11.022 ; Fall       ; setP1           ;
+;  seg10[6]    ; setP1      ; 10.511 ; 10.511 ; Fall       ; setP1           ;
+; seg1[*]      ; setP2      ; 9.150  ; 9.150  ; Fall       ; setP2           ;
+;  seg1[0]     ; setP2      ; 10.638 ; 10.638 ; Fall       ; setP2           ;
+;  seg1[1]     ; setP2      ; 10.313 ; 10.313 ; Fall       ; setP2           ;
+;  seg1[2]     ; setP2      ; 11.421 ; 11.421 ; Fall       ; setP2           ;
+;  seg1[3]     ; setP2      ; 10.188 ; 10.188 ; Fall       ; setP2           ;
+;  seg1[4]     ; setP2      ; 9.731  ; 9.731  ; Fall       ; setP2           ;
+;  seg1[5]     ; setP2      ; 9.150  ; 9.150  ; Fall       ; setP2           ;
+;  seg1[6]     ; setP2      ; 10.123 ; 10.123 ; Fall       ; setP2           ;
+; seg10[*]     ; setP2      ; 10.648 ; 10.648 ; Fall       ; setP2           ;
+;  seg10[0]    ; setP2      ; 12.117 ; 12.117 ; Fall       ; setP2           ;
+;  seg10[1]    ; setP2      ; 10.980 ; 10.980 ; Fall       ; setP2           ;
+;  seg10[2]    ; setP2      ; 10.648 ; 10.648 ; Fall       ; setP2           ;
+;  seg10[3]    ; setP2      ; 11.429 ; 11.429 ; Fall       ; setP2           ;
+;  seg10[4]    ; setP2      ; 11.099 ; 11.099 ; Fall       ; setP2           ;
+;  seg10[5]    ; setP2      ; 10.835 ; 10.835 ; Fall       ; setP2           ;
+;  seg10[6]    ; setP2      ; 10.703 ; 10.703 ; Fall       ; setP2           ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------+
+; Fast Model Setup Summary      ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; setP1 ; 0.231 ; 0.000         ;
+; setP2 ; 0.684 ; 0.000         ;
++-------+-------+---------------+
+
+
++--------------------------------+
+; Fast Model Hold Summary        ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; setP2 ; -0.269 ; -1.515        ;
+; setP1 ; 0.208  ; 0.000         ;
++-------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++--------+--------+----------------------+
+; Clock  ; Slack  ; End Point TNS        ;
++--------+--------+----------------------+
+; player ; -1.222 ; -1.222               ;
+; setP1  ; 0.500  ; 0.000                ;
+; setP2  ; 0.500  ; 0.000                ;
++--------+--------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'setP1'                                                                                                            ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node  ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.231 ; inputP1[1] ; GuessGame:u1|StateSaver:u1|saved_state[1] ; player       ; setP1       ; 0.500        ; 0.386      ; 0.164      ;
+; 0.313 ; inputP1[2] ; GuessGame:u1|StateSaver:u1|saved_state[2] ; player       ; setP1       ; 0.500        ; 0.456      ; 0.171      ;
+; 0.318 ; inputP1[6] ; GuessGame:u1|StateSaver:u1|saved_state[6] ; player       ; setP1       ; 0.500        ; 0.390      ; 0.172      ;
+; 0.319 ; inputP1[0] ; GuessGame:u1|StateSaver:u1|saved_state[0] ; player       ; setP1       ; 0.500        ; 0.388      ; 0.175      ;
+; 0.322 ; inputP1[4] ; GuessGame:u1|StateSaver:u1|saved_state[4] ; player       ; setP1       ; 0.500        ; 0.392      ; 0.167      ;
+; 0.382 ; inputP1[5] ; GuessGame:u1|StateSaver:u1|saved_state[5] ; player       ; setP1       ; 0.500        ; 0.453      ; 0.171      ;
+; 0.387 ; inputP1[7] ; GuessGame:u1|StateSaver:u1|saved_state[7] ; player       ; setP1       ; 0.500        ; 0.453      ; 0.170      ;
+; 0.394 ; inputP1[3] ; GuessGame:u1|StateSaver:u1|saved_state[3] ; player       ; setP1       ; 0.500        ; 0.459      ; 0.167      ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'setP2'                                                                                                            ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node  ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.684 ; inputP2[6] ; GuessGame:u2|StateSaver:u1|saved_state[6] ; player       ; setP2       ; 1.000        ; 0.264      ; 0.164      ;
+; 0.743 ; inputP2[0] ; GuessGame:u2|StateSaver:u1|saved_state[0] ; player       ; setP2       ; 1.000        ; 0.325      ; 0.177      ;
+; 0.787 ; inputP2[1] ; GuessGame:u2|StateSaver:u1|saved_state[1] ; player       ; setP2       ; 1.000        ; 0.370      ; 0.176      ;
+; 0.794 ; inputP2[5] ; GuessGame:u2|StateSaver:u1|saved_state[5] ; player       ; setP2       ; 1.000        ; 0.375      ; 0.175      ;
+; 0.797 ; inputP2[2] ; GuessGame:u2|StateSaver:u1|saved_state[2] ; player       ; setP2       ; 1.000        ; 0.371      ; 0.174      ;
+; 0.800 ; inputP2[3] ; GuessGame:u2|StateSaver:u1|saved_state[3] ; player       ; setP2       ; 1.000        ; 0.371      ; 0.170      ;
+; 0.812 ; inputP2[4] ; GuessGame:u2|StateSaver:u1|saved_state[4] ; player       ; setP2       ; 1.000        ; 0.382      ; 0.176      ;
+; 0.869 ; inputP2[7] ; GuessGame:u2|StateSaver:u1|saved_state[7] ; player       ; setP2       ; 1.000        ; 0.442      ; 0.173      ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'setP2'                                                                                                              ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node  ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.269 ; inputP2[7] ; GuessGame:u2|StateSaver:u1|saved_state[7] ; player       ; setP2       ; 0.000        ; 0.442      ; 0.173      ;
+; -0.206 ; inputP2[4] ; GuessGame:u2|StateSaver:u1|saved_state[4] ; player       ; setP2       ; 0.000        ; 0.382      ; 0.176      ;
+; -0.201 ; inputP2[3] ; GuessGame:u2|StateSaver:u1|saved_state[3] ; player       ; setP2       ; 0.000        ; 0.371      ; 0.170      ;
+; -0.200 ; inputP2[5] ; GuessGame:u2|StateSaver:u1|saved_state[5] ; player       ; setP2       ; 0.000        ; 0.375      ; 0.175      ;
+; -0.197 ; inputP2[2] ; GuessGame:u2|StateSaver:u1|saved_state[2] ; player       ; setP2       ; 0.000        ; 0.371      ; 0.174      ;
+; -0.194 ; inputP2[1] ; GuessGame:u2|StateSaver:u1|saved_state[1] ; player       ; setP2       ; 0.000        ; 0.370      ; 0.176      ;
+; -0.148 ; inputP2[0] ; GuessGame:u2|StateSaver:u1|saved_state[0] ; player       ; setP2       ; 0.000        ; 0.325      ; 0.177      ;
+; -0.100 ; inputP2[6] ; GuessGame:u2|StateSaver:u1|saved_state[6] ; player       ; setP2       ; 0.000        ; 0.264      ; 0.164      ;
++--------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'setP1'                                                                                                             ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node  ; To Node                                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.208 ; inputP1[3] ; GuessGame:u1|StateSaver:u1|saved_state[3] ; player       ; setP1       ; -0.500       ; 0.459      ; 0.167      ;
+; 0.215 ; inputP1[2] ; GuessGame:u1|StateSaver:u1|saved_state[2] ; player       ; setP1       ; -0.500       ; 0.456      ; 0.171      ;
+; 0.217 ; inputP1[7] ; GuessGame:u1|StateSaver:u1|saved_state[7] ; player       ; setP1       ; -0.500       ; 0.453      ; 0.170      ;
+; 0.218 ; inputP1[5] ; GuessGame:u1|StateSaver:u1|saved_state[5] ; player       ; setP1       ; -0.500       ; 0.453      ; 0.171      ;
+; 0.275 ; inputP1[4] ; GuessGame:u1|StateSaver:u1|saved_state[4] ; player       ; setP1       ; -0.500       ; 0.392      ; 0.167      ;
+; 0.278 ; inputP1[1] ; GuessGame:u1|StateSaver:u1|saved_state[1] ; player       ; setP1       ; -0.500       ; 0.386      ; 0.164      ;
+; 0.282 ; inputP1[6] ; GuessGame:u1|StateSaver:u1|saved_state[6] ; player       ; setP1       ; -0.500       ; 0.390      ; 0.172      ;
+; 0.287 ; inputP1[0] ; GuessGame:u1|StateSaver:u1|saved_state[0] ; player       ; setP1       ; -0.500       ; 0.388      ; 0.175      ;
++-------+------------+-------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'player'                                                           ;
++--------+--------------+----------------+------------------+--------+------------+------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target           ;
++--------+--------------+----------------+------------------+--------+------------+------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; player ; Rise       ; player           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[0]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[0]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[0]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[0]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[1]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[1]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[1]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[1]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[2]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[2]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[2]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[2]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[3]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[3]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[3]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[3]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[4]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[4]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[4]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[4]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[5]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[5]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[5]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[5]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[6]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[6]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[6]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[6]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[7]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[7]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP1[7]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP1[7]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[0]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[0]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[0]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[0]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[1]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[1]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[1]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[1]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[2]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[2]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[2]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[2]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[3]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[3]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[3]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[3]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[4]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[4]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[4]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[4]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[5]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[5]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[5]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[5]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[6]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[6]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[6]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[6]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; inputP2[7]       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; inputP2[7]       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; inputP2[7]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; inputP2[7]|datad ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; player|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; player|combout   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; setP1            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; setP1            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; setP1|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; setP1|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; setP2            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; setP2            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; setP2|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; setP2|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; showP1           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; showP1           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; showP1|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; showP1|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; showP2           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; showP2           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; showP2|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; showP2|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; tryP1            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; tryP1            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; tryP1|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; tryP1|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Fall       ; tryP2            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Fall       ; tryP2            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; player ; Rise       ; tryP2|datad      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; player ; Rise       ; tryP2|datad      ;
++--------+--------------+----------------+------------------+--------+------------+------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'setP1'                                                                                   ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                    ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[0] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[0] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[1] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[1] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[2] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[2] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[3] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[3] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[4] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[4] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[5] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[5] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[6] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[6] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[7] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Fall       ; GuessGame:u1|StateSaver:u1|saved_state[7] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; setP1|combout                             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; setP1|combout                             ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; setP1~clkctrl|inclk[0]                    ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; setP1~clkctrl|inclk[0]                    ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; setP1~clkctrl|outclk                      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; setP1~clkctrl|outclk                      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[0]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[0]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[1]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[1]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[2]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[2]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[3]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[3]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[4]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[4]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[5]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[5]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[6]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[6]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP1 ; Rise       ; u1|u1|saved_state[7]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP1 ; Rise       ; u1|u1|saved_state[7]|datac                ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'setP2'                                                                                   ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+; Slack ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                    ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[0] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[0] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[1] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[1] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[2] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[2] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[3] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[3] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[4] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[4] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[5] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[5] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[6] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[6] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[7] ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Fall       ; GuessGame:u2|StateSaver:u1|saved_state[7] ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; setP2|combout                             ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; setP2|combout                             ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; setP2~clkctrl|inclk[0]                    ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; setP2~clkctrl|inclk[0]                    ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; setP2~clkctrl|outclk                      ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; setP2~clkctrl|outclk                      ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[0]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[0]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[1]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[1]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[2]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[2]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[3]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[3]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[4]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[4]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[5]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[5]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[6]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[6]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; High Pulse Width ; setP2 ; Rise       ; u2|u1|saved_state[7]|datac                ;
+; 0.500 ; 0.500        ; 0.000          ; Low Pulse Width  ; setP2 ; Rise       ; u2|u1|saved_state[7]|datac                ;
++-------+--------------+----------------+------------------+-------+------------+-------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; input[*]  ; player     ; 1.487 ; 1.487 ; Rise       ; player          ;
+;  input[0] ; player     ; 1.471 ; 1.471 ; Rise       ; player          ;
+;  input[1] ; player     ; 1.420 ; 1.420 ; Rise       ; player          ;
+;  input[2] ; player     ; 1.487 ; 1.487 ; Rise       ; player          ;
+;  input[3] ; player     ; 1.201 ; 1.201 ; Rise       ; player          ;
+;  input[4] ; player     ; 1.131 ; 1.131 ; Rise       ; player          ;
+;  input[5] ; player     ; 1.126 ; 1.126 ; Rise       ; player          ;
+;  input[6] ; player     ; 1.115 ; 1.115 ; Rise       ; player          ;
+;  input[7] ; player     ; 1.375 ; 1.375 ; Rise       ; player          ;
+; set       ; player     ; 2.729 ; 2.729 ; Rise       ; player          ;
+; show      ; player     ; 2.680 ; 2.680 ; Rise       ; player          ;
+; try       ; player     ; 2.776 ; 2.776 ; Rise       ; player          ;
+; input[*]  ; player     ; 1.482 ; 1.482 ; Fall       ; player          ;
+;  input[0] ; player     ; 1.471 ; 1.471 ; Fall       ; player          ;
+;  input[1] ; player     ; 1.279 ; 1.279 ; Fall       ; player          ;
+;  input[2] ; player     ; 1.482 ; 1.482 ; Fall       ; player          ;
+;  input[3] ; player     ; 1.303 ; 1.303 ; Fall       ; player          ;
+;  input[4] ; player     ; 1.141 ; 1.141 ; Fall       ; player          ;
+;  input[5] ; player     ; 1.008 ; 1.008 ; Fall       ; player          ;
+;  input[6] ; player     ; 0.972 ; 0.972 ; Fall       ; player          ;
+;  input[7] ; player     ; 1.377 ; 1.377 ; Fall       ; player          ;
+; set       ; player     ; 2.734 ; 2.734 ; Fall       ; player          ;
+; show      ; player     ; 2.743 ; 2.743 ; Fall       ; player          ;
+; try       ; player     ; 2.775 ; 2.775 ; Fall       ; player          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; input[*]  ; player     ; -0.752 ; -0.752 ; Rise       ; player          ;
+;  input[0] ; player     ; -1.116 ; -1.116 ; Rise       ; player          ;
+;  input[1] ; player     ; -1.051 ; -1.051 ; Rise       ; player          ;
+;  input[2] ; player     ; -1.136 ; -1.136 ; Rise       ; player          ;
+;  input[3] ; player     ; -0.839 ; -0.839 ; Rise       ; player          ;
+;  input[4] ; player     ; -0.783 ; -0.783 ; Rise       ; player          ;
+;  input[5] ; player     ; -0.760 ; -0.760 ; Rise       ; player          ;
+;  input[6] ; player     ; -0.752 ; -0.752 ; Rise       ; player          ;
+;  input[7] ; player     ; -1.010 ; -1.010 ; Rise       ; player          ;
+; set       ; player     ; -2.455 ; -2.455 ; Rise       ; player          ;
+; show      ; player     ; -2.395 ; -2.395 ; Rise       ; player          ;
+; try       ; player     ; -2.413 ; -2.413 ; Rise       ; player          ;
+; input[*]  ; player     ; -0.601 ; -0.601 ; Fall       ; player          ;
+;  input[0] ; player     ; -1.118 ; -1.118 ; Fall       ; player          ;
+;  input[1] ; player     ; -0.926 ; -0.926 ; Fall       ; player          ;
+;  input[2] ; player     ; -1.132 ; -1.132 ; Fall       ; player          ;
+;  input[3] ; player     ; -0.939 ; -0.939 ; Fall       ; player          ;
+;  input[4] ; player     ; -0.789 ; -0.789 ; Fall       ; player          ;
+;  input[5] ; player     ; -0.653 ; -0.653 ; Fall       ; player          ;
+;  input[6] ; player     ; -0.601 ; -0.601 ; Fall       ; player          ;
+;  input[7] ; player     ; -1.015 ; -1.015 ; Fall       ; player          ;
+; set       ; player     ; -2.463 ; -2.463 ; Fall       ; player          ;
+; show      ; player     ; -2.398 ; -2.398 ; Fall       ; player          ;
+; try       ; player     ; -2.415 ; -2.415 ; Fall       ; player          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; playerNo[*]  ; player     ; 5.675 ; 5.675 ; Rise       ; player          ;
+;  playerNo[1] ; player     ; 5.621 ; 5.621 ; Rise       ; player          ;
+;  playerNo[2] ; player     ; 5.621 ; 5.621 ; Rise       ; player          ;
+;  playerNo[3] ; player     ; 5.675 ; 5.675 ; Rise       ; player          ;
+;  playerNo[6] ; player     ; 5.634 ; 5.634 ; Rise       ; player          ;
+; seg1[*]      ; player     ; 7.267 ; 7.267 ; Rise       ; player          ;
+;  seg1[0]     ; player     ; 6.641 ; 6.641 ; Rise       ; player          ;
+;  seg1[1]     ; player     ; 6.325 ; 6.325 ; Rise       ; player          ;
+;  seg1[2]     ; player     ; 6.838 ; 6.838 ; Rise       ; player          ;
+;  seg1[3]     ; player     ; 7.267 ; 7.267 ; Rise       ; player          ;
+;  seg1[4]     ; player     ; 7.036 ; 7.036 ; Rise       ; player          ;
+;  seg1[5]     ; player     ; 6.349 ; 6.349 ; Rise       ; player          ;
+;  seg1[6]     ; player     ; 6.911 ; 6.911 ; Rise       ; player          ;
+; seg10[*]     ; player     ; 7.899 ; 7.899 ; Rise       ; player          ;
+;  seg10[0]    ; player     ; 7.899 ; 7.899 ; Rise       ; player          ;
+;  seg10[1]    ; player     ; 7.205 ; 7.205 ; Rise       ; player          ;
+;  seg10[2]    ; player     ; 6.993 ; 6.993 ; Rise       ; player          ;
+;  seg10[3]    ; player     ; 7.456 ; 7.456 ; Rise       ; player          ;
+;  seg10[4]    ; player     ; 7.265 ; 7.265 ; Rise       ; player          ;
+;  seg10[5]    ; player     ; 7.318 ; 7.318 ; Rise       ; player          ;
+;  seg10[6]    ; player     ; 7.166 ; 7.166 ; Rise       ; player          ;
+; playerNo[*]  ; player     ; 5.675 ; 5.675 ; Fall       ; player          ;
+;  playerNo[1] ; player     ; 5.621 ; 5.621 ; Fall       ; player          ;
+;  playerNo[2] ; player     ; 5.621 ; 5.621 ; Fall       ; player          ;
+;  playerNo[3] ; player     ; 5.675 ; 5.675 ; Fall       ; player          ;
+;  playerNo[6] ; player     ; 5.634 ; 5.634 ; Fall       ; player          ;
+; seg1[*]      ; player     ; 7.267 ; 7.267 ; Fall       ; player          ;
+;  seg1[0]     ; player     ; 6.641 ; 6.641 ; Fall       ; player          ;
+;  seg1[1]     ; player     ; 6.325 ; 6.325 ; Fall       ; player          ;
+;  seg1[2]     ; player     ; 6.838 ; 6.838 ; Fall       ; player          ;
+;  seg1[3]     ; player     ; 7.267 ; 7.267 ; Fall       ; player          ;
+;  seg1[4]     ; player     ; 7.036 ; 7.036 ; Fall       ; player          ;
+;  seg1[5]     ; player     ; 6.349 ; 6.349 ; Fall       ; player          ;
+;  seg1[6]     ; player     ; 6.911 ; 6.911 ; Fall       ; player          ;
+; seg10[*]     ; player     ; 7.899 ; 7.899 ; Fall       ; player          ;
+;  seg10[0]    ; player     ; 7.899 ; 7.899 ; Fall       ; player          ;
+;  seg10[1]    ; player     ; 7.205 ; 7.205 ; Fall       ; player          ;
+;  seg10[2]    ; player     ; 6.993 ; 6.993 ; Fall       ; player          ;
+;  seg10[3]    ; player     ; 7.456 ; 7.456 ; Fall       ; player          ;
+;  seg10[4]    ; player     ; 7.265 ; 7.265 ; Fall       ; player          ;
+;  seg10[5]    ; player     ; 7.318 ; 7.318 ; Fall       ; player          ;
+;  seg10[6]    ; player     ; 7.166 ; 7.166 ; Fall       ; player          ;
+; seg1[*]      ; setP1      ; 5.955 ; 5.955 ; Fall       ; setP1           ;
+;  seg1[0]     ; setP1      ; 5.611 ; 5.611 ; Fall       ; setP1           ;
+;  seg1[1]     ; setP1      ; 5.124 ; 5.124 ; Fall       ; setP1           ;
+;  seg1[2]     ; setP1      ; 5.955 ; 5.955 ; Fall       ; setP1           ;
+;  seg1[3]     ; setP1      ; 5.943 ; 5.943 ; Fall       ; setP1           ;
+;  seg1[4]     ; setP1      ; 5.726 ; 5.726 ; Fall       ; setP1           ;
+;  seg1[5]     ; setP1      ; 5.026 ; 5.026 ; Fall       ; setP1           ;
+;  seg1[6]     ; setP1      ; 5.335 ; 5.335 ; Fall       ; setP1           ;
+; seg10[*]     ; setP1      ; 6.586 ; 6.586 ; Fall       ; setP1           ;
+;  seg10[0]    ; setP1      ; 6.586 ; 6.586 ; Fall       ; setP1           ;
+;  seg10[1]    ; setP1      ; 6.034 ; 6.034 ; Fall       ; setP1           ;
+;  seg10[2]    ; setP1      ; 5.961 ; 5.961 ; Fall       ; setP1           ;
+;  seg10[3]    ; setP1      ; 6.008 ; 6.008 ; Fall       ; setP1           ;
+;  seg10[4]    ; setP1      ; 5.982 ; 5.982 ; Fall       ; setP1           ;
+;  seg10[5]    ; setP1      ; 6.128 ; 6.128 ; Fall       ; setP1           ;
+;  seg10[6]    ; setP1      ; 5.717 ; 5.717 ; Fall       ; setP1           ;
+; seg1[*]      ; setP2      ; 6.031 ; 6.031 ; Fall       ; setP2           ;
+;  seg1[0]     ; setP2      ; 5.810 ; 5.810 ; Fall       ; setP2           ;
+;  seg1[1]     ; setP2      ; 5.500 ; 5.500 ; Fall       ; setP2           ;
+;  seg1[2]     ; setP2      ; 6.031 ; 6.031 ; Fall       ; setP2           ;
+;  seg1[3]     ; setP2      ; 5.906 ; 5.906 ; Fall       ; setP2           ;
+;  seg1[4]     ; setP2      ; 5.667 ; 5.667 ; Fall       ; setP2           ;
+;  seg1[5]     ; setP2      ; 4.980 ; 4.980 ; Fall       ; setP2           ;
+;  seg1[6]     ; setP2      ; 5.413 ; 5.413 ; Fall       ; setP2           ;
+; seg10[*]     ; setP2      ; 6.406 ; 6.406 ; Fall       ; setP2           ;
+;  seg10[0]    ; setP2      ; 6.406 ; 6.406 ; Fall       ; setP2           ;
+;  seg10[1]    ; setP2      ; 6.018 ; 6.018 ; Fall       ; setP2           ;
+;  seg10[2]    ; setP2      ; 5.708 ; 5.708 ; Fall       ; setP2           ;
+;  seg10[3]    ; setP2      ; 6.161 ; 6.161 ; Fall       ; setP2           ;
+;  seg10[4]    ; setP2      ; 5.980 ; 5.980 ; Fall       ; setP2           ;
+;  seg10[5]    ; setP2      ; 6.009 ; 6.009 ; Fall       ; setP2           ;
+;  seg10[6]    ; setP2      ; 5.765 ; 5.765 ; Fall       ; setP2           ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; playerNo[*]  ; player     ; 5.621 ; 5.621 ; Rise       ; player          ;
+;  playerNo[1] ; player     ; 5.621 ; 5.621 ; Rise       ; player          ;
+;  playerNo[2] ; player     ; 5.621 ; 5.621 ; Rise       ; player          ;
+;  playerNo[3] ; player     ; 5.675 ; 5.675 ; Rise       ; player          ;
+;  playerNo[6] ; player     ; 5.634 ; 5.634 ; Rise       ; player          ;
+; seg1[*]      ; player     ; 4.207 ; 4.207 ; Rise       ; player          ;
+;  seg1[0]     ; player     ; 4.357 ; 4.357 ; Rise       ; player          ;
+;  seg1[1]     ; player     ; 4.207 ; 4.207 ; Rise       ; player          ;
+;  seg1[2]     ; player     ; 4.425 ; 4.425 ; Rise       ; player          ;
+;  seg1[3]     ; player     ; 4.560 ; 4.560 ; Rise       ; player          ;
+;  seg1[4]     ; player     ; 4.342 ; 4.342 ; Rise       ; player          ;
+;  seg1[5]     ; player     ; 4.231 ; 4.231 ; Rise       ; player          ;
+;  seg1[6]     ; player     ; 4.765 ; 4.765 ; Rise       ; player          ;
+; seg10[*]     ; player     ; 4.586 ; 4.586 ; Rise       ; player          ;
+;  seg10[0]    ; player     ; 5.537 ; 5.537 ; Rise       ; player          ;
+;  seg10[1]    ; player     ; 4.778 ; 4.778 ; Rise       ; player          ;
+;  seg10[2]    ; player     ; 4.586 ; 4.586 ; Rise       ; player          ;
+;  seg10[3]    ; player     ; 5.089 ; 5.089 ; Rise       ; player          ;
+;  seg10[4]    ; player     ; 4.769 ; 4.769 ; Rise       ; player          ;
+;  seg10[5]    ; player     ; 4.916 ; 4.916 ; Rise       ; player          ;
+;  seg10[6]    ; player     ; 5.003 ; 5.003 ; Rise       ; player          ;
+; playerNo[*]  ; player     ; 5.621 ; 5.621 ; Fall       ; player          ;
+;  playerNo[1] ; player     ; 5.621 ; 5.621 ; Fall       ; player          ;
+;  playerNo[2] ; player     ; 5.621 ; 5.621 ; Fall       ; player          ;
+;  playerNo[3] ; player     ; 5.675 ; 5.675 ; Fall       ; player          ;
+;  playerNo[6] ; player     ; 5.634 ; 5.634 ; Fall       ; player          ;
+; seg1[*]      ; player     ; 4.094 ; 4.094 ; Fall       ; player          ;
+;  seg1[0]     ; player     ; 4.244 ; 4.244 ; Fall       ; player          ;
+;  seg1[1]     ; player     ; 4.094 ; 4.094 ; Fall       ; player          ;
+;  seg1[2]     ; player     ; 4.312 ; 4.312 ; Fall       ; player          ;
+;  seg1[3]     ; player     ; 4.447 ; 4.447 ; Fall       ; player          ;
+;  seg1[4]     ; player     ; 4.229 ; 4.229 ; Fall       ; player          ;
+;  seg1[5]     ; player     ; 4.118 ; 4.118 ; Fall       ; player          ;
+;  seg1[6]     ; player     ; 4.680 ; 4.680 ; Fall       ; player          ;
+; seg10[*]     ; player     ; 4.473 ; 4.473 ; Fall       ; player          ;
+;  seg10[0]    ; player     ; 5.514 ; 5.514 ; Fall       ; player          ;
+;  seg10[1]    ; player     ; 4.665 ; 4.665 ; Fall       ; player          ;
+;  seg10[2]    ; player     ; 4.473 ; 4.473 ; Fall       ; player          ;
+;  seg10[3]    ; player     ; 5.062 ; 5.062 ; Fall       ; player          ;
+;  seg10[4]    ; player     ; 4.656 ; 4.656 ; Fall       ; player          ;
+;  seg10[5]    ; player     ; 4.803 ; 4.803 ; Fall       ; player          ;
+;  seg10[6]    ; player     ; 4.935 ; 4.935 ; Fall       ; player          ;
+; seg1[*]      ; setP1      ; 4.727 ; 4.727 ; Fall       ; setP1           ;
+;  seg1[0]     ; setP1      ; 5.087 ; 5.087 ; Fall       ; setP1           ;
+;  seg1[1]     ; setP1      ; 4.981 ; 4.981 ; Fall       ; setP1           ;
+;  seg1[2]     ; setP1      ; 5.401 ; 5.401 ; Fall       ; setP1           ;
+;  seg1[3]     ; setP1      ; 4.928 ; 4.928 ; Fall       ; setP1           ;
+;  seg1[4]     ; setP1      ; 4.727 ; 4.727 ; Fall       ; setP1           ;
+;  seg1[5]     ; setP1      ; 4.891 ; 4.891 ; Fall       ; setP1           ;
+;  seg1[6]     ; setP1      ; 5.197 ; 5.197 ; Fall       ; setP1           ;
+; seg10[*]     ; setP1      ; 5.353 ; 5.353 ; Fall       ; setP1           ;
+;  seg10[0]    ; setP1      ; 5.877 ; 5.877 ; Fall       ; setP1           ;
+;  seg10[1]    ; setP1      ; 5.480 ; 5.480 ; Fall       ; setP1           ;
+;  seg10[2]    ; setP1      ; 5.353 ; 5.353 ; Fall       ; setP1           ;
+;  seg10[3]    ; setP1      ; 5.429 ; 5.429 ; Fall       ; setP1           ;
+;  seg10[4]    ; setP1      ; 5.458 ; 5.458 ; Fall       ; setP1           ;
+;  seg10[5]    ; setP1      ; 5.604 ; 5.604 ; Fall       ; setP1           ;
+;  seg10[6]    ; setP1      ; 5.364 ; 5.364 ; Fall       ; setP1           ;
+; seg1[*]      ; setP2      ; 4.743 ; 4.743 ; Fall       ; setP2           ;
+;  seg1[0]     ; setP2      ; 5.345 ; 5.345 ; Fall       ; setP2           ;
+;  seg1[1]     ; setP2      ; 5.259 ; 5.259 ; Fall       ; setP2           ;
+;  seg1[2]     ; setP2      ; 5.679 ; 5.679 ; Fall       ; setP2           ;
+;  seg1[3]     ; setP2      ; 5.142 ; 5.142 ; Fall       ; setP2           ;
+;  seg1[4]     ; setP2      ; 4.931 ; 4.931 ; Fall       ; setP2           ;
+;  seg1[5]     ; setP2      ; 4.743 ; 4.743 ; Fall       ; setP2           ;
+;  seg1[6]     ; setP2      ; 5.177 ; 5.177 ; Fall       ; setP2           ;
+; seg10[*]     ; setP2      ; 5.370 ; 5.370 ; Fall       ; setP2           ;
+;  seg10[0]    ; setP2      ; 6.068 ; 6.068 ; Fall       ; setP2           ;
+;  seg10[1]    ; setP2      ; 5.494 ; 5.494 ; Fall       ; setP2           ;
+;  seg10[2]    ; setP2      ; 5.370 ; 5.370 ; Fall       ; setP2           ;
+;  seg10[3]    ; setP2      ; 5.640 ; 5.640 ; Fall       ; setP2           ;
+;  seg10[4]    ; setP2      ; 5.549 ; 5.549 ; Fall       ; setP2           ;
+;  seg10[5]    ; setP2      ; 5.498 ; 5.498 ; Fall       ; setP2           ;
+;  seg10[6]    ; setP2      ; 5.439 ; 5.439 ; Fall       ; setP2           ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+--------+--------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+--------+----------+---------+---------------------+
+; Worst-case Slack ; -0.536 ; -0.280 ; N/A      ; N/A     ; -1.222              ;
+;  player          ; N/A    ; N/A    ; N/A      ; N/A     ; -1.222              ;
+;  setP1           ; -0.536 ; 0.183  ; N/A      ; N/A     ; 0.500               ;
+;  setP2           ; -0.139 ; -0.280 ; N/A      ; N/A     ; 0.500               ;
+; Design-wide TNS  ; -2.496 ; -1.515 ; 0.0      ; 0.0     ; -1.222              ;
+;  player          ; N/A    ; N/A    ; N/A      ; N/A     ; -1.222              ;
+;  setP1           ; -2.357 ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  setP2           ; -0.139 ; -1.515 ; N/A      ; N/A     ; 0.000               ;
++------------------+--------+--------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; input[*]  ; player     ; 3.105 ; 3.105 ; Rise       ; player          ;
+;  input[0] ; player     ; 3.041 ; 3.041 ; Rise       ; player          ;
+;  input[1] ; player     ; 2.971 ; 2.971 ; Rise       ; player          ;
+;  input[2] ; player     ; 3.105 ; 3.105 ; Rise       ; player          ;
+;  input[3] ; player     ; 2.526 ; 2.526 ; Rise       ; player          ;
+;  input[4] ; player     ; 2.389 ; 2.389 ; Rise       ; player          ;
+;  input[5] ; player     ; 2.442 ; 2.442 ; Rise       ; player          ;
+;  input[6] ; player     ; 2.368 ; 2.368 ; Rise       ; player          ;
+;  input[7] ; player     ; 2.832 ; 2.832 ; Rise       ; player          ;
+; set       ; player     ; 4.722 ; 4.722 ; Rise       ; player          ;
+; show      ; player     ; 4.657 ; 4.657 ; Rise       ; player          ;
+; try       ; player     ; 4.837 ; 4.837 ; Rise       ; player          ;
+; input[*]  ; player     ; 3.067 ; 3.067 ; Fall       ; player          ;
+;  input[0] ; player     ; 3.027 ; 3.027 ; Fall       ; player          ;
+;  input[1] ; player     ; 2.653 ; 2.653 ; Fall       ; player          ;
+;  input[2] ; player     ; 3.067 ; 3.067 ; Fall       ; player          ;
+;  input[3] ; player     ; 2.734 ; 2.734 ; Fall       ; player          ;
+;  input[4] ; player     ; 2.394 ; 2.394 ; Fall       ; player          ;
+;  input[5] ; player     ; 2.136 ; 2.136 ; Fall       ; player          ;
+;  input[6] ; player     ; 2.024 ; 2.024 ; Fall       ; player          ;
+;  input[7] ; player     ; 2.832 ; 2.832 ; Fall       ; player          ;
+; set       ; player     ; 4.727 ; 4.727 ; Fall       ; player          ;
+; show      ; player     ; 4.789 ; 4.789 ; Fall       ; player          ;
+; try       ; player     ; 4.834 ; 4.834 ; Fall       ; player          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; input[*]  ; player     ; -0.752 ; -0.752 ; Rise       ; player          ;
+;  input[0] ; player     ; -1.116 ; -1.116 ; Rise       ; player          ;
+;  input[1] ; player     ; -1.051 ; -1.051 ; Rise       ; player          ;
+;  input[2] ; player     ; -1.136 ; -1.136 ; Rise       ; player          ;
+;  input[3] ; player     ; -0.839 ; -0.839 ; Rise       ; player          ;
+;  input[4] ; player     ; -0.783 ; -0.783 ; Rise       ; player          ;
+;  input[5] ; player     ; -0.760 ; -0.760 ; Rise       ; player          ;
+;  input[6] ; player     ; -0.752 ; -0.752 ; Rise       ; player          ;
+;  input[7] ; player     ; -1.010 ; -1.010 ; Rise       ; player          ;
+; set       ; player     ; -2.455 ; -2.455 ; Rise       ; player          ;
+; show      ; player     ; -2.395 ; -2.395 ; Rise       ; player          ;
+; try       ; player     ; -2.413 ; -2.413 ; Rise       ; player          ;
+; input[*]  ; player     ; -0.601 ; -0.601 ; Fall       ; player          ;
+;  input[0] ; player     ; -1.118 ; -1.118 ; Fall       ; player          ;
+;  input[1] ; player     ; -0.926 ; -0.926 ; Fall       ; player          ;
+;  input[2] ; player     ; -1.132 ; -1.132 ; Fall       ; player          ;
+;  input[3] ; player     ; -0.939 ; -0.939 ; Fall       ; player          ;
+;  input[4] ; player     ; -0.789 ; -0.789 ; Fall       ; player          ;
+;  input[5] ; player     ; -0.653 ; -0.653 ; Fall       ; player          ;
+;  input[6] ; player     ; -0.601 ; -0.601 ; Fall       ; player          ;
+;  input[7] ; player     ; -1.015 ; -1.015 ; Fall       ; player          ;
+; set       ; player     ; -2.463 ; -2.463 ; Fall       ; player          ;
+; show      ; player     ; -2.398 ; -2.398 ; Fall       ; player          ;
+; try       ; player     ; -2.415 ; -2.415 ; Fall       ; player          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Clock to Output Times                                                      ;
++--------------+------------+--------+--------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++--------------+------------+--------+--------+------------+-----------------+
+; playerNo[*]  ; player     ; 9.987  ; 9.987  ; Rise       ; player          ;
+;  playerNo[1] ; player     ; 9.918  ; 9.918  ; Rise       ; player          ;
+;  playerNo[2] ; player     ; 9.918  ; 9.918  ; Rise       ; player          ;
+;  playerNo[3] ; player     ; 9.987  ; 9.987  ; Rise       ; player          ;
+;  playerNo[6] ; player     ; 9.936  ; 9.936  ; Rise       ; player          ;
+; seg1[*]      ; player     ; 13.636 ; 13.636 ; Rise       ; player          ;
+;  seg1[0]     ; player     ; 12.254 ; 12.254 ; Rise       ; player          ;
+;  seg1[1]     ; player     ; 11.537 ; 11.537 ; Rise       ; player          ;
+;  seg1[2]     ; player     ; 12.724 ; 12.724 ; Rise       ; player          ;
+;  seg1[3]     ; player     ; 13.636 ; 13.636 ; Rise       ; player          ;
+;  seg1[4]     ; player     ; 13.166 ; 13.166 ; Rise       ; player          ;
+;  seg1[5]     ; player     ; 11.566 ; 11.566 ; Rise       ; player          ;
+;  seg1[6]     ; player     ; 12.847 ; 12.847 ; Rise       ; player          ;
+; seg10[*]     ; player     ; 15.020 ; 15.020 ; Rise       ; player          ;
+;  seg10[0]    ; player     ; 15.020 ; 15.020 ; Rise       ; player          ;
+;  seg10[1]    ; player     ; 13.612 ; 13.612 ; Rise       ; player          ;
+;  seg10[2]    ; player     ; 13.059 ; 13.059 ; Rise       ; player          ;
+;  seg10[3]    ; player     ; 14.216 ; 14.216 ; Rise       ; player          ;
+;  seg10[4]    ; player     ; 13.722 ; 13.722 ; Rise       ; player          ;
+;  seg10[5]    ; player     ; 13.727 ; 13.727 ; Rise       ; player          ;
+;  seg10[6]    ; player     ; 13.338 ; 13.338 ; Rise       ; player          ;
+; playerNo[*]  ; player     ; 9.987  ; 9.987  ; Fall       ; player          ;
+;  playerNo[1] ; player     ; 9.918  ; 9.918  ; Fall       ; player          ;
+;  playerNo[2] ; player     ; 9.918  ; 9.918  ; Fall       ; player          ;
+;  playerNo[3] ; player     ; 9.987  ; 9.987  ; Fall       ; player          ;
+;  playerNo[6] ; player     ; 9.936  ; 9.936  ; Fall       ; player          ;
+; seg1[*]      ; player     ; 13.636 ; 13.636 ; Fall       ; player          ;
+;  seg1[0]     ; player     ; 12.254 ; 12.254 ; Fall       ; player          ;
+;  seg1[1]     ; player     ; 11.537 ; 11.537 ; Fall       ; player          ;
+;  seg1[2]     ; player     ; 12.724 ; 12.724 ; Fall       ; player          ;
+;  seg1[3]     ; player     ; 13.636 ; 13.636 ; Fall       ; player          ;
+;  seg1[4]     ; player     ; 13.166 ; 13.166 ; Fall       ; player          ;
+;  seg1[5]     ; player     ; 11.566 ; 11.566 ; Fall       ; player          ;
+;  seg1[6]     ; player     ; 12.847 ; 12.847 ; Fall       ; player          ;
+; seg10[*]     ; player     ; 15.020 ; 15.020 ; Fall       ; player          ;
+;  seg10[0]    ; player     ; 15.020 ; 15.020 ; Fall       ; player          ;
+;  seg10[1]    ; player     ; 13.612 ; 13.612 ; Fall       ; player          ;
+;  seg10[2]    ; player     ; 13.059 ; 13.059 ; Fall       ; player          ;
+;  seg10[3]    ; player     ; 14.216 ; 14.216 ; Fall       ; player          ;
+;  seg10[4]    ; player     ; 13.722 ; 13.722 ; Fall       ; player          ;
+;  seg10[5]    ; player     ; 13.727 ; 13.727 ; Fall       ; player          ;
+;  seg10[6]    ; player     ; 13.338 ; 13.338 ; Fall       ; player          ;
+; seg1[*]      ; setP1      ; 11.982 ; 11.982 ; Fall       ; setP1           ;
+;  seg1[0]     ; setP1      ; 11.177 ; 11.177 ; Fall       ; setP1           ;
+;  seg1[1]     ; setP1      ; 10.109 ; 10.109 ; Fall       ; setP1           ;
+;  seg1[2]     ; setP1      ; 11.982 ; 11.982 ; Fall       ; setP1           ;
+;  seg1[3]     ; setP1      ; 11.936 ; 11.936 ; Fall       ; setP1           ;
+;  seg1[4]     ; setP1      ; 11.484 ; 11.484 ; Fall       ; setP1           ;
+;  seg1[5]     ; setP1      ; 9.890  ; 9.890  ; Fall       ; setP1           ;
+;  seg1[6]     ; setP1      ; 10.561 ; 10.561 ; Fall       ; setP1           ;
+; seg10[*]     ; setP1      ; 13.283 ; 13.283 ; Fall       ; setP1           ;
+;  seg10[0]    ; setP1      ; 13.283 ; 13.283 ; Fall       ; setP1           ;
+;  seg10[1]    ; setP1      ; 12.228 ; 12.228 ; Fall       ; setP1           ;
+;  seg10[2]    ; setP1      ; 12.008 ; 12.008 ; Fall       ; setP1           ;
+;  seg10[3]    ; setP1      ; 12.168 ; 12.168 ; Fall       ; setP1           ;
+;  seg10[4]    ; setP1      ; 12.071 ; 12.071 ; Fall       ; setP1           ;
+;  seg10[5]    ; setP1      ; 12.261 ; 12.261 ; Fall       ; setP1           ;
+;  seg10[6]    ; setP1      ; 11.289 ; 11.289 ; Fall       ; setP1           ;
+; seg1[*]      ; setP2      ; 12.092 ; 12.092 ; Fall       ; setP2           ;
+;  seg1[0]     ; setP2      ; 11.583 ; 11.583 ; Fall       ; setP2           ;
+;  seg1[1]     ; setP2      ; 10.887 ; 10.887 ; Fall       ; setP2           ;
+;  seg1[2]     ; setP2      ; 12.092 ; 12.092 ; Fall       ; setP2           ;
+;  seg1[3]     ; setP2      ; 11.811 ; 11.811 ; Fall       ; setP2           ;
+;  seg1[4]     ; setP2      ; 11.315 ; 11.315 ; Fall       ; setP2           ;
+;  seg1[5]     ; setP2      ; 9.714  ; 9.714  ; Fall       ; setP2           ;
+;  seg1[6]     ; setP2      ; 10.688 ; 10.688 ; Fall       ; setP2           ;
+; seg10[*]     ; setP2      ; 12.919 ; 12.919 ; Fall       ; setP2           ;
+;  seg10[0]    ; setP2      ; 12.919 ; 12.919 ; Fall       ; setP2           ;
+;  seg10[1]    ; setP2      ; 12.147 ; 12.147 ; Fall       ; setP2           ;
+;  seg10[2]    ; setP2      ; 11.410 ; 11.410 ; Fall       ; setP2           ;
+;  seg10[3]    ; setP2      ; 12.593 ; 12.593 ; Fall       ; setP2           ;
+;  seg10[4]    ; setP2      ; 12.120 ; 12.120 ; Fall       ; setP2           ;
+;  seg10[5]    ; setP2      ; 12.035 ; 12.035 ; Fall       ; setP2           ;
+;  seg10[6]    ; setP2      ; 11.461 ; 11.461 ; Fall       ; setP2           ;
++--------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; playerNo[*]  ; player     ; 5.621 ; 5.621 ; Rise       ; player          ;
+;  playerNo[1] ; player     ; 5.621 ; 5.621 ; Rise       ; player          ;
+;  playerNo[2] ; player     ; 5.621 ; 5.621 ; Rise       ; player          ;
+;  playerNo[3] ; player     ; 5.675 ; 5.675 ; Rise       ; player          ;
+;  playerNo[6] ; player     ; 5.634 ; 5.634 ; Rise       ; player          ;
+; seg1[*]      ; player     ; 4.207 ; 4.207 ; Rise       ; player          ;
+;  seg1[0]     ; player     ; 4.357 ; 4.357 ; Rise       ; player          ;
+;  seg1[1]     ; player     ; 4.207 ; 4.207 ; Rise       ; player          ;
+;  seg1[2]     ; player     ; 4.425 ; 4.425 ; Rise       ; player          ;
+;  seg1[3]     ; player     ; 4.560 ; 4.560 ; Rise       ; player          ;
+;  seg1[4]     ; player     ; 4.342 ; 4.342 ; Rise       ; player          ;
+;  seg1[5]     ; player     ; 4.231 ; 4.231 ; Rise       ; player          ;
+;  seg1[6]     ; player     ; 4.765 ; 4.765 ; Rise       ; player          ;
+; seg10[*]     ; player     ; 4.586 ; 4.586 ; Rise       ; player          ;
+;  seg10[0]    ; player     ; 5.537 ; 5.537 ; Rise       ; player          ;
+;  seg10[1]    ; player     ; 4.778 ; 4.778 ; Rise       ; player          ;
+;  seg10[2]    ; player     ; 4.586 ; 4.586 ; Rise       ; player          ;
+;  seg10[3]    ; player     ; 5.089 ; 5.089 ; Rise       ; player          ;
+;  seg10[4]    ; player     ; 4.769 ; 4.769 ; Rise       ; player          ;
+;  seg10[5]    ; player     ; 4.916 ; 4.916 ; Rise       ; player          ;
+;  seg10[6]    ; player     ; 5.003 ; 5.003 ; Rise       ; player          ;
+; playerNo[*]  ; player     ; 5.621 ; 5.621 ; Fall       ; player          ;
+;  playerNo[1] ; player     ; 5.621 ; 5.621 ; Fall       ; player          ;
+;  playerNo[2] ; player     ; 5.621 ; 5.621 ; Fall       ; player          ;
+;  playerNo[3] ; player     ; 5.675 ; 5.675 ; Fall       ; player          ;
+;  playerNo[6] ; player     ; 5.634 ; 5.634 ; Fall       ; player          ;
+; seg1[*]      ; player     ; 4.094 ; 4.094 ; Fall       ; player          ;
+;  seg1[0]     ; player     ; 4.244 ; 4.244 ; Fall       ; player          ;
+;  seg1[1]     ; player     ; 4.094 ; 4.094 ; Fall       ; player          ;
+;  seg1[2]     ; player     ; 4.312 ; 4.312 ; Fall       ; player          ;
+;  seg1[3]     ; player     ; 4.447 ; 4.447 ; Fall       ; player          ;
+;  seg1[4]     ; player     ; 4.229 ; 4.229 ; Fall       ; player          ;
+;  seg1[5]     ; player     ; 4.118 ; 4.118 ; Fall       ; player          ;
+;  seg1[6]     ; player     ; 4.680 ; 4.680 ; Fall       ; player          ;
+; seg10[*]     ; player     ; 4.473 ; 4.473 ; Fall       ; player          ;
+;  seg10[0]    ; player     ; 5.514 ; 5.514 ; Fall       ; player          ;
+;  seg10[1]    ; player     ; 4.665 ; 4.665 ; Fall       ; player          ;
+;  seg10[2]    ; player     ; 4.473 ; 4.473 ; Fall       ; player          ;
+;  seg10[3]    ; player     ; 5.062 ; 5.062 ; Fall       ; player          ;
+;  seg10[4]    ; player     ; 4.656 ; 4.656 ; Fall       ; player          ;
+;  seg10[5]    ; player     ; 4.803 ; 4.803 ; Fall       ; player          ;
+;  seg10[6]    ; player     ; 4.935 ; 4.935 ; Fall       ; player          ;
+; seg1[*]      ; setP1      ; 4.727 ; 4.727 ; Fall       ; setP1           ;
+;  seg1[0]     ; setP1      ; 5.087 ; 5.087 ; Fall       ; setP1           ;
+;  seg1[1]     ; setP1      ; 4.981 ; 4.981 ; Fall       ; setP1           ;
+;  seg1[2]     ; setP1      ; 5.401 ; 5.401 ; Fall       ; setP1           ;
+;  seg1[3]     ; setP1      ; 4.928 ; 4.928 ; Fall       ; setP1           ;
+;  seg1[4]     ; setP1      ; 4.727 ; 4.727 ; Fall       ; setP1           ;
+;  seg1[5]     ; setP1      ; 4.891 ; 4.891 ; Fall       ; setP1           ;
+;  seg1[6]     ; setP1      ; 5.197 ; 5.197 ; Fall       ; setP1           ;
+; seg10[*]     ; setP1      ; 5.353 ; 5.353 ; Fall       ; setP1           ;
+;  seg10[0]    ; setP1      ; 5.877 ; 5.877 ; Fall       ; setP1           ;
+;  seg10[1]    ; setP1      ; 5.480 ; 5.480 ; Fall       ; setP1           ;
+;  seg10[2]    ; setP1      ; 5.353 ; 5.353 ; Fall       ; setP1           ;
+;  seg10[3]    ; setP1      ; 5.429 ; 5.429 ; Fall       ; setP1           ;
+;  seg10[4]    ; setP1      ; 5.458 ; 5.458 ; Fall       ; setP1           ;
+;  seg10[5]    ; setP1      ; 5.604 ; 5.604 ; Fall       ; setP1           ;
+;  seg10[6]    ; setP1      ; 5.364 ; 5.364 ; Fall       ; setP1           ;
+; seg1[*]      ; setP2      ; 4.743 ; 4.743 ; Fall       ; setP2           ;
+;  seg1[0]     ; setP2      ; 5.345 ; 5.345 ; Fall       ; setP2           ;
+;  seg1[1]     ; setP2      ; 5.259 ; 5.259 ; Fall       ; setP2           ;
+;  seg1[2]     ; setP2      ; 5.679 ; 5.679 ; Fall       ; setP2           ;
+;  seg1[3]     ; setP2      ; 5.142 ; 5.142 ; Fall       ; setP2           ;
+;  seg1[4]     ; setP2      ; 4.931 ; 4.931 ; Fall       ; setP2           ;
+;  seg1[5]     ; setP2      ; 4.743 ; 4.743 ; Fall       ; setP2           ;
+;  seg1[6]     ; setP2      ; 5.177 ; 5.177 ; Fall       ; setP2           ;
+; seg10[*]     ; setP2      ; 5.370 ; 5.370 ; Fall       ; setP2           ;
+;  seg10[0]    ; setP2      ; 6.068 ; 6.068 ; Fall       ; setP2           ;
+;  seg10[1]    ; setP2      ; 5.494 ; 5.494 ; Fall       ; setP2           ;
+;  seg10[2]    ; setP2      ; 5.370 ; 5.370 ; Fall       ; setP2           ;
+;  seg10[3]    ; setP2      ; 5.640 ; 5.640 ; Fall       ; setP2           ;
+;  seg10[4]    ; setP2      ; 5.549 ; 5.549 ; Fall       ; setP2           ;
+;  seg10[5]    ; setP2      ; 5.498 ; 5.498 ; Fall       ; setP2           ;
+;  seg10[6]    ; setP2      ; 5.439 ; 5.439 ; Fall       ; setP2           ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; player     ; setP1    ; 0        ; 0        ; 8        ; 0        ;
+; player     ; setP2    ; 0        ; 0        ; 0        ; 8        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; player     ; setP1    ; 0        ; 0        ; 8        ; 0        ;
+; player     ; setP2    ; 0        ; 0        ; 0        ; 8        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 40    ; 40   ;
+; Unconstrained Output Ports      ; 18    ; 18   ;
+; Unconstrained Output Port Paths ; 458   ; 458  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
+    Info: Processing started: Thu Oct 24 15:49:55 2013
+Info: Command: quartus_sta GuessGame -c GuessGame
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 38 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'GuessGame.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name player player
+    Info (332105): create_clock -period 1.000 -name setP1 setP1
+    Info (332105): create_clock -period 1.000 -name setP2 setP2
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.536
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.536        -2.357 setP1 
+    Info (332119):    -0.139        -0.139 setP2 
+Info (332146): Worst-case hold slack is -0.280
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.280        -0.739 setP2 
+    Info (332119):     0.183         0.000 setP1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 player 
+    Info (332119):     0.500         0.000 setP1 
+    Info (332119):     0.500         0.000 setP2 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332146): Worst-case setup slack is 0.231
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.231         0.000 setP1 
+    Info (332119):     0.684         0.000 setP2 
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case hold slack is -0.269
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.269        -1.515 setP2 
+    Info (332119):     0.208         0.000 setP1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -1.222 player 
+    Info (332119):     0.500         0.000 setP1 
+    Info (332119):     0.500         0.000 setP2 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 430 megabytes
+    Info: Processing ended: Thu Oct 24 15:49:59 2013
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Oct 24 16:18:40 2013
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : BCD
+Top-level Entity Name : onesCount
+Family : Cyclone II
+Total logic elements : 21
+    Total combinational functions : 21
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

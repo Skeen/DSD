@@ -1,0 +1,8 @@
+Exercise2Behavior
+CARRY_IN,input,user_entered
+CARRY_OUT,output,user_entered
+INPUT1,input,user_entered
+INPUT2,input,user_entered
+process_0,comb,
+SUM,output,user_entered
+,hierarchy,user_entered

@@ -1,0 +1,8 @@
+Exercise2Structural
+or_2:u3|
+HalfAdder_2:u2|xor_2:u1|
+HalfAdder_2:u1|
+HalfAdder_2:u2|
+HalfAdder_2:u1|xor_2:u1|
+HalfAdder_2:u1|and_2:u2|
+HalfAdder_2:u2|and_2:u2|

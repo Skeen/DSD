@@ -1,0 +1,35 @@
+|shift_div
+a[0] => a_shl[1].DATAIN
+a[1] => a_shl[2].DATAIN
+a[2] => a_shl[3].DATAIN
+a[3] => a_shl[4].DATAIN
+a[4] => a_shl[5].DATAIN
+a[5] => a_shl[6].DATAIN
+a[6] => a_shl[7].DATAIN
+a[7] => ~NO_FANOUT~
+a_shl[0] <= <GND>
+a_shl[1] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+a_shl[2] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+a_shl[3] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+a_shl[4] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+a_shl[5] <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+a_shl[6] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+a_shl[7] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+a_shr[0] <= a_shr[0].DB_MAX_OUTPUT_PORT_TYPE
+a_shr[1] <= a_shr[1].DB_MAX_OUTPUT_PORT_TYPE
+a_shr[2] <= a_shr[2].DB_MAX_OUTPUT_PORT_TYPE
+a_shr[3] <= a_shr[3].DB_MAX_OUTPUT_PORT_TYPE
+a_shr[4] <= a_shr[4].DB_MAX_OUTPUT_PORT_TYPE
+a_shr[5] <= a_shr[5].DB_MAX_OUTPUT_PORT_TYPE
+a_shr[6] <= a_shr[6].DB_MAX_OUTPUT_PORT_TYPE
+a_shr[7] <= a_shr[7].DB_MAX_OUTPUT_PORT_TYPE
+a_ror[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+a_ror[1] <= a_ror[1].DB_MAX_OUTPUT_PORT_TYPE
+a_ror[2] <= a_ror[2].DB_MAX_OUTPUT_PORT_TYPE
+a_ror[3] <= a_ror[3].DB_MAX_OUTPUT_PORT_TYPE
+a_ror[4] <= a_ror[4].DB_MAX_OUTPUT_PORT_TYPE
+a_ror[5] <= a_ror[5].DB_MAX_OUTPUT_PORT_TYPE
+a_ror[6] <= a_ror[6].DB_MAX_OUTPUT_PORT_TYPE
+a_ror[7] <= a_ror[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

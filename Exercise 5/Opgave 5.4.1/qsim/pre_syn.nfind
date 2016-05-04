@@ -1,0 +1,13 @@
+NANDLoop
+input,bus,user_entered
+input[0],input,user_entered
+input[1],input,user_entered
+input[2],input,user_entered
+input[3],input,user_entered
+input[4],input,user_entered
+input[5],input,user_entered
+input[6],input,user_entered
+input[7],input,user_entered
+nand_8,output,user_entered
+process_0,comb,
+,hierarchy,user_entered

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Skeen/Dropbox/DSD/Exercise 5/Opgave1/Opgave1.vhd
+source_file = 1, C:/Users/Skeen/Dropbox/DSD/Exercise 5/Opgave1/db/Opgave1.cbx.xml
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Opgave1
+instance = comp, \b~I\, b, Opgave1, 1
+instance = comp, \a~I\, a, Opgave1, 1
+instance = comp, \c~I\, c, Opgave1, 1
+instance = comp, \f~0\, f~0, Opgave1, 1
+instance = comp, \f~I\, f, Opgave1, 1

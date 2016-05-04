@@ -1,0 +1,22 @@
+Quartus II Archive log --	C:/Users/Andreas Portable/Dropbox/DSD/Exercise2/Exercise2_tmp_archive.qarlog
+
+Archive:	C:/Users/Andreas Portable/Dropbox/DSD/Exercise2/Exercise2_tmp_archive.qar
+Date:		Wed Oct 02 13:54:57 2013
+Quartus II 32-bit		12.1 Build 177 11/07/2012 SJ Full Version
+
+	=========== Files Selected: ===========
+C:/Users/Andreas Portable/Dropbox/DSD/Exercise2/Exercise2.qpf
+C:/Users/Andreas Portable/Dropbox/DSD/Exercise2/Exercise2.qsf
+C:/Users/Andreas Portable/Dropbox/DSD/Exercise2/Exercise2.vhd
+C:/Users/Andreas Portable/Dropbox/DSD/Exercise2/incremental_db/compiled_partitions/Exercise2.db_info
+c:/altera/12.1/quartus/bin/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Wed Oct 02 13:54:59 2013
+Source archive file:	C:/Users/Andreas Portable/Dropbox/DSD/Exercise2/Exercise2_tmp_archive.qar
+Archive was extracted into	C:/Users/Andreas Portable/Dropbox/DSD/Exercise2_copy/
+		 - successfully.

@@ -1,0 +1,9 @@
+entity and2 is 
+ port(x,y:in bit; 
+ z:out bit); 
+end entity and2; 
+architecture behav of and2 is 
+begin 
+ z <= '1' after 6 ns when x = '1' and y = '1' 
+ else '0' after 6 ns; 
+end architecture behav; 

@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Skeen/Desktop/iha/E2DSD/Exercise2/Exercise2.vhd
+source_file = 1, C:/Users/Skeen/Desktop/iha/E2DSD/Exercise2/db/Exercise2.cbx.xml
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Exercise2
+instance = comp, \INPUT2~I\, INPUT2, Exercise2, 1
+instance = comp, \INPUT1~I\, INPUT1, Exercise2, 1
+instance = comp, \SUM~0\, SUM~0, Exercise2, 1
+instance = comp, \CARRY~0\, CARRY~0, Exercise2, 1
+instance = comp, \SUM~I\, SUM, Exercise2, 1
+instance = comp, \CARRY~I\, CARRY, Exercise2, 1

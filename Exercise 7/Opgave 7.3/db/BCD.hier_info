@@ -1,0 +1,36 @@
+|CodeLock
+clock => error_count[0].CLK
+clock => error_count[1].CLK
+clock => present_state~1.DATAIN
+reset => error_count[0].ACLR
+reset => error_count[1].ACLR
+reset => present_state~3.DATAIN
+a => Mux0.IN8
+a => Mux1.IN8
+a => Mux2.IN4
+a => Mux3.IN8
+a => Mux5.IN8
+a => Mux6.IN8
+a => Mux7.IN8
+b => Mux0.IN9
+b => Mux1.IN9
+b => Mux3.IN9
+b => Mux4.IN4
+b => Mux5.IN9
+b => Mux6.IN9
+b => Mux7.IN9
+c => Mux0.IN10
+c => Mux1.IN10
+c => Mux2.IN5
+c => Mux3.IN10
+c => Mux4.IN5
+c => Mux5.IN10
+c => Mux6.IN10
+c => Mux7.IN10
+state_out[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+state_out[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+state_out[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+state_out[3] <= state_out.DB_MAX_OUTPUT_PORT_TYPE
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+

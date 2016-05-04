@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Exercise2 is
+    port (
+	  INPUT_A : in std_logic_vector(3 downto 0);
+	  INPUT_B : in std_logic_vector(3 downto 0);
+	  CARRY_IN : in std_logic;
+	  SUM    : out std_logic_vector(3 downto 0);
+	  CARRY_OUT: out std_logic);
+end Exercise2;
+
+architecture structural of Exercise2 is
+  signal INTERNAL_CARRY : std_logic_vector(2 downto 0); --temp variables
+begin
+	u1: entity work.MagicFullAdder port map(INPUT1=>INPUT_A(0),
+                                            INPUT2=>INPUT_B(0),
+                                            CARRY_IN=>CARRY_IN, SUM=>SUM(0),
+                                            CARRY_OUT=>INTERNAL_CARRY(0));
+	u2: entity work.MagicFullAdder port map(INPUT1=>INPUT_A(1),
+                                            INPUT2=>INPUT_B(1),
+                                            CARRY_IN=>INTERNAL_CARRY(0),
+                                            SUM=>SUM(1),
+                                            CARRY_OUT=>INTERNAL_CARRY(1));
+	u3: entity work.MagicFullAdder port map(INPUT1=>INPUT_A(2),
+                                            INPUT2=>INPUT_B(2),
+                                            CARRY_IN=>INTERNAL_CARRY(1),
+                                            SUM=>SUM(2),
+                                            CARRY_OUT=>INTERNAL_CARRY(2));
+	u4: entity work.MagicFullAdder port map(INPUT1=>INPUT_A(3),
+                                            INPUT2=>INPUT_B(3),
+                                            CARRY_IN=>INTERNAL_CARRY(2),
+                                            SUM=>SUM(3), CARRY_OUT=>CARRY_OUT));
+end structural;

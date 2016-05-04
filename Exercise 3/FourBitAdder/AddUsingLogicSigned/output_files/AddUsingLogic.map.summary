@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Oct 02 17:45:48 2013
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : AddUsingLogic
+Top-level Entity Name : AddUsingLogic
+Family : Cyclone II
+Total logic elements : 4
+    Total combinational functions : 4
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

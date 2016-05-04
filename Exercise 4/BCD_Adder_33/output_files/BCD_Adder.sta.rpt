@@ -1,0 +1,1158 @@
+TimeQuest Timing Analyzer report for BCD_Adder
+Fri Oct 04 00:02:28 2013
+Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                      ;
++--------------------+---------------------------------------------------+
+; Quartus II Version ; Version 12.1 Build 177 11/07/2012 SJ Full Version ;
+; Revision Name      ; BCD_Adder                                         ;
+; Device Family      ; Cyclone II                                        ;
+; Device Name        ; EP2C35F672C6                                      ;
+; Timing Models      ; Final                                             ;
+; Delay Model        ; Combined                                          ;
+; Rise/Fall Delays   ; Unavailable                                       ;
++--------------------+---------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------------+
+; Propagation Delay                                                  ;
++------------------+-------------+--------+--------+--------+--------+
+; Input Port       ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------------+-------------+--------+--------+--------+--------+
+; binary_input1[0] ; SEG7_1[0]   ; 7.354  ;        ;        ; 7.354  ;
+; binary_input1[0] ; SEG7_1[1]   ; 7.386  ;        ;        ; 7.386  ;
+; binary_input1[0] ; SEG7_1[2]   ; 7.361  ;        ;        ; 7.361  ;
+; binary_input1[0] ; SEG7_1[3]   ; 7.362  ; 7.362  ; 7.362  ; 7.362  ;
+; binary_input1[0] ; SEG7_1[4]   ;        ; 7.594  ; 7.594  ;        ;
+; binary_input1[0] ; SEG7_1[5]   ; 7.558  ; 7.558  ; 7.558  ; 7.558  ;
+; binary_input1[0] ; SEG7_1[6]   ; 7.624  ; 7.624  ; 7.624  ; 7.624  ;
+; binary_input1[0] ; SEG7_one[0] ; 12.592 ; 12.592 ; 12.592 ; 12.592 ;
+; binary_input1[0] ; SEG7_one[1] ; 12.606 ; 12.606 ; 12.606 ; 12.606 ;
+; binary_input1[0] ; SEG7_one[2] ; 12.299 ; 12.268 ; 12.268 ; 12.299 ;
+; binary_input1[0] ; SEG7_one[3] ; 12.346 ; 12.346 ; 12.346 ; 12.346 ;
+; binary_input1[0] ; SEG7_one[4] ; 12.291 ; 12.291 ; 12.291 ; 12.291 ;
+; binary_input1[0] ; SEG7_one[5] ; 12.294 ; 12.294 ; 12.294 ; 12.294 ;
+; binary_input1[0] ; SEG7_one[6] ; 12.550 ; 12.550 ; 12.550 ; 12.550 ;
+; binary_input1[0] ; SEG7_ten[1] ; 11.799 ; 11.799 ; 11.799 ; 11.799 ;
+; binary_input1[0] ; SEG7_ten[2] ; 11.819 ; 11.819 ; 11.819 ; 11.819 ;
+; binary_input1[0] ; SEG7_ten[3] ; 11.819 ; 11.819 ; 11.819 ; 11.819 ;
+; binary_input1[0] ; SEG7_ten[6] ; 11.834 ; 11.834 ; 11.834 ; 11.834 ;
+; binary_input1[1] ; SEG7_1[0]   ; 7.122  ; 7.122  ; 7.122  ; 7.122  ;
+; binary_input1[1] ; SEG7_1[1]   ; 7.153  ;        ;        ; 7.153  ;
+; binary_input1[1] ; SEG7_1[2]   ; 7.128  ; 7.128  ; 7.128  ; 7.128  ;
+; binary_input1[1] ; SEG7_1[3]   ; 7.106  ; 7.106  ; 7.106  ; 7.106  ;
+; binary_input1[1] ; SEG7_1[4]   ; 7.405  ;        ;        ; 7.405  ;
+; binary_input1[1] ; SEG7_1[5]   ; 7.332  ; 7.332  ; 7.332  ; 7.332  ;
+; binary_input1[1] ; SEG7_1[6]   ;        ; 7.356  ; 7.356  ;        ;
+; binary_input1[1] ; SEG7_one[0] ; 12.359 ; 12.359 ; 12.359 ; 12.359 ;
+; binary_input1[1] ; SEG7_one[1] ; 12.373 ; 12.373 ; 12.373 ; 12.373 ;
+; binary_input1[1] ; SEG7_one[2] ; 12.066 ; 12.035 ; 12.035 ; 12.066 ;
+; binary_input1[1] ; SEG7_one[3] ; 12.113 ; 12.113 ; 12.113 ; 12.113 ;
+; binary_input1[1] ; SEG7_one[4] ; 12.058 ; 12.058 ; 12.058 ; 12.058 ;
+; binary_input1[1] ; SEG7_one[5] ; 12.061 ; 12.061 ; 12.061 ; 12.061 ;
+; binary_input1[1] ; SEG7_one[6] ; 12.317 ; 12.317 ; 12.317 ; 12.317 ;
+; binary_input1[1] ; SEG7_ten[1] ; 11.566 ; 11.566 ; 11.566 ; 11.566 ;
+; binary_input1[1] ; SEG7_ten[2] ; 11.586 ; 11.586 ; 11.586 ; 11.586 ;
+; binary_input1[1] ; SEG7_ten[3] ; 11.586 ; 11.586 ; 11.586 ; 11.586 ;
+; binary_input1[1] ; SEG7_ten[6] ; 11.601 ; 11.601 ; 11.601 ; 11.601 ;
+; binary_input1[2] ; SEG7_1[0]   ; 6.785  ; 6.785  ; 6.785  ; 6.785  ;
+; binary_input1[2] ; SEG7_1[1]   ;        ; 6.817  ; 6.817  ;        ;
+; binary_input1[2] ; SEG7_1[2]   ; 6.792  ;        ;        ; 6.792  ;
+; binary_input1[2] ; SEG7_1[3]   ; 6.789  ; 6.789  ; 6.789  ; 6.789  ;
+; binary_input1[2] ; SEG7_1[4]   ;        ; 7.061  ; 7.061  ;        ;
+; binary_input1[2] ; SEG7_1[5]   ; 7.015  ;        ;        ; 7.015  ;
+; binary_input1[2] ; SEG7_1[6]   ; 7.054  ; 7.054  ; 7.054  ; 7.054  ;
+; binary_input1[2] ; SEG7_one[0] ; 12.023 ; 12.023 ; 12.023 ; 12.023 ;
+; binary_input1[2] ; SEG7_one[1] ; 12.037 ; 12.037 ; 12.037 ; 12.037 ;
+; binary_input1[2] ; SEG7_one[2] ; 11.730 ; 11.699 ; 11.699 ; 11.730 ;
+; binary_input1[2] ; SEG7_one[3] ; 11.777 ; 11.777 ; 11.777 ; 11.777 ;
+; binary_input1[2] ; SEG7_one[4] ; 11.722 ; 11.722 ; 11.722 ; 11.722 ;
+; binary_input1[2] ; SEG7_one[5] ; 11.725 ; 11.725 ; 11.725 ; 11.725 ;
+; binary_input1[2] ; SEG7_one[6] ; 11.981 ; 11.981 ; 11.981 ; 11.981 ;
+; binary_input1[2] ; SEG7_ten[1] ; 11.230 ; 11.230 ; 11.230 ; 11.230 ;
+; binary_input1[2] ; SEG7_ten[2] ; 11.250 ; 11.250 ; 11.250 ; 11.250 ;
+; binary_input1[2] ; SEG7_ten[3] ; 11.250 ; 11.250 ; 11.250 ; 11.250 ;
+; binary_input1[2] ; SEG7_ten[6] ; 11.265 ; 11.265 ; 11.265 ; 11.265 ;
+; binary_input1[3] ; SEG7_1[0]   ;        ; 5.779  ; 5.779  ;        ;
+; binary_input1[3] ; SEG7_1[1]   ;        ; 5.839  ; 5.839  ;        ;
+; binary_input1[3] ; SEG7_1[2]   ; 5.811  ;        ;        ; 5.811  ;
+; binary_input1[3] ; SEG7_1[3]   ;        ; 5.813  ; 5.813  ;        ;
+; binary_input1[3] ; SEG7_1[4]   ;        ; 6.083  ; 6.083  ;        ;
+; binary_input1[3] ; SEG7_1[5]   ;        ; 6.037  ; 6.037  ;        ;
+; binary_input1[3] ; SEG7_1[6]   ;        ; 6.077  ; 6.077  ;        ;
+; binary_input1[3] ; SEG7_one[0] ; 11.042 ; 11.042 ; 11.042 ; 11.042 ;
+; binary_input1[3] ; SEG7_one[1] ; 11.056 ; 11.056 ; 11.056 ; 11.056 ;
+; binary_input1[3] ; SEG7_one[2] ; 10.749 ; 10.741 ; 10.741 ; 10.749 ;
+; binary_input1[3] ; SEG7_one[3] ; 10.796 ; 10.796 ; 10.796 ; 10.796 ;
+; binary_input1[3] ; SEG7_one[4] ; 10.741 ; 10.741 ; 10.741 ; 10.741 ;
+; binary_input1[3] ; SEG7_one[5] ; 10.744 ; 10.744 ; 10.744 ; 10.744 ;
+; binary_input1[3] ; SEG7_one[6] ; 11.000 ; 11.000 ; 11.000 ; 11.000 ;
+; binary_input1[3] ; SEG7_ten[1] ; 10.249 ; 10.249 ; 10.249 ; 10.249 ;
+; binary_input1[3] ; SEG7_ten[2] ; 10.269 ; 10.269 ; 10.269 ; 10.269 ;
+; binary_input1[3] ; SEG7_ten[3] ; 10.269 ; 10.269 ; 10.269 ; 10.269 ;
+; binary_input1[3] ; SEG7_ten[6] ; 10.284 ; 10.284 ; 10.284 ; 10.284 ;
+; binary_input2[0] ; SEG7_2[0]   ; 6.699  ;        ;        ; 6.699  ;
+; binary_input2[0] ; SEG7_2[1]   ; 6.677  ;        ;        ; 6.677  ;
+; binary_input2[0] ; SEG7_2[2]   ; 6.403  ;        ;        ; 6.403  ;
+; binary_input2[0] ; SEG7_2[3]   ; 6.335  ; 6.335  ; 6.335  ; 6.335  ;
+; binary_input2[0] ; SEG7_2[4]   ;        ; 6.331  ; 6.331  ;        ;
+; binary_input2[0] ; SEG7_2[5]   ; 6.745  ; 6.745  ; 6.745  ; 6.745  ;
+; binary_input2[0] ; SEG7_2[6]   ; 6.824  ; 6.824  ; 6.824  ; 6.824  ;
+; binary_input2[0] ; SEG7_one[0] ; 9.872  ; 9.872  ; 9.872  ; 9.872  ;
+; binary_input2[0] ; SEG7_one[1] ; 9.886  ; 9.886  ; 9.886  ; 9.886  ;
+; binary_input2[0] ; SEG7_one[2] ; 9.579  ; 9.548  ; 9.548  ; 9.579  ;
+; binary_input2[0] ; SEG7_one[3] ; 9.626  ; 9.626  ; 9.626  ; 9.626  ;
+; binary_input2[0] ; SEG7_one[4] ; 9.571  ; 9.571  ; 9.571  ; 9.571  ;
+; binary_input2[0] ; SEG7_one[5] ; 9.574  ; 9.574  ; 9.574  ; 9.574  ;
+; binary_input2[0] ; SEG7_one[6] ; 9.830  ; 9.830  ; 9.830  ; 9.830  ;
+; binary_input2[0] ; SEG7_ten[1] ; 9.079  ; 9.079  ; 9.079  ; 9.079  ;
+; binary_input2[0] ; SEG7_ten[2] ; 9.099  ; 9.099  ; 9.099  ; 9.099  ;
+; binary_input2[0] ; SEG7_ten[3] ; 9.099  ; 9.099  ; 9.099  ; 9.099  ;
+; binary_input2[0] ; SEG7_ten[6] ; 9.114  ; 9.114  ; 9.114  ; 9.114  ;
+; binary_input2[1] ; SEG7_2[0]   ; 6.552  ; 6.552  ; 6.552  ; 6.552  ;
+; binary_input2[1] ; SEG7_2[1]   ; 6.524  ;        ;        ; 6.524  ;
+; binary_input2[1] ; SEG7_2[2]   ; 6.256  ; 6.256  ; 6.256  ; 6.256  ;
+; binary_input2[1] ; SEG7_2[3]   ; 6.191  ; 6.191  ; 6.191  ; 6.191  ;
+; binary_input2[1] ; SEG7_2[4]   ; 6.235  ;        ;        ; 6.235  ;
+; binary_input2[1] ; SEG7_2[5]   ; 6.634  ; 6.634  ; 6.634  ; 6.634  ;
+; binary_input2[1] ; SEG7_2[6]   ;        ; 6.674  ; 6.674  ;        ;
+; binary_input2[1] ; SEG7_one[0] ; 9.726  ; 9.726  ; 9.726  ; 9.726  ;
+; binary_input2[1] ; SEG7_one[1] ; 9.740  ; 9.740  ; 9.740  ; 9.740  ;
+; binary_input2[1] ; SEG7_one[2] ; 9.433  ; 9.402  ; 9.402  ; 9.433  ;
+; binary_input2[1] ; SEG7_one[3] ; 9.480  ; 9.480  ; 9.480  ; 9.480  ;
+; binary_input2[1] ; SEG7_one[4] ; 9.425  ; 9.425  ; 9.425  ; 9.425  ;
+; binary_input2[1] ; SEG7_one[5] ; 9.428  ; 9.428  ; 9.428  ; 9.428  ;
+; binary_input2[1] ; SEG7_one[6] ; 9.684  ; 9.684  ; 9.684  ; 9.684  ;
+; binary_input2[1] ; SEG7_ten[1] ; 8.933  ; 8.933  ; 8.933  ; 8.933  ;
+; binary_input2[1] ; SEG7_ten[2] ; 8.953  ; 8.953  ; 8.953  ; 8.953  ;
+; binary_input2[1] ; SEG7_ten[3] ; 8.953  ; 8.953  ; 8.953  ; 8.953  ;
+; binary_input2[1] ; SEG7_ten[6] ; 8.968  ; 8.968  ; 8.968  ; 8.968  ;
+; binary_input2[2] ; SEG7_2[0]   ; 6.306  ; 6.306  ; 6.306  ; 6.306  ;
+; binary_input2[2] ; SEG7_2[1]   ;        ; 6.294  ; 6.294  ;        ;
+; binary_input2[2] ; SEG7_2[2]   ; 6.010  ;        ;        ; 6.010  ;
+; binary_input2[2] ; SEG7_2[3]   ; 5.950  ; 5.950  ; 5.950  ; 5.950  ;
+; binary_input2[2] ; SEG7_2[4]   ;        ; 5.988  ; 5.988  ;        ;
+; binary_input2[2] ; SEG7_2[5]   ; 6.392  ;        ;        ; 6.392  ;
+; binary_input2[2] ; SEG7_2[6]   ; 6.440  ; 6.440  ; 6.440  ; 6.440  ;
+; binary_input2[2] ; SEG7_one[0] ; 9.621  ; 9.621  ; 9.621  ; 9.621  ;
+; binary_input2[2] ; SEG7_one[1] ; 9.635  ; 9.635  ; 9.635  ; 9.635  ;
+; binary_input2[2] ; SEG7_one[2] ; 9.328  ; 9.297  ; 9.297  ; 9.328  ;
+; binary_input2[2] ; SEG7_one[3] ; 9.375  ; 9.375  ; 9.375  ; 9.375  ;
+; binary_input2[2] ; SEG7_one[4] ; 9.320  ; 9.320  ; 9.320  ; 9.320  ;
+; binary_input2[2] ; SEG7_one[5] ; 9.323  ; 9.323  ; 9.323  ; 9.323  ;
+; binary_input2[2] ; SEG7_one[6] ; 9.579  ; 9.579  ; 9.579  ; 9.579  ;
+; binary_input2[2] ; SEG7_ten[1] ; 8.828  ; 8.828  ; 8.828  ; 8.828  ;
+; binary_input2[2] ; SEG7_ten[2] ; 8.848  ; 8.848  ; 8.848  ; 8.848  ;
+; binary_input2[2] ; SEG7_ten[3] ; 8.848  ; 8.848  ; 8.848  ; 8.848  ;
+; binary_input2[2] ; SEG7_ten[6] ; 8.863  ; 8.863  ; 8.863  ; 8.863  ;
+; binary_input2[3] ; SEG7_2[0]   ;        ; 7.353  ; 7.353  ;        ;
+; binary_input2[3] ; SEG7_2[1]   ;        ; 7.286  ; 7.286  ;        ;
+; binary_input2[3] ; SEG7_2[2]   ; 7.058  ;        ;        ; 7.058  ;
+; binary_input2[3] ; SEG7_2[3]   ;        ; 6.951  ; 6.951  ;        ;
+; binary_input2[3] ; SEG7_2[4]   ;        ; 6.996  ; 6.996  ;        ;
+; binary_input2[3] ; SEG7_2[5]   ;        ; 7.395  ; 7.395  ;        ;
+; binary_input2[3] ; SEG7_2[6]   ;        ; 7.435  ; 7.435  ;        ;
+; binary_input2[3] ; SEG7_one[0] ; 10.527 ; 10.527 ; 10.527 ; 10.527 ;
+; binary_input2[3] ; SEG7_one[1] ; 10.541 ; 10.541 ; 10.541 ; 10.541 ;
+; binary_input2[3] ; SEG7_one[2] ; 10.234 ; 10.203 ; 10.203 ; 10.234 ;
+; binary_input2[3] ; SEG7_one[3] ; 10.281 ; 10.281 ; 10.281 ; 10.281 ;
+; binary_input2[3] ; SEG7_one[4] ; 10.226 ; 10.226 ; 10.226 ; 10.226 ;
+; binary_input2[3] ; SEG7_one[5] ; 10.229 ; 10.229 ; 10.229 ; 10.229 ;
+; binary_input2[3] ; SEG7_one[6] ; 10.485 ; 10.485 ; 10.485 ; 10.485 ;
+; binary_input2[3] ; SEG7_ten[1] ; 9.734  ; 9.734  ; 9.734  ; 9.734  ;
+; binary_input2[3] ; SEG7_ten[2] ; 9.754  ; 9.754  ; 9.754  ; 9.754  ;
+; binary_input2[3] ; SEG7_ten[3] ; 9.754  ; 9.754  ; 9.754  ; 9.754  ;
+; binary_input2[3] ; SEG7_ten[6] ; 9.769  ; 9.769  ; 9.769  ; 9.769  ;
++------------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------------+
+; Minimum Propagation Delay                                          ;
++------------------+-------------+--------+--------+--------+--------+
+; Input Port       ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------------+-------------+--------+--------+--------+--------+
+; binary_input1[0] ; SEG7_1[0]   ; 7.354  ;        ;        ; 7.354  ;
+; binary_input1[0] ; SEG7_1[1]   ; 7.386  ;        ;        ; 7.386  ;
+; binary_input1[0] ; SEG7_1[2]   ; 7.361  ;        ;        ; 7.361  ;
+; binary_input1[0] ; SEG7_1[3]   ; 7.362  ; 7.362  ; 7.362  ; 7.362  ;
+; binary_input1[0] ; SEG7_1[4]   ;        ; 7.594  ; 7.594  ;        ;
+; binary_input1[0] ; SEG7_1[5]   ; 7.558  ; 7.558  ; 7.558  ; 7.558  ;
+; binary_input1[0] ; SEG7_1[6]   ; 7.624  ; 7.624  ; 7.624  ; 7.624  ;
+; binary_input1[0] ; SEG7_one[0] ; 11.176 ; 11.176 ; 11.176 ; 11.176 ;
+; binary_input1[0] ; SEG7_one[1] ; 11.173 ; 11.173 ; 11.173 ; 11.173 ;
+; binary_input1[0] ; SEG7_one[2] ; 11.139 ; 11.139 ; 11.139 ; 11.139 ;
+; binary_input1[0] ; SEG7_one[3] ; 10.914 ; 10.914 ; 10.914 ; 10.914 ;
+; binary_input1[0] ; SEG7_one[4] ; 10.865 ; 10.865 ; 10.865 ; 10.865 ;
+; binary_input1[0] ; SEG7_one[5] ; 10.862 ; 10.862 ; 10.862 ; 10.862 ;
+; binary_input1[0] ; SEG7_one[6] ; 11.135 ; 11.135 ; 11.135 ; 11.135 ;
+; binary_input1[0] ; SEG7_ten[1] ; 11.377 ; 11.377 ; 11.377 ; 11.377 ;
+; binary_input1[0] ; SEG7_ten[2] ; 11.397 ; 11.397 ; 11.397 ; 11.397 ;
+; binary_input1[0] ; SEG7_ten[3] ; 11.397 ; 11.397 ; 11.397 ; 11.397 ;
+; binary_input1[0] ; SEG7_ten[6] ; 11.412 ; 11.412 ; 11.412 ; 11.412 ;
+; binary_input1[1] ; SEG7_1[0]   ; 7.122  ; 7.122  ; 7.122  ; 7.122  ;
+; binary_input1[1] ; SEG7_1[1]   ; 7.153  ;        ;        ; 7.153  ;
+; binary_input1[1] ; SEG7_1[2]   ; 7.128  ; 7.128  ; 7.128  ; 7.128  ;
+; binary_input1[1] ; SEG7_1[3]   ; 7.106  ; 7.106  ; 7.106  ; 7.106  ;
+; binary_input1[1] ; SEG7_1[4]   ; 7.405  ;        ;        ; 7.405  ;
+; binary_input1[1] ; SEG7_1[5]   ; 7.332  ; 7.332  ; 7.332  ; 7.332  ;
+; binary_input1[1] ; SEG7_1[6]   ;        ; 7.356  ; 7.356  ;        ;
+; binary_input1[1] ; SEG7_one[0] ; 10.801 ; 10.801 ; 10.801 ; 10.801 ;
+; binary_input1[1] ; SEG7_one[1] ; 10.813 ; 10.813 ; 10.813 ; 10.813 ;
+; binary_input1[1] ; SEG7_one[2] ; 10.795 ; 10.795 ; 10.795 ; 10.795 ;
+; binary_input1[1] ; SEG7_one[3] ; 10.554 ; 10.554 ; 10.554 ; 10.554 ;
+; binary_input1[1] ; SEG7_one[4] ; 10.495 ; 10.495 ; 10.495 ; 10.495 ;
+; binary_input1[1] ; SEG7_one[5] ; 10.502 ; 10.502 ; 10.502 ; 10.502 ;
+; binary_input1[1] ; SEG7_one[6] ; 10.760 ; 10.760 ; 10.760 ; 10.760 ;
+; binary_input1[1] ; SEG7_ten[1] ; 10.323 ; 10.323 ; 10.323 ; 10.323 ;
+; binary_input1[1] ; SEG7_ten[2] ; 10.343 ; 10.343 ; 10.343 ; 10.343 ;
+; binary_input1[1] ; SEG7_ten[3] ; 10.343 ; 10.343 ; 10.343 ; 10.343 ;
+; binary_input1[1] ; SEG7_ten[6] ; 10.358 ; 10.358 ; 10.358 ; 10.358 ;
+; binary_input1[2] ; SEG7_1[0]   ; 6.785  ; 6.785  ; 6.785  ; 6.785  ;
+; binary_input1[2] ; SEG7_1[1]   ;        ; 6.817  ; 6.817  ;        ;
+; binary_input1[2] ; SEG7_1[2]   ; 6.792  ;        ;        ; 6.792  ;
+; binary_input1[2] ; SEG7_1[3]   ; 6.789  ; 6.789  ; 6.789  ; 6.789  ;
+; binary_input1[2] ; SEG7_1[4]   ;        ; 7.061  ; 7.061  ;        ;
+; binary_input1[2] ; SEG7_1[5]   ; 7.015  ;        ;        ; 7.015  ;
+; binary_input1[2] ; SEG7_1[6]   ; 7.054  ; 7.054  ; 7.054  ; 7.054  ;
+; binary_input1[2] ; SEG7_one[0] ; 10.607 ; 10.607 ; 10.607 ; 10.607 ;
+; binary_input1[2] ; SEG7_one[1] ; 10.604 ; 10.604 ; 10.604 ; 10.604 ;
+; binary_input1[2] ; SEG7_one[2] ; 10.570 ; 10.570 ; 10.570 ; 10.570 ;
+; binary_input1[2] ; SEG7_one[3] ; 10.345 ; 10.345 ; 10.345 ; 10.345 ;
+; binary_input1[2] ; SEG7_one[4] ; 10.296 ; 10.296 ; 10.296 ; 10.296 ;
+; binary_input1[2] ; SEG7_one[5] ; 10.293 ; 10.293 ; 10.293 ; 10.293 ;
+; binary_input1[2] ; SEG7_one[6] ; 10.566 ; 10.566 ; 10.566 ; 10.566 ;
+; binary_input1[2] ; SEG7_ten[1] ; 10.808 ; 10.808 ; 10.808 ; 10.808 ;
+; binary_input1[2] ; SEG7_ten[2] ; 10.828 ; 10.828 ; 10.828 ; 10.828 ;
+; binary_input1[2] ; SEG7_ten[3] ; 10.828 ; 10.828 ; 10.828 ; 10.828 ;
+; binary_input1[2] ; SEG7_ten[6] ; 10.843 ; 10.843 ; 10.843 ; 10.843 ;
+; binary_input1[3] ; SEG7_1[0]   ;        ; 5.779  ; 5.779  ;        ;
+; binary_input1[3] ; SEG7_1[1]   ;        ; 5.839  ; 5.839  ;        ;
+; binary_input1[3] ; SEG7_1[2]   ; 5.811  ;        ;        ; 5.811  ;
+; binary_input1[3] ; SEG7_1[3]   ;        ; 5.813  ; 5.813  ;        ;
+; binary_input1[3] ; SEG7_1[4]   ;        ; 6.083  ; 6.083  ;        ;
+; binary_input1[3] ; SEG7_1[5]   ;        ; 6.037  ; 6.037  ;        ;
+; binary_input1[3] ; SEG7_1[6]   ;        ; 6.077  ; 6.077  ;        ;
+; binary_input1[3] ; SEG7_one[0] ; 7.729  ; 7.729  ; 7.729  ; 7.729  ;
+; binary_input1[3] ; SEG7_one[1] ; 7.741  ; 7.741  ; 7.741  ; 7.741  ;
+; binary_input1[3] ; SEG7_one[2] ; 7.725  ; 7.725  ; 7.725  ; 7.725  ;
+; binary_input1[3] ; SEG7_one[3] ; 7.482  ; 7.482  ; 7.482  ; 7.482  ;
+; binary_input1[3] ; SEG7_one[4] ; 7.423  ; 7.423  ; 7.423  ; 7.423  ;
+; binary_input1[3] ; SEG7_one[5] ; 7.430  ; 7.430  ; 7.430  ; 7.430  ;
+; binary_input1[3] ; SEG7_one[6] ; 7.688  ; 7.688  ; 7.688  ; 7.688  ;
+; binary_input1[3] ; SEG7_ten[1] ; 7.256  ; 7.256  ; 7.256  ; 7.256  ;
+; binary_input1[3] ; SEG7_ten[2] ; 7.276  ; 7.276  ; 7.276  ; 7.276  ;
+; binary_input1[3] ; SEG7_ten[3] ; 7.276  ; 7.276  ; 7.276  ; 7.276  ;
+; binary_input1[3] ; SEG7_ten[6] ; 7.291  ; 7.291  ; 7.291  ; 7.291  ;
+; binary_input2[0] ; SEG7_2[0]   ; 6.699  ;        ;        ; 6.699  ;
+; binary_input2[0] ; SEG7_2[1]   ; 6.677  ;        ;        ; 6.677  ;
+; binary_input2[0] ; SEG7_2[2]   ; 6.403  ;        ;        ; 6.403  ;
+; binary_input2[0] ; SEG7_2[3]   ; 6.335  ; 6.335  ; 6.335  ; 6.335  ;
+; binary_input2[0] ; SEG7_2[4]   ;        ; 6.331  ; 6.331  ;        ;
+; binary_input2[0] ; SEG7_2[5]   ; 6.745  ; 6.745  ; 6.745  ; 6.745  ;
+; binary_input2[0] ; SEG7_2[6]   ; 6.824  ; 6.824  ; 6.824  ; 6.824  ;
+; binary_input2[0] ; SEG7_one[0] ; 8.452  ; 8.452  ; 8.452  ; 8.452  ;
+; binary_input2[0] ; SEG7_one[1] ; 8.449  ; 8.449  ; 8.449  ; 8.449  ;
+; binary_input2[0] ; SEG7_one[2] ; 8.415  ; 8.415  ; 8.415  ; 8.415  ;
+; binary_input2[0] ; SEG7_one[3] ; 8.190  ; 8.190  ; 8.190  ; 8.190  ;
+; binary_input2[0] ; SEG7_one[4] ; 8.141  ; 8.141  ; 8.141  ; 8.141  ;
+; binary_input2[0] ; SEG7_one[5] ; 8.138  ; 8.138  ; 8.138  ; 8.138  ;
+; binary_input2[0] ; SEG7_one[6] ; 8.411  ; 8.411  ; 8.411  ; 8.411  ;
+; binary_input2[0] ; SEG7_ten[1] ; 8.657  ; 8.657  ; 8.657  ; 8.657  ;
+; binary_input2[0] ; SEG7_ten[2] ; 8.677  ; 8.677  ; 8.677  ; 8.677  ;
+; binary_input2[0] ; SEG7_ten[3] ; 8.677  ; 8.677  ; 8.677  ; 8.677  ;
+; binary_input2[0] ; SEG7_ten[6] ; 8.692  ; 8.692  ; 8.692  ; 8.692  ;
+; binary_input2[1] ; SEG7_2[0]   ; 6.552  ; 6.552  ; 6.552  ; 6.552  ;
+; binary_input2[1] ; SEG7_2[1]   ; 6.524  ;        ;        ; 6.524  ;
+; binary_input2[1] ; SEG7_2[2]   ; 6.256  ; 6.256  ; 6.256  ; 6.256  ;
+; binary_input2[1] ; SEG7_2[3]   ; 6.191  ; 6.191  ; 6.191  ; 6.191  ;
+; binary_input2[1] ; SEG7_2[4]   ; 6.235  ;        ;        ; 6.235  ;
+; binary_input2[1] ; SEG7_2[5]   ; 6.634  ; 6.634  ; 6.634  ; 6.634  ;
+; binary_input2[1] ; SEG7_2[6]   ;        ; 6.674  ; 6.674  ;        ;
+; binary_input2[1] ; SEG7_one[0] ; 8.306  ; 8.306  ; 8.306  ; 8.306  ;
+; binary_input2[1] ; SEG7_one[1] ; 8.303  ; 8.303  ; 8.303  ; 8.303  ;
+; binary_input2[1] ; SEG7_one[2] ; 8.269  ; 8.269  ; 8.269  ; 8.269  ;
+; binary_input2[1] ; SEG7_one[3] ; 8.044  ; 8.044  ; 8.044  ; 8.044  ;
+; binary_input2[1] ; SEG7_one[4] ; 7.995  ; 7.995  ; 7.995  ; 7.995  ;
+; binary_input2[1] ; SEG7_one[5] ; 7.992  ; 7.992  ; 7.992  ; 7.992  ;
+; binary_input2[1] ; SEG7_one[6] ; 8.265  ; 8.265  ; 8.265  ; 8.265  ;
+; binary_input2[1] ; SEG7_ten[1] ; 8.073  ; 8.073  ; 8.073  ; 8.073  ;
+; binary_input2[1] ; SEG7_ten[2] ; 8.093  ; 8.093  ; 8.093  ; 8.093  ;
+; binary_input2[1] ; SEG7_ten[3] ; 8.093  ; 8.093  ; 8.093  ; 8.093  ;
+; binary_input2[1] ; SEG7_ten[6] ; 8.108  ; 8.108  ; 8.108  ; 8.108  ;
+; binary_input2[2] ; SEG7_2[0]   ; 6.306  ; 6.306  ; 6.306  ; 6.306  ;
+; binary_input2[2] ; SEG7_2[1]   ;        ; 6.294  ; 6.294  ;        ;
+; binary_input2[2] ; SEG7_2[2]   ; 6.010  ;        ;        ; 6.010  ;
+; binary_input2[2] ; SEG7_2[3]   ; 5.950  ; 5.950  ; 5.950  ; 5.950  ;
+; binary_input2[2] ; SEG7_2[4]   ;        ; 5.988  ; 5.988  ;        ;
+; binary_input2[2] ; SEG7_2[5]   ; 6.392  ;        ;        ; 6.392  ;
+; binary_input2[2] ; SEG7_2[6]   ; 6.440  ; 6.440  ; 6.440  ; 6.440  ;
+; binary_input2[2] ; SEG7_one[0] ; 8.059  ; 8.059  ; 8.059  ; 8.059  ;
+; binary_input2[2] ; SEG7_one[1] ; 8.056  ; 8.056  ; 8.056  ; 8.056  ;
+; binary_input2[2] ; SEG7_one[2] ; 8.022  ; 8.022  ; 8.022  ; 8.022  ;
+; binary_input2[2] ; SEG7_one[3] ; 7.797  ; 7.797  ; 7.797  ; 7.797  ;
+; binary_input2[2] ; SEG7_one[4] ; 7.748  ; 7.748  ; 7.748  ; 7.748  ;
+; binary_input2[2] ; SEG7_one[5] ; 7.745  ; 7.745  ; 7.745  ; 7.745  ;
+; binary_input2[2] ; SEG7_one[6] ; 8.018  ; 8.018  ; 8.018  ; 8.018  ;
+; binary_input2[2] ; SEG7_ten[1] ; 8.264  ; 8.264  ; 8.264  ; 8.264  ;
+; binary_input2[2] ; SEG7_ten[2] ; 8.284  ; 8.284  ; 8.284  ; 8.284  ;
+; binary_input2[2] ; SEG7_ten[3] ; 8.284  ; 8.284  ; 8.284  ; 8.284  ;
+; binary_input2[2] ; SEG7_ten[6] ; 8.299  ; 8.299  ; 8.299  ; 8.299  ;
+; binary_input2[3] ; SEG7_2[0]   ;        ; 7.353  ; 7.353  ;        ;
+; binary_input2[3] ; SEG7_2[1]   ;        ; 7.286  ; 7.286  ;        ;
+; binary_input2[3] ; SEG7_2[2]   ; 7.058  ;        ;        ; 7.058  ;
+; binary_input2[3] ; SEG7_2[3]   ;        ; 6.951  ; 6.951  ;        ;
+; binary_input2[3] ; SEG7_2[4]   ;        ; 6.996  ; 6.996  ;        ;
+; binary_input2[3] ; SEG7_2[5]   ;        ; 7.395  ; 7.395  ;        ;
+; binary_input2[3] ; SEG7_2[6]   ;        ; 7.435  ; 7.435  ;        ;
+; binary_input2[3] ; SEG7_one[0] ; 8.842  ; 8.842  ; 8.842  ; 8.842  ;
+; binary_input2[3] ; SEG7_one[1] ; 8.854  ; 8.854  ; 8.854  ; 8.854  ;
+; binary_input2[3] ; SEG7_one[2] ; 8.838  ; 8.838  ; 8.838  ; 8.838  ;
+; binary_input2[3] ; SEG7_one[3] ; 8.595  ; 8.595  ; 8.595  ; 8.595  ;
+; binary_input2[3] ; SEG7_one[4] ; 8.536  ; 8.536  ; 8.536  ; 8.536  ;
+; binary_input2[3] ; SEG7_one[5] ; 8.543  ; 8.543  ; 8.543  ; 8.543  ;
+; binary_input2[3] ; SEG7_one[6] ; 8.801  ; 8.801  ; 8.801  ; 8.801  ;
+; binary_input2[3] ; SEG7_ten[1] ; 8.369  ; 8.369  ; 8.369  ; 8.369  ;
+; binary_input2[3] ; SEG7_ten[2] ; 8.389  ; 8.389  ; 8.389  ; 8.389  ;
+; binary_input2[3] ; SEG7_ten[3] ; 8.389  ; 8.389  ; 8.389  ; 8.389  ;
+; binary_input2[3] ; SEG7_ten[6] ; 8.404  ; 8.404  ; 8.404  ; 8.404  ;
++------------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------------+
+; Propagation Delay                                              ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 3.845 ;       ;       ; 3.845 ;
+; binary_input1[0] ; SEG7_1[1]   ; 3.866 ;       ;       ; 3.866 ;
+; binary_input1[0] ; SEG7_1[2]   ; 3.853 ;       ;       ; 3.853 ;
+; binary_input1[0] ; SEG7_1[3]   ; 3.859 ; 3.859 ; 3.859 ; 3.859 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 3.986 ; 3.986 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 3.950 ; 3.950 ; 3.950 ; 3.950 ;
+; binary_input1[0] ; SEG7_1[6]   ; 3.982 ; 3.982 ; 3.982 ; 3.982 ;
+; binary_input1[0] ; SEG7_one[0] ; 6.262 ; 6.262 ; 6.262 ; 6.262 ;
+; binary_input1[0] ; SEG7_one[1] ; 6.278 ; 6.278 ; 6.278 ; 6.278 ;
+; binary_input1[0] ; SEG7_one[2] ; 6.130 ; 6.097 ; 6.097 ; 6.130 ;
+; binary_input1[0] ; SEG7_one[3] ; 6.172 ; 6.172 ; 6.172 ; 6.172 ;
+; binary_input1[0] ; SEG7_one[4] ; 6.135 ; 6.135 ; 6.135 ; 6.135 ;
+; binary_input1[0] ; SEG7_one[5] ; 6.122 ; 6.122 ; 6.122 ; 6.122 ;
+; binary_input1[0] ; SEG7_one[6] ; 6.244 ; 6.244 ; 6.244 ; 6.244 ;
+; binary_input1[0] ; SEG7_ten[1] ; 5.921 ; 5.898 ; 5.898 ; 5.921 ;
+; binary_input1[0] ; SEG7_ten[2] ; 5.942 ; 5.919 ; 5.919 ; 5.942 ;
+; binary_input1[0] ; SEG7_ten[3] ; 5.942 ; 5.919 ; 5.919 ; 5.942 ;
+; binary_input1[0] ; SEG7_ten[6] ; 5.934 ; 5.911 ; 5.911 ; 5.934 ;
+; binary_input1[1] ; SEG7_1[0]   ; 3.727 ; 3.727 ; 3.727 ; 3.727 ;
+; binary_input1[1] ; SEG7_1[1]   ; 3.748 ;       ;       ; 3.748 ;
+; binary_input1[1] ; SEG7_1[2]   ; 3.733 ; 3.733 ; 3.733 ; 3.733 ;
+; binary_input1[1] ; SEG7_1[3]   ; 3.741 ; 3.741 ; 3.741 ; 3.741 ;
+; binary_input1[1] ; SEG7_1[4]   ; 3.870 ;       ;       ; 3.870 ;
+; binary_input1[1] ; SEG7_1[5]   ; 3.829 ; 3.829 ; 3.829 ; 3.829 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 3.865 ; 3.865 ;       ;
+; binary_input1[1] ; SEG7_one[0] ; 6.142 ; 6.142 ; 6.142 ; 6.142 ;
+; binary_input1[1] ; SEG7_one[1] ; 6.158 ; 6.158 ; 6.158 ; 6.158 ;
+; binary_input1[1] ; SEG7_one[2] ; 6.010 ; 5.977 ; 5.977 ; 6.010 ;
+; binary_input1[1] ; SEG7_one[3] ; 6.052 ; 6.052 ; 6.052 ; 6.052 ;
+; binary_input1[1] ; SEG7_one[4] ; 6.015 ; 6.015 ; 6.015 ; 6.015 ;
+; binary_input1[1] ; SEG7_one[5] ; 6.002 ; 6.002 ; 6.002 ; 6.002 ;
+; binary_input1[1] ; SEG7_one[6] ; 6.124 ; 6.124 ; 6.124 ; 6.124 ;
+; binary_input1[1] ; SEG7_ten[1] ; 5.801 ; 5.778 ; 5.778 ; 5.801 ;
+; binary_input1[1] ; SEG7_ten[2] ; 5.822 ; 5.799 ; 5.799 ; 5.822 ;
+; binary_input1[1] ; SEG7_ten[3] ; 5.822 ; 5.799 ; 5.799 ; 5.822 ;
+; binary_input1[1] ; SEG7_ten[6] ; 5.814 ; 5.791 ; 5.791 ; 5.814 ;
+; binary_input1[2] ; SEG7_1[0]   ; 3.587 ; 3.587 ; 3.587 ; 3.587 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 3.602 ; 3.602 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 3.594 ;       ;       ; 3.594 ;
+; binary_input1[2] ; SEG7_1[3]   ; 3.591 ; 3.591 ; 3.591 ; 3.591 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 3.714 ; 3.714 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 3.679 ;       ;       ; 3.679 ;
+; binary_input1[2] ; SEG7_1[6]   ; 3.719 ; 3.719 ; 3.719 ; 3.719 ;
+; binary_input1[2] ; SEG7_one[0] ; 6.004 ; 6.004 ; 6.004 ; 6.004 ;
+; binary_input1[2] ; SEG7_one[1] ; 6.020 ; 6.020 ; 6.020 ; 6.020 ;
+; binary_input1[2] ; SEG7_one[2] ; 5.872 ; 5.839 ; 5.839 ; 5.872 ;
+; binary_input1[2] ; SEG7_one[3] ; 5.914 ; 5.914 ; 5.914 ; 5.914 ;
+; binary_input1[2] ; SEG7_one[4] ; 5.877 ; 5.877 ; 5.877 ; 5.877 ;
+; binary_input1[2] ; SEG7_one[5] ; 5.864 ; 5.864 ; 5.864 ; 5.864 ;
+; binary_input1[2] ; SEG7_one[6] ; 5.986 ; 5.986 ; 5.986 ; 5.986 ;
+; binary_input1[2] ; SEG7_ten[1] ; 5.663 ; 5.640 ; 5.640 ; 5.663 ;
+; binary_input1[2] ; SEG7_ten[2] ; 5.684 ; 5.661 ; 5.661 ; 5.684 ;
+; binary_input1[2] ; SEG7_ten[3] ; 5.684 ; 5.661 ; 5.661 ; 5.684 ;
+; binary_input1[2] ; SEG7_ten[6] ; 5.676 ; 5.653 ; 5.653 ; 5.676 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 3.072 ; 3.072 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 3.088 ; 3.088 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 3.080 ;       ;       ; 3.080 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 3.076 ; 3.076 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 3.200 ; 3.200 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 3.165 ; 3.165 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 3.202 ; 3.202 ;       ;
+; binary_input1[3] ; SEG7_one[0] ; 5.488 ; 5.488 ; 5.488 ; 5.488 ;
+; binary_input1[3] ; SEG7_one[1] ; 5.504 ; 5.504 ; 5.504 ; 5.504 ;
+; binary_input1[3] ; SEG7_one[2] ; 5.356 ; 5.330 ; 5.330 ; 5.356 ;
+; binary_input1[3] ; SEG7_one[3] ; 5.398 ; 5.398 ; 5.398 ; 5.398 ;
+; binary_input1[3] ; SEG7_one[4] ; 5.361 ; 5.361 ; 5.361 ; 5.361 ;
+; binary_input1[3] ; SEG7_one[5] ; 5.348 ; 5.348 ; 5.348 ; 5.348 ;
+; binary_input1[3] ; SEG7_one[6] ; 5.470 ; 5.470 ; 5.470 ; 5.470 ;
+; binary_input1[3] ; SEG7_ten[1] ; 5.147 ; 5.124 ; 5.124 ; 5.147 ;
+; binary_input1[3] ; SEG7_ten[2] ; 5.168 ; 5.145 ; 5.145 ; 5.168 ;
+; binary_input1[3] ; SEG7_ten[3] ; 5.168 ; 5.145 ; 5.145 ; 5.168 ;
+; binary_input1[3] ; SEG7_ten[6] ; 5.160 ; 5.137 ; 5.137 ; 5.160 ;
+; binary_input2[0] ; SEG7_2[0]   ; 3.440 ;       ;       ; 3.440 ;
+; binary_input2[0] ; SEG7_2[1]   ; 3.427 ;       ;       ; 3.427 ;
+; binary_input2[0] ; SEG7_2[2]   ; 3.303 ;       ;       ; 3.303 ;
+; binary_input2[0] ; SEG7_2[3]   ; 3.259 ; 3.259 ; 3.259 ; 3.259 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 3.288 ; 3.288 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 3.510 ; 3.510 ; 3.510 ; 3.510 ;
+; binary_input2[0] ; SEG7_2[6]   ; 3.539 ; 3.539 ; 3.539 ; 3.539 ;
+; binary_input2[0] ; SEG7_one[0] ; 4.808 ; 4.808 ; 4.808 ; 4.808 ;
+; binary_input2[0] ; SEG7_one[1] ; 4.824 ; 4.824 ; 4.824 ; 4.824 ;
+; binary_input2[0] ; SEG7_one[2] ; 4.676 ; 4.643 ; 4.643 ; 4.676 ;
+; binary_input2[0] ; SEG7_one[3] ; 4.718 ; 4.718 ; 4.718 ; 4.718 ;
+; binary_input2[0] ; SEG7_one[4] ; 4.681 ; 4.681 ; 4.681 ; 4.681 ;
+; binary_input2[0] ; SEG7_one[5] ; 4.668 ; 4.668 ; 4.668 ; 4.668 ;
+; binary_input2[0] ; SEG7_one[6] ; 4.790 ; 4.790 ; 4.790 ; 4.790 ;
+; binary_input2[0] ; SEG7_ten[1] ; 4.467 ; 4.444 ; 4.444 ; 4.467 ;
+; binary_input2[0] ; SEG7_ten[2] ; 4.488 ; 4.465 ; 4.465 ; 4.488 ;
+; binary_input2[0] ; SEG7_ten[3] ; 4.488 ; 4.465 ; 4.465 ; 4.488 ;
+; binary_input2[0] ; SEG7_ten[6] ; 4.480 ; 4.457 ; 4.457 ; 4.480 ;
+; binary_input2[1] ; SEG7_2[0]   ; 3.382 ; 3.382 ; 3.382 ; 3.382 ;
+; binary_input2[1] ; SEG7_2[1]   ; 3.359 ;       ;       ; 3.359 ;
+; binary_input2[1] ; SEG7_2[2]   ; 3.246 ; 3.246 ; 3.246 ; 3.246 ;
+; binary_input2[1] ; SEG7_2[3]   ; 3.199 ; 3.199 ; 3.199 ; 3.199 ;
+; binary_input2[1] ; SEG7_2[4]   ; 3.253 ;       ;       ; 3.253 ;
+; binary_input2[1] ; SEG7_2[5]   ; 3.454 ; 3.454 ; 3.454 ; 3.454 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 3.475 ; 3.475 ;       ;
+; binary_input2[1] ; SEG7_one[0] ; 4.747 ; 4.747 ; 4.747 ; 4.747 ;
+; binary_input2[1] ; SEG7_one[1] ; 4.763 ; 4.763 ; 4.763 ; 4.763 ;
+; binary_input2[1] ; SEG7_one[2] ; 4.615 ; 4.582 ; 4.582 ; 4.615 ;
+; binary_input2[1] ; SEG7_one[3] ; 4.657 ; 4.657 ; 4.657 ; 4.657 ;
+; binary_input2[1] ; SEG7_one[4] ; 4.620 ; 4.620 ; 4.620 ; 4.620 ;
+; binary_input2[1] ; SEG7_one[5] ; 4.607 ; 4.607 ; 4.607 ; 4.607 ;
+; binary_input2[1] ; SEG7_one[6] ; 4.729 ; 4.729 ; 4.729 ; 4.729 ;
+; binary_input2[1] ; SEG7_ten[1] ; 4.406 ; 4.383 ; 4.383 ; 4.406 ;
+; binary_input2[1] ; SEG7_ten[2] ; 4.427 ; 4.404 ; 4.404 ; 4.427 ;
+; binary_input2[1] ; SEG7_ten[3] ; 4.427 ; 4.404 ; 4.404 ; 4.427 ;
+; binary_input2[1] ; SEG7_ten[6] ; 4.419 ; 4.396 ; 4.396 ; 4.419 ;
+; binary_input2[2] ; SEG7_2[0]   ; 3.267 ; 3.267 ; 3.267 ; 3.267 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 3.253 ; 3.253 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 3.131 ;       ;       ; 3.131 ;
+; binary_input2[2] ; SEG7_2[3]   ; 3.091 ; 3.091 ; 3.091 ; 3.091 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 3.111 ; 3.111 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 3.342 ;       ;       ; 3.342 ;
+; binary_input2[2] ; SEG7_2[6]   ; 3.371 ; 3.371 ; 3.371 ; 3.371 ;
+; binary_input2[2] ; SEG7_one[0] ; 4.694 ; 4.694 ; 4.694 ; 4.694 ;
+; binary_input2[2] ; SEG7_one[1] ; 4.710 ; 4.710 ; 4.710 ; 4.710 ;
+; binary_input2[2] ; SEG7_one[2] ; 4.562 ; 4.529 ; 4.529 ; 4.562 ;
+; binary_input2[2] ; SEG7_one[3] ; 4.604 ; 4.604 ; 4.604 ; 4.604 ;
+; binary_input2[2] ; SEG7_one[4] ; 4.567 ; 4.567 ; 4.567 ; 4.567 ;
+; binary_input2[2] ; SEG7_one[5] ; 4.554 ; 4.554 ; 4.554 ; 4.554 ;
+; binary_input2[2] ; SEG7_one[6] ; 4.676 ; 4.676 ; 4.676 ; 4.676 ;
+; binary_input2[2] ; SEG7_ten[1] ; 4.353 ; 4.330 ; 4.330 ; 4.353 ;
+; binary_input2[2] ; SEG7_ten[2] ; 4.374 ; 4.351 ; 4.351 ; 4.374 ;
+; binary_input2[2] ; SEG7_ten[3] ; 4.374 ; 4.351 ; 4.351 ; 4.374 ;
+; binary_input2[2] ; SEG7_ten[6] ; 4.366 ; 4.343 ; 4.343 ; 4.366 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 3.866 ; 3.866 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 3.840 ; 3.840 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 3.730 ;       ;       ; 3.730 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 3.683 ; 3.683 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 3.716 ; 3.716 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 3.938 ; 3.938 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 3.959 ; 3.959 ;       ;
+; binary_input2[3] ; SEG7_one[0] ; 5.231 ; 5.231 ; 5.231 ; 5.231 ;
+; binary_input2[3] ; SEG7_one[1] ; 5.247 ; 5.247 ; 5.247 ; 5.247 ;
+; binary_input2[3] ; SEG7_one[2] ; 5.099 ; 5.066 ; 5.066 ; 5.099 ;
+; binary_input2[3] ; SEG7_one[3] ; 5.141 ; 5.141 ; 5.141 ; 5.141 ;
+; binary_input2[3] ; SEG7_one[4] ; 5.104 ; 5.104 ; 5.104 ; 5.104 ;
+; binary_input2[3] ; SEG7_one[5] ; 5.091 ; 5.091 ; 5.091 ; 5.091 ;
+; binary_input2[3] ; SEG7_one[6] ; 5.213 ; 5.213 ; 5.213 ; 5.213 ;
+; binary_input2[3] ; SEG7_ten[1] ; 4.890 ; 4.867 ; 4.867 ; 4.890 ;
+; binary_input2[3] ; SEG7_ten[2] ; 4.911 ; 4.888 ; 4.888 ; 4.911 ;
+; binary_input2[3] ; SEG7_ten[3] ; 4.911 ; 4.888 ; 4.888 ; 4.911 ;
+; binary_input2[3] ; SEG7_ten[6] ; 4.903 ; 4.880 ; 4.880 ; 4.903 ;
++------------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------+
+; Minimum Propagation Delay                                      ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 3.845 ;       ;       ; 3.845 ;
+; binary_input1[0] ; SEG7_1[1]   ; 3.866 ;       ;       ; 3.866 ;
+; binary_input1[0] ; SEG7_1[2]   ; 3.853 ;       ;       ; 3.853 ;
+; binary_input1[0] ; SEG7_1[3]   ; 3.859 ; 3.859 ; 3.859 ; 3.859 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 3.986 ; 3.986 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 3.950 ; 3.950 ; 3.950 ; 3.950 ;
+; binary_input1[0] ; SEG7_1[6]   ; 3.982 ; 3.982 ; 3.982 ; 3.982 ;
+; binary_input1[0] ; SEG7_one[0] ; 5.650 ; 5.650 ; 5.650 ; 5.650 ;
+; binary_input1[0] ; SEG7_one[1] ; 5.654 ; 5.654 ; 5.654 ; 5.654 ;
+; binary_input1[0] ; SEG7_one[2] ; 5.632 ; 5.632 ; 5.632 ; 5.632 ;
+; binary_input1[0] ; SEG7_one[3] ; 5.548 ; 5.548 ; 5.548 ; 5.548 ;
+; binary_input1[0] ; SEG7_one[4] ; 5.517 ; 5.517 ; 5.517 ; 5.517 ;
+; binary_input1[0] ; SEG7_one[5] ; 5.498 ; 5.498 ; 5.498 ; 5.498 ;
+; binary_input1[0] ; SEG7_one[6] ; 5.633 ; 5.633 ; 5.633 ; 5.633 ;
+; binary_input1[0] ; SEG7_ten[1] ; 5.709 ; 5.709 ; 5.709 ; 5.709 ;
+; binary_input1[0] ; SEG7_ten[2] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; binary_input1[0] ; SEG7_ten[3] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; binary_input1[0] ; SEG7_ten[6] ; 5.722 ; 5.722 ; 5.722 ; 5.722 ;
+; binary_input1[1] ; SEG7_1[0]   ; 3.727 ; 3.727 ; 3.727 ; 3.727 ;
+; binary_input1[1] ; SEG7_1[1]   ; 3.748 ;       ;       ; 3.748 ;
+; binary_input1[1] ; SEG7_1[2]   ; 3.733 ; 3.733 ; 3.733 ; 3.733 ;
+; binary_input1[1] ; SEG7_1[3]   ; 3.741 ; 3.741 ; 3.741 ; 3.741 ;
+; binary_input1[1] ; SEG7_1[4]   ; 3.870 ;       ;       ; 3.870 ;
+; binary_input1[1] ; SEG7_1[5]   ; 3.829 ; 3.829 ; 3.829 ; 3.829 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 3.865 ; 3.865 ;       ;
+; binary_input1[1] ; SEG7_one[0] ; 5.312 ; 5.312 ; 5.312 ; 5.312 ;
+; binary_input1[1] ; SEG7_one[1] ; 5.327 ; 5.327 ; 5.327 ; 5.327 ;
+; binary_input1[1] ; SEG7_one[2] ; 5.294 ; 5.294 ; 5.294 ; 5.294 ;
+; binary_input1[1] ; SEG7_one[3] ; 5.221 ; 5.221 ; 5.221 ; 5.221 ;
+; binary_input1[1] ; SEG7_one[4] ; 5.182 ; 5.182 ; 5.182 ; 5.182 ;
+; binary_input1[1] ; SEG7_one[5] ; 5.171 ; 5.171 ; 5.171 ; 5.171 ;
+; binary_input1[1] ; SEG7_one[6] ; 5.295 ; 5.295 ; 5.295 ; 5.295 ;
+; binary_input1[1] ; SEG7_ten[1] ; 5.102 ; 5.102 ; 5.102 ; 5.102 ;
+; binary_input1[1] ; SEG7_ten[2] ; 5.123 ; 5.123 ; 5.123 ; 5.123 ;
+; binary_input1[1] ; SEG7_ten[3] ; 5.123 ; 5.123 ; 5.123 ; 5.123 ;
+; binary_input1[1] ; SEG7_ten[6] ; 5.115 ; 5.115 ; 5.115 ; 5.115 ;
+; binary_input1[2] ; SEG7_1[0]   ; 3.587 ; 3.587 ; 3.587 ; 3.587 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 3.602 ; 3.602 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 3.594 ;       ;       ; 3.594 ;
+; binary_input1[2] ; SEG7_1[3]   ; 3.591 ; 3.591 ; 3.591 ; 3.591 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 3.714 ; 3.714 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 3.679 ;       ;       ; 3.679 ;
+; binary_input1[2] ; SEG7_1[6]   ; 3.719 ; 3.719 ; 3.719 ; 3.719 ;
+; binary_input1[2] ; SEG7_one[0] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; binary_input1[2] ; SEG7_one[1] ; 5.396 ; 5.396 ; 5.396 ; 5.396 ;
+; binary_input1[2] ; SEG7_one[2] ; 5.374 ; 5.374 ; 5.374 ; 5.374 ;
+; binary_input1[2] ; SEG7_one[3] ; 5.290 ; 5.290 ; 5.290 ; 5.290 ;
+; binary_input1[2] ; SEG7_one[4] ; 5.259 ; 5.259 ; 5.259 ; 5.259 ;
+; binary_input1[2] ; SEG7_one[5] ; 5.240 ; 5.240 ; 5.240 ; 5.240 ;
+; binary_input1[2] ; SEG7_one[6] ; 5.375 ; 5.375 ; 5.375 ; 5.375 ;
+; binary_input1[2] ; SEG7_ten[1] ; 5.451 ; 5.451 ; 5.451 ; 5.451 ;
+; binary_input1[2] ; SEG7_ten[2] ; 5.472 ; 5.472 ; 5.472 ; 5.472 ;
+; binary_input1[2] ; SEG7_ten[3] ; 5.472 ; 5.472 ; 5.472 ; 5.472 ;
+; binary_input1[2] ; SEG7_ten[6] ; 5.464 ; 5.464 ; 5.464 ; 5.464 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 3.072 ; 3.072 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 3.088 ; 3.088 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 3.080 ;       ;       ; 3.080 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 3.076 ; 3.076 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 3.200 ; 3.200 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 3.165 ; 3.165 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 3.202 ; 3.202 ;       ;
+; binary_input1[3] ; SEG7_one[0] ; 3.865 ; 3.865 ; 3.865 ; 3.865 ;
+; binary_input1[3] ; SEG7_one[1] ; 3.880 ; 3.880 ; 3.880 ; 3.880 ;
+; binary_input1[3] ; SEG7_one[2] ; 3.851 ; 3.851 ; 3.851 ; 3.851 ;
+; binary_input1[3] ; SEG7_one[3] ; 3.774 ; 3.774 ; 3.774 ; 3.774 ;
+; binary_input1[3] ; SEG7_one[4] ; 3.735 ; 3.735 ; 3.735 ; 3.735 ;
+; binary_input1[3] ; SEG7_one[5] ; 3.724 ; 3.724 ; 3.724 ; 3.724 ;
+; binary_input1[3] ; SEG7_one[6] ; 3.848 ; 3.848 ; 3.848 ; 3.848 ;
+; binary_input1[3] ; SEG7_ten[1] ; 3.652 ; 3.652 ; 3.652 ; 3.652 ;
+; binary_input1[3] ; SEG7_ten[2] ; 3.673 ; 3.673 ; 3.673 ; 3.673 ;
+; binary_input1[3] ; SEG7_ten[3] ; 3.673 ; 3.673 ; 3.673 ; 3.673 ;
+; binary_input1[3] ; SEG7_ten[6] ; 3.665 ; 3.665 ; 3.665 ; 3.665 ;
+; binary_input2[0] ; SEG7_2[0]   ; 3.440 ;       ;       ; 3.440 ;
+; binary_input2[0] ; SEG7_2[1]   ; 3.427 ;       ;       ; 3.427 ;
+; binary_input2[0] ; SEG7_2[2]   ; 3.303 ;       ;       ; 3.303 ;
+; binary_input2[0] ; SEG7_2[3]   ; 3.259 ; 3.259 ; 3.259 ; 3.259 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 3.288 ; 3.288 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 3.510 ; 3.510 ; 3.510 ; 3.510 ;
+; binary_input2[0] ; SEG7_2[6]   ; 3.539 ; 3.539 ; 3.539 ; 3.539 ;
+; binary_input2[0] ; SEG7_one[0] ; 4.191 ; 4.191 ; 4.191 ; 4.191 ;
+; binary_input2[0] ; SEG7_one[1] ; 4.195 ; 4.195 ; 4.195 ; 4.195 ;
+; binary_input2[0] ; SEG7_one[2] ; 4.173 ; 4.173 ; 4.173 ; 4.173 ;
+; binary_input2[0] ; SEG7_one[3] ; 4.089 ; 4.089 ; 4.089 ; 4.089 ;
+; binary_input2[0] ; SEG7_one[4] ; 4.058 ; 4.058 ; 4.058 ; 4.058 ;
+; binary_input2[0] ; SEG7_one[5] ; 4.039 ; 4.039 ; 4.039 ; 4.039 ;
+; binary_input2[0] ; SEG7_one[6] ; 4.174 ; 4.174 ; 4.174 ; 4.174 ;
+; binary_input2[0] ; SEG7_ten[1] ; 4.255 ; 4.255 ; 4.255 ; 4.255 ;
+; binary_input2[0] ; SEG7_ten[2] ; 4.276 ; 4.276 ; 4.276 ; 4.276 ;
+; binary_input2[0] ; SEG7_ten[3] ; 4.276 ; 4.276 ; 4.276 ; 4.276 ;
+; binary_input2[0] ; SEG7_ten[6] ; 4.268 ; 4.268 ; 4.268 ; 4.268 ;
+; binary_input2[1] ; SEG7_2[0]   ; 3.382 ; 3.382 ; 3.382 ; 3.382 ;
+; binary_input2[1] ; SEG7_2[1]   ; 3.359 ;       ;       ; 3.359 ;
+; binary_input2[1] ; SEG7_2[2]   ; 3.246 ; 3.246 ; 3.246 ; 3.246 ;
+; binary_input2[1] ; SEG7_2[3]   ; 3.199 ; 3.199 ; 3.199 ; 3.199 ;
+; binary_input2[1] ; SEG7_2[4]   ; 3.253 ;       ;       ; 3.253 ;
+; binary_input2[1] ; SEG7_2[5]   ; 3.454 ; 3.454 ; 3.454 ; 3.454 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 3.475 ; 3.475 ;       ;
+; binary_input2[1] ; SEG7_one[0] ; 4.130 ; 4.130 ; 4.130 ; 4.130 ;
+; binary_input2[1] ; SEG7_one[1] ; 4.134 ; 4.134 ; 4.134 ; 4.134 ;
+; binary_input2[1] ; SEG7_one[2] ; 4.112 ; 4.112 ; 4.112 ; 4.112 ;
+; binary_input2[1] ; SEG7_one[3] ; 4.028 ; 4.028 ; 4.028 ; 4.028 ;
+; binary_input2[1] ; SEG7_one[4] ; 3.997 ; 3.997 ; 3.997 ; 3.997 ;
+; binary_input2[1] ; SEG7_one[5] ; 3.978 ; 3.978 ; 3.978 ; 3.978 ;
+; binary_input2[1] ; SEG7_one[6] ; 4.113 ; 4.113 ; 4.113 ; 4.113 ;
+; binary_input2[1] ; SEG7_ten[1] ; 4.056 ; 4.056 ; 4.056 ; 4.056 ;
+; binary_input2[1] ; SEG7_ten[2] ; 4.077 ; 4.077 ; 4.077 ; 4.077 ;
+; binary_input2[1] ; SEG7_ten[3] ; 4.077 ; 4.077 ; 4.077 ; 4.077 ;
+; binary_input2[1] ; SEG7_ten[6] ; 4.069 ; 4.069 ; 4.069 ; 4.069 ;
+; binary_input2[2] ; SEG7_2[0]   ; 3.267 ; 3.267 ; 3.267 ; 3.267 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 3.253 ; 3.253 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 3.131 ;       ;       ; 3.131 ;
+; binary_input2[2] ; SEG7_2[3]   ; 3.091 ; 3.091 ; 3.091 ; 3.091 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 3.111 ; 3.111 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 3.342 ;       ;       ; 3.342 ;
+; binary_input2[2] ; SEG7_2[6]   ; 3.371 ; 3.371 ; 3.371 ; 3.371 ;
+; binary_input2[2] ; SEG7_one[0] ; 4.015 ; 4.015 ; 4.015 ; 4.015 ;
+; binary_input2[2] ; SEG7_one[1] ; 4.019 ; 4.019 ; 4.019 ; 4.019 ;
+; binary_input2[2] ; SEG7_one[2] ; 3.997 ; 3.997 ; 3.997 ; 3.997 ;
+; binary_input2[2] ; SEG7_one[3] ; 3.913 ; 3.913 ; 3.913 ; 3.913 ;
+; binary_input2[2] ; SEG7_one[4] ; 3.882 ; 3.882 ; 3.882 ; 3.882 ;
+; binary_input2[2] ; SEG7_one[5] ; 3.863 ; 3.863 ; 3.863 ; 3.863 ;
+; binary_input2[2] ; SEG7_one[6] ; 3.998 ; 3.998 ; 3.998 ; 3.998 ;
+; binary_input2[2] ; SEG7_ten[1] ; 4.079 ; 4.079 ; 4.079 ; 4.079 ;
+; binary_input2[2] ; SEG7_ten[2] ; 4.100 ; 4.100 ; 4.100 ; 4.100 ;
+; binary_input2[2] ; SEG7_ten[3] ; 4.100 ; 4.100 ; 4.100 ; 4.100 ;
+; binary_input2[2] ; SEG7_ten[6] ; 4.092 ; 4.092 ; 4.092 ; 4.092 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 3.866 ; 3.866 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 3.840 ; 3.840 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 3.730 ;       ;       ; 3.730 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 3.683 ; 3.683 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 3.716 ; 3.716 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 3.938 ; 3.938 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 3.959 ; 3.959 ;       ;
+; binary_input2[3] ; SEG7_one[0] ; 4.502 ; 4.502 ; 4.502 ; 4.502 ;
+; binary_input2[3] ; SEG7_one[1] ; 4.517 ; 4.517 ; 4.517 ; 4.517 ;
+; binary_input2[3] ; SEG7_one[2] ; 4.488 ; 4.488 ; 4.488 ; 4.488 ;
+; binary_input2[3] ; SEG7_one[3] ; 4.411 ; 4.411 ; 4.411 ; 4.411 ;
+; binary_input2[3] ; SEG7_one[4] ; 4.372 ; 4.372 ; 4.372 ; 4.372 ;
+; binary_input2[3] ; SEG7_one[5] ; 4.361 ; 4.361 ; 4.361 ; 4.361 ;
+; binary_input2[3] ; SEG7_one[6] ; 4.485 ; 4.485 ; 4.485 ; 4.485 ;
+; binary_input2[3] ; SEG7_ten[1] ; 4.289 ; 4.289 ; 4.289 ; 4.289 ;
+; binary_input2[3] ; SEG7_ten[2] ; 4.310 ; 4.310 ; 4.310 ; 4.310 ;
+; binary_input2[3] ; SEG7_ten[3] ; 4.310 ; 4.310 ; 4.310 ; 4.310 ;
+; binary_input2[3] ; SEG7_ten[6] ; 4.302 ; 4.302 ; 4.302 ; 4.302 ;
++------------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------------+
+; Progagation Delay                                                  ;
++------------------+-------------+--------+--------+--------+--------+
+; Input Port       ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------------+-------------+--------+--------+--------+--------+
+; binary_input1[0] ; SEG7_1[0]   ; 7.354  ;        ;        ; 7.354  ;
+; binary_input1[0] ; SEG7_1[1]   ; 7.386  ;        ;        ; 7.386  ;
+; binary_input1[0] ; SEG7_1[2]   ; 7.361  ;        ;        ; 7.361  ;
+; binary_input1[0] ; SEG7_1[3]   ; 7.362  ; 7.362  ; 7.362  ; 7.362  ;
+; binary_input1[0] ; SEG7_1[4]   ;        ; 7.594  ; 7.594  ;        ;
+; binary_input1[0] ; SEG7_1[5]   ; 7.558  ; 7.558  ; 7.558  ; 7.558  ;
+; binary_input1[0] ; SEG7_1[6]   ; 7.624  ; 7.624  ; 7.624  ; 7.624  ;
+; binary_input1[0] ; SEG7_one[0] ; 12.592 ; 12.592 ; 12.592 ; 12.592 ;
+; binary_input1[0] ; SEG7_one[1] ; 12.606 ; 12.606 ; 12.606 ; 12.606 ;
+; binary_input1[0] ; SEG7_one[2] ; 12.299 ; 12.268 ; 12.268 ; 12.299 ;
+; binary_input1[0] ; SEG7_one[3] ; 12.346 ; 12.346 ; 12.346 ; 12.346 ;
+; binary_input1[0] ; SEG7_one[4] ; 12.291 ; 12.291 ; 12.291 ; 12.291 ;
+; binary_input1[0] ; SEG7_one[5] ; 12.294 ; 12.294 ; 12.294 ; 12.294 ;
+; binary_input1[0] ; SEG7_one[6] ; 12.550 ; 12.550 ; 12.550 ; 12.550 ;
+; binary_input1[0] ; SEG7_ten[1] ; 11.799 ; 11.799 ; 11.799 ; 11.799 ;
+; binary_input1[0] ; SEG7_ten[2] ; 11.819 ; 11.819 ; 11.819 ; 11.819 ;
+; binary_input1[0] ; SEG7_ten[3] ; 11.819 ; 11.819 ; 11.819 ; 11.819 ;
+; binary_input1[0] ; SEG7_ten[6] ; 11.834 ; 11.834 ; 11.834 ; 11.834 ;
+; binary_input1[1] ; SEG7_1[0]   ; 7.122  ; 7.122  ; 7.122  ; 7.122  ;
+; binary_input1[1] ; SEG7_1[1]   ; 7.153  ;        ;        ; 7.153  ;
+; binary_input1[1] ; SEG7_1[2]   ; 7.128  ; 7.128  ; 7.128  ; 7.128  ;
+; binary_input1[1] ; SEG7_1[3]   ; 7.106  ; 7.106  ; 7.106  ; 7.106  ;
+; binary_input1[1] ; SEG7_1[4]   ; 7.405  ;        ;        ; 7.405  ;
+; binary_input1[1] ; SEG7_1[5]   ; 7.332  ; 7.332  ; 7.332  ; 7.332  ;
+; binary_input1[1] ; SEG7_1[6]   ;        ; 7.356  ; 7.356  ;        ;
+; binary_input1[1] ; SEG7_one[0] ; 12.359 ; 12.359 ; 12.359 ; 12.359 ;
+; binary_input1[1] ; SEG7_one[1] ; 12.373 ; 12.373 ; 12.373 ; 12.373 ;
+; binary_input1[1] ; SEG7_one[2] ; 12.066 ; 12.035 ; 12.035 ; 12.066 ;
+; binary_input1[1] ; SEG7_one[3] ; 12.113 ; 12.113 ; 12.113 ; 12.113 ;
+; binary_input1[1] ; SEG7_one[4] ; 12.058 ; 12.058 ; 12.058 ; 12.058 ;
+; binary_input1[1] ; SEG7_one[5] ; 12.061 ; 12.061 ; 12.061 ; 12.061 ;
+; binary_input1[1] ; SEG7_one[6] ; 12.317 ; 12.317 ; 12.317 ; 12.317 ;
+; binary_input1[1] ; SEG7_ten[1] ; 11.566 ; 11.566 ; 11.566 ; 11.566 ;
+; binary_input1[1] ; SEG7_ten[2] ; 11.586 ; 11.586 ; 11.586 ; 11.586 ;
+; binary_input1[1] ; SEG7_ten[3] ; 11.586 ; 11.586 ; 11.586 ; 11.586 ;
+; binary_input1[1] ; SEG7_ten[6] ; 11.601 ; 11.601 ; 11.601 ; 11.601 ;
+; binary_input1[2] ; SEG7_1[0]   ; 6.785  ; 6.785  ; 6.785  ; 6.785  ;
+; binary_input1[2] ; SEG7_1[1]   ;        ; 6.817  ; 6.817  ;        ;
+; binary_input1[2] ; SEG7_1[2]   ; 6.792  ;        ;        ; 6.792  ;
+; binary_input1[2] ; SEG7_1[3]   ; 6.789  ; 6.789  ; 6.789  ; 6.789  ;
+; binary_input1[2] ; SEG7_1[4]   ;        ; 7.061  ; 7.061  ;        ;
+; binary_input1[2] ; SEG7_1[5]   ; 7.015  ;        ;        ; 7.015  ;
+; binary_input1[2] ; SEG7_1[6]   ; 7.054  ; 7.054  ; 7.054  ; 7.054  ;
+; binary_input1[2] ; SEG7_one[0] ; 12.023 ; 12.023 ; 12.023 ; 12.023 ;
+; binary_input1[2] ; SEG7_one[1] ; 12.037 ; 12.037 ; 12.037 ; 12.037 ;
+; binary_input1[2] ; SEG7_one[2] ; 11.730 ; 11.699 ; 11.699 ; 11.730 ;
+; binary_input1[2] ; SEG7_one[3] ; 11.777 ; 11.777 ; 11.777 ; 11.777 ;
+; binary_input1[2] ; SEG7_one[4] ; 11.722 ; 11.722 ; 11.722 ; 11.722 ;
+; binary_input1[2] ; SEG7_one[5] ; 11.725 ; 11.725 ; 11.725 ; 11.725 ;
+; binary_input1[2] ; SEG7_one[6] ; 11.981 ; 11.981 ; 11.981 ; 11.981 ;
+; binary_input1[2] ; SEG7_ten[1] ; 11.230 ; 11.230 ; 11.230 ; 11.230 ;
+; binary_input1[2] ; SEG7_ten[2] ; 11.250 ; 11.250 ; 11.250 ; 11.250 ;
+; binary_input1[2] ; SEG7_ten[3] ; 11.250 ; 11.250 ; 11.250 ; 11.250 ;
+; binary_input1[2] ; SEG7_ten[6] ; 11.265 ; 11.265 ; 11.265 ; 11.265 ;
+; binary_input1[3] ; SEG7_1[0]   ;        ; 5.779  ; 5.779  ;        ;
+; binary_input1[3] ; SEG7_1[1]   ;        ; 5.839  ; 5.839  ;        ;
+; binary_input1[3] ; SEG7_1[2]   ; 5.811  ;        ;        ; 5.811  ;
+; binary_input1[3] ; SEG7_1[3]   ;        ; 5.813  ; 5.813  ;        ;
+; binary_input1[3] ; SEG7_1[4]   ;        ; 6.083  ; 6.083  ;        ;
+; binary_input1[3] ; SEG7_1[5]   ;        ; 6.037  ; 6.037  ;        ;
+; binary_input1[3] ; SEG7_1[6]   ;        ; 6.077  ; 6.077  ;        ;
+; binary_input1[3] ; SEG7_one[0] ; 11.042 ; 11.042 ; 11.042 ; 11.042 ;
+; binary_input1[3] ; SEG7_one[1] ; 11.056 ; 11.056 ; 11.056 ; 11.056 ;
+; binary_input1[3] ; SEG7_one[2] ; 10.749 ; 10.741 ; 10.741 ; 10.749 ;
+; binary_input1[3] ; SEG7_one[3] ; 10.796 ; 10.796 ; 10.796 ; 10.796 ;
+; binary_input1[3] ; SEG7_one[4] ; 10.741 ; 10.741 ; 10.741 ; 10.741 ;
+; binary_input1[3] ; SEG7_one[5] ; 10.744 ; 10.744 ; 10.744 ; 10.744 ;
+; binary_input1[3] ; SEG7_one[6] ; 11.000 ; 11.000 ; 11.000 ; 11.000 ;
+; binary_input1[3] ; SEG7_ten[1] ; 10.249 ; 10.249 ; 10.249 ; 10.249 ;
+; binary_input1[3] ; SEG7_ten[2] ; 10.269 ; 10.269 ; 10.269 ; 10.269 ;
+; binary_input1[3] ; SEG7_ten[3] ; 10.269 ; 10.269 ; 10.269 ; 10.269 ;
+; binary_input1[3] ; SEG7_ten[6] ; 10.284 ; 10.284 ; 10.284 ; 10.284 ;
+; binary_input2[0] ; SEG7_2[0]   ; 6.699  ;        ;        ; 6.699  ;
+; binary_input2[0] ; SEG7_2[1]   ; 6.677  ;        ;        ; 6.677  ;
+; binary_input2[0] ; SEG7_2[2]   ; 6.403  ;        ;        ; 6.403  ;
+; binary_input2[0] ; SEG7_2[3]   ; 6.335  ; 6.335  ; 6.335  ; 6.335  ;
+; binary_input2[0] ; SEG7_2[4]   ;        ; 6.331  ; 6.331  ;        ;
+; binary_input2[0] ; SEG7_2[5]   ; 6.745  ; 6.745  ; 6.745  ; 6.745  ;
+; binary_input2[0] ; SEG7_2[6]   ; 6.824  ; 6.824  ; 6.824  ; 6.824  ;
+; binary_input2[0] ; SEG7_one[0] ; 9.872  ; 9.872  ; 9.872  ; 9.872  ;
+; binary_input2[0] ; SEG7_one[1] ; 9.886  ; 9.886  ; 9.886  ; 9.886  ;
+; binary_input2[0] ; SEG7_one[2] ; 9.579  ; 9.548  ; 9.548  ; 9.579  ;
+; binary_input2[0] ; SEG7_one[3] ; 9.626  ; 9.626  ; 9.626  ; 9.626  ;
+; binary_input2[0] ; SEG7_one[4] ; 9.571  ; 9.571  ; 9.571  ; 9.571  ;
+; binary_input2[0] ; SEG7_one[5] ; 9.574  ; 9.574  ; 9.574  ; 9.574  ;
+; binary_input2[0] ; SEG7_one[6] ; 9.830  ; 9.830  ; 9.830  ; 9.830  ;
+; binary_input2[0] ; SEG7_ten[1] ; 9.079  ; 9.079  ; 9.079  ; 9.079  ;
+; binary_input2[0] ; SEG7_ten[2] ; 9.099  ; 9.099  ; 9.099  ; 9.099  ;
+; binary_input2[0] ; SEG7_ten[3] ; 9.099  ; 9.099  ; 9.099  ; 9.099  ;
+; binary_input2[0] ; SEG7_ten[6] ; 9.114  ; 9.114  ; 9.114  ; 9.114  ;
+; binary_input2[1] ; SEG7_2[0]   ; 6.552  ; 6.552  ; 6.552  ; 6.552  ;
+; binary_input2[1] ; SEG7_2[1]   ; 6.524  ;        ;        ; 6.524  ;
+; binary_input2[1] ; SEG7_2[2]   ; 6.256  ; 6.256  ; 6.256  ; 6.256  ;
+; binary_input2[1] ; SEG7_2[3]   ; 6.191  ; 6.191  ; 6.191  ; 6.191  ;
+; binary_input2[1] ; SEG7_2[4]   ; 6.235  ;        ;        ; 6.235  ;
+; binary_input2[1] ; SEG7_2[5]   ; 6.634  ; 6.634  ; 6.634  ; 6.634  ;
+; binary_input2[1] ; SEG7_2[6]   ;        ; 6.674  ; 6.674  ;        ;
+; binary_input2[1] ; SEG7_one[0] ; 9.726  ; 9.726  ; 9.726  ; 9.726  ;
+; binary_input2[1] ; SEG7_one[1] ; 9.740  ; 9.740  ; 9.740  ; 9.740  ;
+; binary_input2[1] ; SEG7_one[2] ; 9.433  ; 9.402  ; 9.402  ; 9.433  ;
+; binary_input2[1] ; SEG7_one[3] ; 9.480  ; 9.480  ; 9.480  ; 9.480  ;
+; binary_input2[1] ; SEG7_one[4] ; 9.425  ; 9.425  ; 9.425  ; 9.425  ;
+; binary_input2[1] ; SEG7_one[5] ; 9.428  ; 9.428  ; 9.428  ; 9.428  ;
+; binary_input2[1] ; SEG7_one[6] ; 9.684  ; 9.684  ; 9.684  ; 9.684  ;
+; binary_input2[1] ; SEG7_ten[1] ; 8.933  ; 8.933  ; 8.933  ; 8.933  ;
+; binary_input2[1] ; SEG7_ten[2] ; 8.953  ; 8.953  ; 8.953  ; 8.953  ;
+; binary_input2[1] ; SEG7_ten[3] ; 8.953  ; 8.953  ; 8.953  ; 8.953  ;
+; binary_input2[1] ; SEG7_ten[6] ; 8.968  ; 8.968  ; 8.968  ; 8.968  ;
+; binary_input2[2] ; SEG7_2[0]   ; 6.306  ; 6.306  ; 6.306  ; 6.306  ;
+; binary_input2[2] ; SEG7_2[1]   ;        ; 6.294  ; 6.294  ;        ;
+; binary_input2[2] ; SEG7_2[2]   ; 6.010  ;        ;        ; 6.010  ;
+; binary_input2[2] ; SEG7_2[3]   ; 5.950  ; 5.950  ; 5.950  ; 5.950  ;
+; binary_input2[2] ; SEG7_2[4]   ;        ; 5.988  ; 5.988  ;        ;
+; binary_input2[2] ; SEG7_2[5]   ; 6.392  ;        ;        ; 6.392  ;
+; binary_input2[2] ; SEG7_2[6]   ; 6.440  ; 6.440  ; 6.440  ; 6.440  ;
+; binary_input2[2] ; SEG7_one[0] ; 9.621  ; 9.621  ; 9.621  ; 9.621  ;
+; binary_input2[2] ; SEG7_one[1] ; 9.635  ; 9.635  ; 9.635  ; 9.635  ;
+; binary_input2[2] ; SEG7_one[2] ; 9.328  ; 9.297  ; 9.297  ; 9.328  ;
+; binary_input2[2] ; SEG7_one[3] ; 9.375  ; 9.375  ; 9.375  ; 9.375  ;
+; binary_input2[2] ; SEG7_one[4] ; 9.320  ; 9.320  ; 9.320  ; 9.320  ;
+; binary_input2[2] ; SEG7_one[5] ; 9.323  ; 9.323  ; 9.323  ; 9.323  ;
+; binary_input2[2] ; SEG7_one[6] ; 9.579  ; 9.579  ; 9.579  ; 9.579  ;
+; binary_input2[2] ; SEG7_ten[1] ; 8.828  ; 8.828  ; 8.828  ; 8.828  ;
+; binary_input2[2] ; SEG7_ten[2] ; 8.848  ; 8.848  ; 8.848  ; 8.848  ;
+; binary_input2[2] ; SEG7_ten[3] ; 8.848  ; 8.848  ; 8.848  ; 8.848  ;
+; binary_input2[2] ; SEG7_ten[6] ; 8.863  ; 8.863  ; 8.863  ; 8.863  ;
+; binary_input2[3] ; SEG7_2[0]   ;        ; 7.353  ; 7.353  ;        ;
+; binary_input2[3] ; SEG7_2[1]   ;        ; 7.286  ; 7.286  ;        ;
+; binary_input2[3] ; SEG7_2[2]   ; 7.058  ;        ;        ; 7.058  ;
+; binary_input2[3] ; SEG7_2[3]   ;        ; 6.951  ; 6.951  ;        ;
+; binary_input2[3] ; SEG7_2[4]   ;        ; 6.996  ; 6.996  ;        ;
+; binary_input2[3] ; SEG7_2[5]   ;        ; 7.395  ; 7.395  ;        ;
+; binary_input2[3] ; SEG7_2[6]   ;        ; 7.435  ; 7.435  ;        ;
+; binary_input2[3] ; SEG7_one[0] ; 10.527 ; 10.527 ; 10.527 ; 10.527 ;
+; binary_input2[3] ; SEG7_one[1] ; 10.541 ; 10.541 ; 10.541 ; 10.541 ;
+; binary_input2[3] ; SEG7_one[2] ; 10.234 ; 10.203 ; 10.203 ; 10.234 ;
+; binary_input2[3] ; SEG7_one[3] ; 10.281 ; 10.281 ; 10.281 ; 10.281 ;
+; binary_input2[3] ; SEG7_one[4] ; 10.226 ; 10.226 ; 10.226 ; 10.226 ;
+; binary_input2[3] ; SEG7_one[5] ; 10.229 ; 10.229 ; 10.229 ; 10.229 ;
+; binary_input2[3] ; SEG7_one[6] ; 10.485 ; 10.485 ; 10.485 ; 10.485 ;
+; binary_input2[3] ; SEG7_ten[1] ; 9.734  ; 9.734  ; 9.734  ; 9.734  ;
+; binary_input2[3] ; SEG7_ten[2] ; 9.754  ; 9.754  ; 9.754  ; 9.754  ;
+; binary_input2[3] ; SEG7_ten[3] ; 9.754  ; 9.754  ; 9.754  ; 9.754  ;
+; binary_input2[3] ; SEG7_ten[6] ; 9.769  ; 9.769  ; 9.769  ; 9.769  ;
++------------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------------+
+; Minimum Progagation Delay                                      ;
++------------------+-------------+-------+-------+-------+-------+
+; Input Port       ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------------+-------------+-------+-------+-------+-------+
+; binary_input1[0] ; SEG7_1[0]   ; 3.845 ;       ;       ; 3.845 ;
+; binary_input1[0] ; SEG7_1[1]   ; 3.866 ;       ;       ; 3.866 ;
+; binary_input1[0] ; SEG7_1[2]   ; 3.853 ;       ;       ; 3.853 ;
+; binary_input1[0] ; SEG7_1[3]   ; 3.859 ; 3.859 ; 3.859 ; 3.859 ;
+; binary_input1[0] ; SEG7_1[4]   ;       ; 3.986 ; 3.986 ;       ;
+; binary_input1[0] ; SEG7_1[5]   ; 3.950 ; 3.950 ; 3.950 ; 3.950 ;
+; binary_input1[0] ; SEG7_1[6]   ; 3.982 ; 3.982 ; 3.982 ; 3.982 ;
+; binary_input1[0] ; SEG7_one[0] ; 5.650 ; 5.650 ; 5.650 ; 5.650 ;
+; binary_input1[0] ; SEG7_one[1] ; 5.654 ; 5.654 ; 5.654 ; 5.654 ;
+; binary_input1[0] ; SEG7_one[2] ; 5.632 ; 5.632 ; 5.632 ; 5.632 ;
+; binary_input1[0] ; SEG7_one[3] ; 5.548 ; 5.548 ; 5.548 ; 5.548 ;
+; binary_input1[0] ; SEG7_one[4] ; 5.517 ; 5.517 ; 5.517 ; 5.517 ;
+; binary_input1[0] ; SEG7_one[5] ; 5.498 ; 5.498 ; 5.498 ; 5.498 ;
+; binary_input1[0] ; SEG7_one[6] ; 5.633 ; 5.633 ; 5.633 ; 5.633 ;
+; binary_input1[0] ; SEG7_ten[1] ; 5.709 ; 5.709 ; 5.709 ; 5.709 ;
+; binary_input1[0] ; SEG7_ten[2] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; binary_input1[0] ; SEG7_ten[3] ; 5.730 ; 5.730 ; 5.730 ; 5.730 ;
+; binary_input1[0] ; SEG7_ten[6] ; 5.722 ; 5.722 ; 5.722 ; 5.722 ;
+; binary_input1[1] ; SEG7_1[0]   ; 3.727 ; 3.727 ; 3.727 ; 3.727 ;
+; binary_input1[1] ; SEG7_1[1]   ; 3.748 ;       ;       ; 3.748 ;
+; binary_input1[1] ; SEG7_1[2]   ; 3.733 ; 3.733 ; 3.733 ; 3.733 ;
+; binary_input1[1] ; SEG7_1[3]   ; 3.741 ; 3.741 ; 3.741 ; 3.741 ;
+; binary_input1[1] ; SEG7_1[4]   ; 3.870 ;       ;       ; 3.870 ;
+; binary_input1[1] ; SEG7_1[5]   ; 3.829 ; 3.829 ; 3.829 ; 3.829 ;
+; binary_input1[1] ; SEG7_1[6]   ;       ; 3.865 ; 3.865 ;       ;
+; binary_input1[1] ; SEG7_one[0] ; 5.312 ; 5.312 ; 5.312 ; 5.312 ;
+; binary_input1[1] ; SEG7_one[1] ; 5.327 ; 5.327 ; 5.327 ; 5.327 ;
+; binary_input1[1] ; SEG7_one[2] ; 5.294 ; 5.294 ; 5.294 ; 5.294 ;
+; binary_input1[1] ; SEG7_one[3] ; 5.221 ; 5.221 ; 5.221 ; 5.221 ;
+; binary_input1[1] ; SEG7_one[4] ; 5.182 ; 5.182 ; 5.182 ; 5.182 ;
+; binary_input1[1] ; SEG7_one[5] ; 5.171 ; 5.171 ; 5.171 ; 5.171 ;
+; binary_input1[1] ; SEG7_one[6] ; 5.295 ; 5.295 ; 5.295 ; 5.295 ;
+; binary_input1[1] ; SEG7_ten[1] ; 5.102 ; 5.102 ; 5.102 ; 5.102 ;
+; binary_input1[1] ; SEG7_ten[2] ; 5.123 ; 5.123 ; 5.123 ; 5.123 ;
+; binary_input1[1] ; SEG7_ten[3] ; 5.123 ; 5.123 ; 5.123 ; 5.123 ;
+; binary_input1[1] ; SEG7_ten[6] ; 5.115 ; 5.115 ; 5.115 ; 5.115 ;
+; binary_input1[2] ; SEG7_1[0]   ; 3.587 ; 3.587 ; 3.587 ; 3.587 ;
+; binary_input1[2] ; SEG7_1[1]   ;       ; 3.602 ; 3.602 ;       ;
+; binary_input1[2] ; SEG7_1[2]   ; 3.594 ;       ;       ; 3.594 ;
+; binary_input1[2] ; SEG7_1[3]   ; 3.591 ; 3.591 ; 3.591 ; 3.591 ;
+; binary_input1[2] ; SEG7_1[4]   ;       ; 3.714 ; 3.714 ;       ;
+; binary_input1[2] ; SEG7_1[5]   ; 3.679 ;       ;       ; 3.679 ;
+; binary_input1[2] ; SEG7_1[6]   ; 3.719 ; 3.719 ; 3.719 ; 3.719 ;
+; binary_input1[2] ; SEG7_one[0] ; 5.392 ; 5.392 ; 5.392 ; 5.392 ;
+; binary_input1[2] ; SEG7_one[1] ; 5.396 ; 5.396 ; 5.396 ; 5.396 ;
+; binary_input1[2] ; SEG7_one[2] ; 5.374 ; 5.374 ; 5.374 ; 5.374 ;
+; binary_input1[2] ; SEG7_one[3] ; 5.290 ; 5.290 ; 5.290 ; 5.290 ;
+; binary_input1[2] ; SEG7_one[4] ; 5.259 ; 5.259 ; 5.259 ; 5.259 ;
+; binary_input1[2] ; SEG7_one[5] ; 5.240 ; 5.240 ; 5.240 ; 5.240 ;
+; binary_input1[2] ; SEG7_one[6] ; 5.375 ; 5.375 ; 5.375 ; 5.375 ;
+; binary_input1[2] ; SEG7_ten[1] ; 5.451 ; 5.451 ; 5.451 ; 5.451 ;
+; binary_input1[2] ; SEG7_ten[2] ; 5.472 ; 5.472 ; 5.472 ; 5.472 ;
+; binary_input1[2] ; SEG7_ten[3] ; 5.472 ; 5.472 ; 5.472 ; 5.472 ;
+; binary_input1[2] ; SEG7_ten[6] ; 5.464 ; 5.464 ; 5.464 ; 5.464 ;
+; binary_input1[3] ; SEG7_1[0]   ;       ; 3.072 ; 3.072 ;       ;
+; binary_input1[3] ; SEG7_1[1]   ;       ; 3.088 ; 3.088 ;       ;
+; binary_input1[3] ; SEG7_1[2]   ; 3.080 ;       ;       ; 3.080 ;
+; binary_input1[3] ; SEG7_1[3]   ;       ; 3.076 ; 3.076 ;       ;
+; binary_input1[3] ; SEG7_1[4]   ;       ; 3.200 ; 3.200 ;       ;
+; binary_input1[3] ; SEG7_1[5]   ;       ; 3.165 ; 3.165 ;       ;
+; binary_input1[3] ; SEG7_1[6]   ;       ; 3.202 ; 3.202 ;       ;
+; binary_input1[3] ; SEG7_one[0] ; 3.865 ; 3.865 ; 3.865 ; 3.865 ;
+; binary_input1[3] ; SEG7_one[1] ; 3.880 ; 3.880 ; 3.880 ; 3.880 ;
+; binary_input1[3] ; SEG7_one[2] ; 3.851 ; 3.851 ; 3.851 ; 3.851 ;
+; binary_input1[3] ; SEG7_one[3] ; 3.774 ; 3.774 ; 3.774 ; 3.774 ;
+; binary_input1[3] ; SEG7_one[4] ; 3.735 ; 3.735 ; 3.735 ; 3.735 ;
+; binary_input1[3] ; SEG7_one[5] ; 3.724 ; 3.724 ; 3.724 ; 3.724 ;
+; binary_input1[3] ; SEG7_one[6] ; 3.848 ; 3.848 ; 3.848 ; 3.848 ;
+; binary_input1[3] ; SEG7_ten[1] ; 3.652 ; 3.652 ; 3.652 ; 3.652 ;
+; binary_input1[3] ; SEG7_ten[2] ; 3.673 ; 3.673 ; 3.673 ; 3.673 ;
+; binary_input1[3] ; SEG7_ten[3] ; 3.673 ; 3.673 ; 3.673 ; 3.673 ;
+; binary_input1[3] ; SEG7_ten[6] ; 3.665 ; 3.665 ; 3.665 ; 3.665 ;
+; binary_input2[0] ; SEG7_2[0]   ; 3.440 ;       ;       ; 3.440 ;
+; binary_input2[0] ; SEG7_2[1]   ; 3.427 ;       ;       ; 3.427 ;
+; binary_input2[0] ; SEG7_2[2]   ; 3.303 ;       ;       ; 3.303 ;
+; binary_input2[0] ; SEG7_2[3]   ; 3.259 ; 3.259 ; 3.259 ; 3.259 ;
+; binary_input2[0] ; SEG7_2[4]   ;       ; 3.288 ; 3.288 ;       ;
+; binary_input2[0] ; SEG7_2[5]   ; 3.510 ; 3.510 ; 3.510 ; 3.510 ;
+; binary_input2[0] ; SEG7_2[6]   ; 3.539 ; 3.539 ; 3.539 ; 3.539 ;
+; binary_input2[0] ; SEG7_one[0] ; 4.191 ; 4.191 ; 4.191 ; 4.191 ;
+; binary_input2[0] ; SEG7_one[1] ; 4.195 ; 4.195 ; 4.195 ; 4.195 ;
+; binary_input2[0] ; SEG7_one[2] ; 4.173 ; 4.173 ; 4.173 ; 4.173 ;
+; binary_input2[0] ; SEG7_one[3] ; 4.089 ; 4.089 ; 4.089 ; 4.089 ;
+; binary_input2[0] ; SEG7_one[4] ; 4.058 ; 4.058 ; 4.058 ; 4.058 ;
+; binary_input2[0] ; SEG7_one[5] ; 4.039 ; 4.039 ; 4.039 ; 4.039 ;
+; binary_input2[0] ; SEG7_one[6] ; 4.174 ; 4.174 ; 4.174 ; 4.174 ;
+; binary_input2[0] ; SEG7_ten[1] ; 4.255 ; 4.255 ; 4.255 ; 4.255 ;
+; binary_input2[0] ; SEG7_ten[2] ; 4.276 ; 4.276 ; 4.276 ; 4.276 ;
+; binary_input2[0] ; SEG7_ten[3] ; 4.276 ; 4.276 ; 4.276 ; 4.276 ;
+; binary_input2[0] ; SEG7_ten[6] ; 4.268 ; 4.268 ; 4.268 ; 4.268 ;
+; binary_input2[1] ; SEG7_2[0]   ; 3.382 ; 3.382 ; 3.382 ; 3.382 ;
+; binary_input2[1] ; SEG7_2[1]   ; 3.359 ;       ;       ; 3.359 ;
+; binary_input2[1] ; SEG7_2[2]   ; 3.246 ; 3.246 ; 3.246 ; 3.246 ;
+; binary_input2[1] ; SEG7_2[3]   ; 3.199 ; 3.199 ; 3.199 ; 3.199 ;
+; binary_input2[1] ; SEG7_2[4]   ; 3.253 ;       ;       ; 3.253 ;
+; binary_input2[1] ; SEG7_2[5]   ; 3.454 ; 3.454 ; 3.454 ; 3.454 ;
+; binary_input2[1] ; SEG7_2[6]   ;       ; 3.475 ; 3.475 ;       ;
+; binary_input2[1] ; SEG7_one[0] ; 4.130 ; 4.130 ; 4.130 ; 4.130 ;
+; binary_input2[1] ; SEG7_one[1] ; 4.134 ; 4.134 ; 4.134 ; 4.134 ;
+; binary_input2[1] ; SEG7_one[2] ; 4.112 ; 4.112 ; 4.112 ; 4.112 ;
+; binary_input2[1] ; SEG7_one[3] ; 4.028 ; 4.028 ; 4.028 ; 4.028 ;
+; binary_input2[1] ; SEG7_one[4] ; 3.997 ; 3.997 ; 3.997 ; 3.997 ;
+; binary_input2[1] ; SEG7_one[5] ; 3.978 ; 3.978 ; 3.978 ; 3.978 ;
+; binary_input2[1] ; SEG7_one[6] ; 4.113 ; 4.113 ; 4.113 ; 4.113 ;
+; binary_input2[1] ; SEG7_ten[1] ; 4.056 ; 4.056 ; 4.056 ; 4.056 ;
+; binary_input2[1] ; SEG7_ten[2] ; 4.077 ; 4.077 ; 4.077 ; 4.077 ;
+; binary_input2[1] ; SEG7_ten[3] ; 4.077 ; 4.077 ; 4.077 ; 4.077 ;
+; binary_input2[1] ; SEG7_ten[6] ; 4.069 ; 4.069 ; 4.069 ; 4.069 ;
+; binary_input2[2] ; SEG7_2[0]   ; 3.267 ; 3.267 ; 3.267 ; 3.267 ;
+; binary_input2[2] ; SEG7_2[1]   ;       ; 3.253 ; 3.253 ;       ;
+; binary_input2[2] ; SEG7_2[2]   ; 3.131 ;       ;       ; 3.131 ;
+; binary_input2[2] ; SEG7_2[3]   ; 3.091 ; 3.091 ; 3.091 ; 3.091 ;
+; binary_input2[2] ; SEG7_2[4]   ;       ; 3.111 ; 3.111 ;       ;
+; binary_input2[2] ; SEG7_2[5]   ; 3.342 ;       ;       ; 3.342 ;
+; binary_input2[2] ; SEG7_2[6]   ; 3.371 ; 3.371 ; 3.371 ; 3.371 ;
+; binary_input2[2] ; SEG7_one[0] ; 4.015 ; 4.015 ; 4.015 ; 4.015 ;
+; binary_input2[2] ; SEG7_one[1] ; 4.019 ; 4.019 ; 4.019 ; 4.019 ;
+; binary_input2[2] ; SEG7_one[2] ; 3.997 ; 3.997 ; 3.997 ; 3.997 ;
+; binary_input2[2] ; SEG7_one[3] ; 3.913 ; 3.913 ; 3.913 ; 3.913 ;
+; binary_input2[2] ; SEG7_one[4] ; 3.882 ; 3.882 ; 3.882 ; 3.882 ;
+; binary_input2[2] ; SEG7_one[5] ; 3.863 ; 3.863 ; 3.863 ; 3.863 ;
+; binary_input2[2] ; SEG7_one[6] ; 3.998 ; 3.998 ; 3.998 ; 3.998 ;
+; binary_input2[2] ; SEG7_ten[1] ; 4.079 ; 4.079 ; 4.079 ; 4.079 ;
+; binary_input2[2] ; SEG7_ten[2] ; 4.100 ; 4.100 ; 4.100 ; 4.100 ;
+; binary_input2[2] ; SEG7_ten[3] ; 4.100 ; 4.100 ; 4.100 ; 4.100 ;
+; binary_input2[2] ; SEG7_ten[6] ; 4.092 ; 4.092 ; 4.092 ; 4.092 ;
+; binary_input2[3] ; SEG7_2[0]   ;       ; 3.866 ; 3.866 ;       ;
+; binary_input2[3] ; SEG7_2[1]   ;       ; 3.840 ; 3.840 ;       ;
+; binary_input2[3] ; SEG7_2[2]   ; 3.730 ;       ;       ; 3.730 ;
+; binary_input2[3] ; SEG7_2[3]   ;       ; 3.683 ; 3.683 ;       ;
+; binary_input2[3] ; SEG7_2[4]   ;       ; 3.716 ; 3.716 ;       ;
+; binary_input2[3] ; SEG7_2[5]   ;       ; 3.938 ; 3.938 ;       ;
+; binary_input2[3] ; SEG7_2[6]   ;       ; 3.959 ; 3.959 ;       ;
+; binary_input2[3] ; SEG7_one[0] ; 4.502 ; 4.502 ; 4.502 ; 4.502 ;
+; binary_input2[3] ; SEG7_one[1] ; 4.517 ; 4.517 ; 4.517 ; 4.517 ;
+; binary_input2[3] ; SEG7_one[2] ; 4.488 ; 4.488 ; 4.488 ; 4.488 ;
+; binary_input2[3] ; SEG7_one[3] ; 4.411 ; 4.411 ; 4.411 ; 4.411 ;
+; binary_input2[3] ; SEG7_one[4] ; 4.372 ; 4.372 ; 4.372 ; 4.372 ;
+; binary_input2[3] ; SEG7_one[5] ; 4.361 ; 4.361 ; 4.361 ; 4.361 ;
+; binary_input2[3] ; SEG7_one[6] ; 4.485 ; 4.485 ; 4.485 ; 4.485 ;
+; binary_input2[3] ; SEG7_ten[1] ; 4.289 ; 4.289 ; 4.289 ; 4.289 ;
+; binary_input2[3] ; SEG7_ten[2] ; 4.310 ; 4.310 ; 4.310 ; 4.310 ;
+; binary_input2[3] ; SEG7_ten[3] ; 4.310 ; 4.310 ; 4.310 ; 4.310 ;
+; binary_input2[3] ; SEG7_ten[6] ; 4.302 ; 4.302 ; 4.302 ; 4.302 ;
++------------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 144   ; 144  ;
+; Unconstrained Output Ports      ; 25    ; 25   ;
+; Unconstrained Output Port Paths ; 144   ; 144  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
+    Info: Processing started: Fri Oct 04 00:02:26 2013
+Info: Command: quartus_sta BCD_Adder -c BCD_Adder
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'BCD_Adder.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 324 megabytes
+    Info: Processing ended: Fri Oct 04 00:02:28 2013
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

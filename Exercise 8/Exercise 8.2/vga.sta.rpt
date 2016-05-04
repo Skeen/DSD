@@ -1,0 +1,1959 @@
+TimeQuest Timing Analyzer report for vga
+Wed Dec 04 15:31:13 2013
+Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk25'
+ 12. Slow Model Setup: 'hSyncOut'
+ 13. Slow Model Setup: 'clk'
+ 14. Slow Model Hold: 'clk'
+ 15. Slow Model Hold: 'clk25'
+ 16. Slow Model Hold: 'hSyncOut'
+ 17. Slow Model Minimum Pulse Width: 'clk'
+ 18. Slow Model Minimum Pulse Width: 'clk25'
+ 19. Slow Model Minimum Pulse Width: 'hSyncOut'
+ 20. Setup Times
+ 21. Hold Times
+ 22. Clock to Output Times
+ 23. Minimum Clock to Output Times
+ 24. Fast Model Setup Summary
+ 25. Fast Model Hold Summary
+ 26. Fast Model Recovery Summary
+ 27. Fast Model Removal Summary
+ 28. Fast Model Minimum Pulse Width Summary
+ 29. Fast Model Setup: 'clk25'
+ 30. Fast Model Setup: 'hSyncOut'
+ 31. Fast Model Setup: 'clk'
+ 32. Fast Model Hold: 'clk'
+ 33. Fast Model Hold: 'clk25'
+ 34. Fast Model Hold: 'hSyncOut'
+ 35. Fast Model Minimum Pulse Width: 'clk'
+ 36. Fast Model Minimum Pulse Width: 'clk25'
+ 37. Fast Model Minimum Pulse Width: 'hSyncOut'
+ 38. Setup Times
+ 39. Hold Times
+ 40. Clock to Output Times
+ 41. Minimum Clock to Output Times
+ 42. Multicorner Timing Analysis Summary
+ 43. Setup Times
+ 44. Hold Times
+ 45. Clock to Output Times
+ 46. Minimum Clock to Output Times
+ 47. Setup Transfers
+ 48. Hold Transfers
+ 49. Report TCCS
+ 50. Report RSKM
+ 51. Unconstrained Paths
+ 52. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                      ;
++--------------------+---------------------------------------------------+
+; Quartus II Version ; Version 12.1 Build 177 11/07/2012 SJ Full Version ;
+; Revision Name      ; vga                                               ;
+; Device Family      ; Cyclone II                                        ;
+; Device Name        ; EP2C35F672C8                                      ;
+; Timing Models      ; Final                                             ;
+; Delay Model        ; Combined                                          ;
+; Rise/Fall Delays   ; Unavailable                                       ;
++--------------------+---------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ; < 0.1%      ;
+;     5-8 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }      ;
+; clk25      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk25 }    ;
+; hSyncOut   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { hSyncOut } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 235.4 MHz  ; 235.4 MHz       ; clk25      ;      ;
+; 263.37 MHz ; 263.37 MHz      ; hSyncOut   ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------+
+; Slow Model Setup Summary          ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; clk25    ; -3.248 ; -31.346       ;
+; hSyncOut ; -2.797 ; -29.734       ;
+; clk      ; 2.337  ; 0.000         ;
++----------+--------+---------------+
+
+
++-----------------------------------+
+; Slow Model Hold Summary           ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; clk      ; -2.103 ; -2.103        ;
+; clk25    ; 0.773  ; 0.000         ;
+; hSyncOut ; 1.052  ; 0.000         ;
++----------+--------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; clk      ; -1.941 ; -3.425             ;
+; clk25    ; -0.742 ; -17.808            ;
+; hSyncOut ; -0.742 ; -17.808            ;
++----------+--------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk25'                                                                                        ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; -3.248 ; hSyncCounter[2] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 4.288      ;
+; -3.248 ; hSyncCounter[2] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 4.288      ;
+; -3.107 ; hSyncCounter[1] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 4.147      ;
+; -3.107 ; hSyncCounter[1] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 4.147      ;
+; -3.074 ; hSyncCounter[9] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 4.114      ;
+; -3.074 ; hSyncCounter[9] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 4.114      ;
+; -2.902 ; hSyncCounter[6] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.942      ;
+; -2.902 ; hSyncCounter[6] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.942      ;
+; -2.881 ; hSyncCounter[0] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.921      ;
+; -2.881 ; hSyncCounter[0] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.921      ;
+; -2.861 ; hSyncCounter[7] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.901      ;
+; -2.861 ; hSyncCounter[7] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.901      ;
+; -2.793 ; hSyncCounter[3] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.833      ;
+; -2.793 ; hSyncCounter[3] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.833      ;
+; -2.695 ; hSyncCounter[8] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.735      ;
+; -2.695 ; hSyncCounter[8] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.735      ;
+; -2.596 ; hSyncCounter[4] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.636      ;
+; -2.596 ; hSyncCounter[4] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.636      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.485 ; hSyncCounter[2] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.525      ;
+; -2.461 ; hSyncCounter[5] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.501      ;
+; -2.461 ; hSyncCounter[5] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.501      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.344 ; hSyncCounter[1] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.384      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.311 ; hSyncCounter[9] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.351      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.139 ; hSyncCounter[6] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.179      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.118 ; hSyncCounter[0] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.158      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.098 ; hSyncCounter[7] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.138      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -2.030 ; hSyncCounter[3] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 3.070      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
+; -1.932 ; hSyncCounter[8] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 2.972      ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'hSyncOut'                                                                                     ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; -2.797 ; vSyncCounter[8] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.837      ;
+; -2.797 ; vSyncCounter[8] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.837      ;
+; -2.732 ; vSyncCounter[4] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.772      ;
+; -2.732 ; vSyncCounter[4] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.772      ;
+; -2.615 ; vSyncCounter[2] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.655      ;
+; -2.615 ; vSyncCounter[2] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.655      ;
+; -2.532 ; vSyncCounter[7] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.572      ;
+; -2.532 ; vSyncCounter[7] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.572      ;
+; -2.495 ; vSyncCounter[5] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.535      ;
+; -2.495 ; vSyncCounter[5] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.535      ;
+; -2.448 ; vSyncCounter[3] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.488      ;
+; -2.448 ; vSyncCounter[3] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.488      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.414 ; vSyncCounter[2] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.454      ;
+; -2.396 ; vSyncCounter[9] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.436      ;
+; -2.396 ; vSyncCounter[9] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.436      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.388 ; vSyncCounter[4] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.428      ;
+; -2.345 ; vSyncCounter[1] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.385      ;
+; -2.345 ; vSyncCounter[1] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.385      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.247 ; vSyncCounter[3] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.287      ;
+; -2.232 ; vSyncCounter[6] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.272      ;
+; -2.232 ; vSyncCounter[6] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.272      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -2.144 ; vSyncCounter[1] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 3.184      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.924 ; vSyncCounter[5] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.964      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.831 ; vSyncCounter[6] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.871      ;
+; -1.717 ; vSyncCounter[0] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.757      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.660 ; vSyncCounter[7] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.700      ;
+; -1.631 ; vSyncCounter[0] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.671      ;
+; -1.545 ; vSyncCounter[0] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.585      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
+; -1.490 ; vSyncCounter[8] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 2.530      ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                           ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; 2.337 ; clk25     ; clk25   ; clk25        ; clk         ; 0.500        ; 2.298      ; 0.805      ;
+; 2.837 ; clk25     ; clk25   ; clk25        ; clk         ; 1.000        ; 2.298      ; 0.805      ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                             ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -2.103 ; clk25     ; clk25   ; clk25        ; clk         ; 0.000        ; 2.298      ; 0.805      ;
+; -1.603 ; clk25     ; clk25   ; clk25        ; clk         ; -0.500       ; 2.298      ; 0.805      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk25'                                                                                        ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 0.773 ; hSyncCounter[9] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.079      ;
+; 1.170 ; hSyncCounter[9] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.476      ;
+; 1.172 ; hSyncCounter[1] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.478      ;
+; 1.176 ; hSyncCounter[3] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.482      ;
+; 1.181 ; hSyncCounter[5] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.487      ;
+; 1.199 ; hSyncCounter[7] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.505      ;
+; 1.207 ; hSyncCounter[8] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.513      ;
+; 1.212 ; hSyncCounter[8] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.518      ;
+; 1.214 ; hSyncCounter[8] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.520      ;
+; 1.233 ; hSyncCounter[2] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.539      ;
+; 1.236 ; hSyncCounter[0] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.542      ;
+; 1.237 ; hSyncCounter[4] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.543      ;
+; 1.238 ; hSyncCounter[6] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.544      ;
+; 1.548 ; hSyncCounter[7] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.854      ;
+; 1.655 ; hSyncCounter[3] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.961      ;
+; 1.660 ; hSyncCounter[5] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.966      ;
+; 1.678 ; hSyncCounter[7] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.984      ;
+; 1.686 ; hSyncCounter[8] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.992      ;
+; 1.712 ; hSyncCounter[0] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.018      ;
+; 1.713 ; hSyncCounter[2] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.019      ;
+; 1.717 ; hSyncCounter[4] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.023      ;
+; 1.718 ; hSyncCounter[6] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.024      ;
+; 1.741 ; hSyncCounter[3] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.047      ;
+; 1.746 ; hSyncCounter[5] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.052      ;
+; 1.761 ; hSyncCounter[1] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.067      ;
+; 1.764 ; hSyncCounter[7] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.070      ;
+; 1.799 ; hSyncCounter[2] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.105      ;
+; 1.803 ; hSyncCounter[4] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.109      ;
+; 1.804 ; hSyncCounter[6] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.110      ;
+; 1.827 ; hSyncCounter[3] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.133      ;
+; 1.832 ; hSyncCounter[5] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.138      ;
+; 1.847 ; hSyncCounter[1] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.153      ;
+; 1.885 ; hSyncCounter[2] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.191      ;
+; 1.889 ; hSyncCounter[4] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.195      ;
+; 1.890 ; hSyncCounter[6] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.196      ;
+; 1.902 ; hSyncCounter[0] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.208      ;
+; 1.913 ; hSyncCounter[3] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.219      ;
+; 1.918 ; hSyncCounter[5] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.224      ;
+; 1.933 ; hSyncCounter[1] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.239      ;
+; 1.945 ; hSyncCounter[6] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.251      ;
+; 1.971 ; hSyncCounter[2] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.277      ;
+; 1.974 ; hSyncCounter[5] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.280      ;
+; 1.975 ; hSyncCounter[4] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.281      ;
+; 1.988 ; hSyncCounter[0] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.294      ;
+; 1.999 ; hSyncCounter[3] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.305      ;
+; 2.019 ; hSyncCounter[1] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.325      ;
+; 2.057 ; hSyncCounter[2] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.363      ;
+; 2.061 ; hSyncCounter[4] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.367      ;
+; 2.074 ; hSyncCounter[0] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.380      ;
+; 2.085 ; hSyncCounter[3] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.391      ;
+; 2.105 ; hSyncCounter[1] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.411      ;
+; 2.143 ; hSyncCounter[2] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.449      ;
+; 2.160 ; hSyncCounter[0] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.466      ;
+; 2.191 ; hSyncCounter[1] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.497      ;
+; 2.229 ; hSyncCounter[2] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.535      ;
+; 2.246 ; hSyncCounter[0] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.552      ;
+; 2.257 ; hSyncCounter[7] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.563      ;
+; 2.277 ; hSyncCounter[1] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.583      ;
+; 2.332 ; hSyncCounter[0] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.638      ;
+; 2.363 ; hSyncCounter[1] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.669      ;
+; 2.382 ; hSyncCounter[5] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.688      ;
+; 2.387 ; hSyncCounter[5] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.693      ;
+; 2.387 ; hSyncCounter[5] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.693      ;
+; 2.387 ; hSyncCounter[5] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.693      ;
+; 2.387 ; hSyncCounter[5] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.693      ;
+; 2.387 ; hSyncCounter[5] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.693      ;
+; 2.418 ; hSyncCounter[0] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.724      ;
+; 2.423 ; hSyncCounter[9] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.729      ;
+; 2.504 ; hSyncCounter[0] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.810      ;
+; 2.567 ; hSyncCounter[4] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.873      ;
+; 2.567 ; hSyncCounter[4] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.873      ;
+; 2.567 ; hSyncCounter[4] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.873      ;
+; 2.567 ; hSyncCounter[4] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.873      ;
+; 2.650 ; hSyncCounter[4] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.956      ;
+; 2.666 ; hSyncCounter[8] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.972      ;
+; 2.666 ; hSyncCounter[8] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.972      ;
+; 2.666 ; hSyncCounter[8] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.972      ;
+; 2.666 ; hSyncCounter[8] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.972      ;
+; 2.666 ; hSyncCounter[8] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.972      ;
+; 2.666 ; hSyncCounter[8] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.972      ;
+; 2.666 ; hSyncCounter[8] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.972      ;
+; 2.666 ; hSyncCounter[8] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 2.972      ;
+; 2.705 ; hSyncCounter[3] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.011      ;
+; 2.723 ; hSyncCounter[3] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.029      ;
+; 2.746 ; hSyncCounter[4] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.052      ;
+; 2.764 ; hSyncCounter[3] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.070      ;
+; 2.764 ; hSyncCounter[3] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.070      ;
+; 2.764 ; hSyncCounter[3] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.070      ;
+; 2.793 ; hSyncCounter[0] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.099      ;
+; 2.811 ; hSyncCounter[0] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.117      ;
+; 2.832 ; hSyncCounter[7] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.138      ;
+; 2.832 ; hSyncCounter[7] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.138      ;
+; 2.832 ; hSyncCounter[7] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.138      ;
+; 2.832 ; hSyncCounter[7] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.138      ;
+; 2.832 ; hSyncCounter[7] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.138      ;
+; 2.832 ; hSyncCounter[7] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.138      ;
+; 2.832 ; hSyncCounter[7] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.138      ;
+; 2.865 ; hSyncCounter[6] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.171      ;
+; 2.873 ; hSyncCounter[6] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.179      ;
+; 2.873 ; hSyncCounter[6] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 3.179      ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'hSyncOut'                                                                                     ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 1.052 ; vSyncCounter[9] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.358      ;
+; 1.181 ; vSyncCounter[0] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.487      ;
+; 1.194 ; vSyncCounter[8] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.500      ;
+; 1.199 ; vSyncCounter[1] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.505      ;
+; 1.204 ; vSyncCounter[3] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.510      ;
+; 1.233 ; vSyncCounter[7] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.539      ;
+; 1.244 ; vSyncCounter[4] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.550      ;
+; 1.251 ; vSyncCounter[2] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.557      ;
+; 1.252 ; vSyncCounter[5] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.558      ;
+; 1.463 ; vSyncCounter[6] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.769      ;
+; 1.546 ; vSyncCounter[9] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.852      ;
+; 1.551 ; vSyncCounter[9] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.857      ;
+; 1.650 ; vSyncCounter[2] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.956      ;
+; 1.659 ; vSyncCounter[0] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.965      ;
+; 1.673 ; vSyncCounter[8] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.979      ;
+; 1.678 ; vSyncCounter[1] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.984      ;
+; 1.683 ; vSyncCounter[3] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.989      ;
+; 1.713 ; vSyncCounter[7] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.019      ;
+; 1.724 ; vSyncCounter[4] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.030      ;
+; 1.731 ; vSyncCounter[2] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.037      ;
+; 1.732 ; vSyncCounter[5] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.038      ;
+; 1.745 ; vSyncCounter[0] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.051      ;
+; 1.764 ; vSyncCounter[1] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.070      ;
+; 1.769 ; vSyncCounter[3] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.075      ;
+; 1.799 ; vSyncCounter[7] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.105      ;
+; 1.810 ; vSyncCounter[4] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.116      ;
+; 1.817 ; vSyncCounter[2] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.123      ;
+; 1.831 ; vSyncCounter[0] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.137      ;
+; 1.850 ; vSyncCounter[1] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.156      ;
+; 1.855 ; vSyncCounter[3] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.161      ;
+; 1.903 ; vSyncCounter[2] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.209      ;
+; 1.917 ; vSyncCounter[0] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.223      ;
+; 1.922 ; vSyncCounter[5] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.228      ;
+; 1.936 ; vSyncCounter[1] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.242      ;
+; 1.989 ; vSyncCounter[2] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.295      ;
+; 2.000 ; vSyncCounter[4] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.306      ;
+; 2.003 ; vSyncCounter[0] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.309      ;
+; 2.008 ; vSyncCounter[5] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.314      ;
+; 2.022 ; vSyncCounter[1] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.328      ;
+; 2.045 ; vSyncCounter[3] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.351      ;
+; 2.057 ; vSyncCounter[6] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.363      ;
+; 2.060 ; vSyncCounter[4] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.366      ;
+; 2.086 ; vSyncCounter[4] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.392      ;
+; 2.089 ; vSyncCounter[0] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.395      ;
+; 2.094 ; vSyncCounter[5] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.400      ;
+; 2.127 ; vSyncCounter[2] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.433      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[9] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.131 ; vSyncCounter[3] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.437      ;
+; 2.143 ; vSyncCounter[6] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.449      ;
+; 2.146 ; vSyncCounter[8] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.452      ;
+; 2.148 ; vSyncCounter[8] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.454      ;
+; 2.172 ; vSyncCounter[4] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.478      ;
+; 2.179 ; vSyncCounter[2] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.485      ;
+; 2.196 ; vSyncCounter[3] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.502      ;
+; 2.212 ; vSyncCounter[1] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.518      ;
+; 2.217 ; vSyncCounter[3] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.523      ;
+; 2.224 ; vSyncCounter[8] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.530      ;
+; 2.224 ; vSyncCounter[8] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.530      ;
+; 2.224 ; vSyncCounter[8] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.530      ;
+; 2.224 ; vSyncCounter[8] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.530      ;
+; 2.224 ; vSyncCounter[8] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.530      ;
+; 2.224 ; vSyncCounter[8] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.530      ;
+; 2.224 ; vSyncCounter[8] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.530      ;
+; 2.224 ; vSyncCounter[8] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.530      ;
+; 2.229 ; vSyncCounter[6] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.535      ;
+; 2.248 ; vSyncCounter[1] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.554      ;
+; 2.265 ; vSyncCounter[2] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.571      ;
+; 2.279 ; vSyncCounter[0] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.585      ;
+; 2.289 ; vSyncCounter[5] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.595      ;
+; 2.292 ; vSyncCounter[5] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.598      ;
+; 2.298 ; vSyncCounter[1] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.604      ;
+; 2.316 ; vSyncCounter[7] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.622      ;
+; 2.318 ; vSyncCounter[7] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.624      ;
+; 2.351 ; vSyncCounter[2] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.657      ;
+; 2.365 ; vSyncCounter[0] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.671      ;
+; 2.384 ; vSyncCounter[1] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.690      ;
+; 2.394 ; vSyncCounter[7] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.700      ;
+; 2.394 ; vSyncCounter[7] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.700      ;
+; 2.394 ; vSyncCounter[7] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.700      ;
+; 2.394 ; vSyncCounter[7] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.700      ;
+; 2.394 ; vSyncCounter[7] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.700      ;
+; 2.394 ; vSyncCounter[7] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.700      ;
+; 2.394 ; vSyncCounter[7] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.700      ;
+; 2.451 ; vSyncCounter[0] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.757      ;
+; 2.487 ; vSyncCounter[6] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.793      ;
+; 2.489 ; vSyncCounter[6] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.795      ;
+; 2.553 ; vSyncCounter[3] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.859      ;
+; 2.565 ; vSyncCounter[6] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.871      ;
+; 2.565 ; vSyncCounter[6] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.871      ;
+; 2.565 ; vSyncCounter[6] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.871      ;
+; 2.565 ; vSyncCounter[6] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.871      ;
+; 2.565 ; vSyncCounter[6] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 2.871      ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                        ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target      ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; -1.941 ; 1.000        ; 2.941          ; Port Rate        ; clk   ; Rise       ; clk         ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk   ; Rise       ; clk25       ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk   ; Rise       ; clk25       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk25|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk25|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk25'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hBlank                 ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hBlank                 ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[0]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[0]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[1]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[1]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[2]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[2]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[3]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[3]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[4]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[4]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[5]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[5]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[6]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[6]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[7]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[7]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[8]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[8]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[9]        ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[9]        ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; clk25 ; Rise       ; hSyncOut               ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncOut               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; clk25|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; clk25|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; clk25~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; clk25~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; clk25~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; clk25~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hBlank|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hBlank|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[0]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[0]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[1]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[1]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[2]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[2]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[3]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[3]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[4]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[4]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[5]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[5]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[6]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[6]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[7]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[7]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[8]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[8]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[9]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[9]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncOut|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncOut|clk           ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'hSyncOut'                                                                    ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                    ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------+
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vBlank                    ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vBlank                    ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[0]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[0]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[1]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[1]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[2]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[2]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[3]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[3]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[4]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[4]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[5]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[5]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[6]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[6]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[7]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[7]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[8]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[8]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[9]           ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[9]           ;
+; -0.742 ; 0.500        ; 1.242          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncOut                  ;
+; -0.742 ; 0.500        ; 1.242          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncOut                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; hSyncOut|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; hSyncOut|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; hSyncOut~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; hSyncOut~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; hSyncOut~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; hSyncOut~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vBlank|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vBlank|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[0]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[0]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[1]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[1]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[2]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[2]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[3]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[3]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[4]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[4]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[5]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[5]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[6]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[6]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[7]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[7]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[8]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[8]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[9]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[9]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncOut|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncOut|clk              ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; clk25      ; 7.152 ; 7.152 ; Rise       ; clk25           ;
+; reset     ; hSyncOut   ; 7.121 ; 7.121 ; Rise       ; hSyncOut        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; clk25      ; -6.886 ; -6.886 ; Rise       ; clk25           ;
+; reset     ; hSyncOut   ; -6.855 ; -6.855 ; Rise       ; hSyncOut        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; blank     ; clk25      ; 9.924  ; 9.924  ; Rise       ; clk25           ;
+; blue[*]   ; clk25      ; 11.260 ; 11.260 ; Rise       ; clk25           ;
+;  blue[0]  ; clk25      ; 11.211 ; 11.211 ; Rise       ; clk25           ;
+;  blue[1]  ; clk25      ; 11.211 ; 11.211 ; Rise       ; clk25           ;
+;  blue[2]  ; clk25      ; 11.200 ; 11.200 ; Rise       ; clk25           ;
+;  blue[3]  ; clk25      ; 11.190 ; 11.190 ; Rise       ; clk25           ;
+;  blue[4]  ; clk25      ; 11.260 ; 11.260 ; Rise       ; clk25           ;
+;  blue[5]  ; clk25      ; 11.250 ; 11.250 ; Rise       ; clk25           ;
+;  blue[6]  ; clk25      ; 10.841 ; 10.841 ; Rise       ; clk25           ;
+;  blue[7]  ; clk25      ; 10.841 ; 10.841 ; Rise       ; clk25           ;
+;  blue[8]  ; clk25      ; 10.831 ; 10.831 ; Rise       ; clk25           ;
+;  blue[9]  ; clk25      ; 10.831 ; 10.831 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ; 6.593  ;        ; Rise       ; clk25           ;
+; green[*]  ; clk25      ; 11.944 ; 11.944 ; Rise       ; clk25           ;
+;  green[0] ; clk25      ; 11.944 ; 11.944 ; Rise       ; clk25           ;
+;  green[1] ; clk25      ; 11.944 ; 11.944 ; Rise       ; clk25           ;
+;  green[2] ; clk25      ; 11.599 ; 11.599 ; Rise       ; clk25           ;
+;  green[3] ; clk25      ; 11.599 ; 11.599 ; Rise       ; clk25           ;
+;  green[4] ; clk25      ; 11.609 ; 11.609 ; Rise       ; clk25           ;
+;  green[5] ; clk25      ; 11.609 ; 11.609 ; Rise       ; clk25           ;
+;  green[6] ; clk25      ; 11.566 ; 11.566 ; Rise       ; clk25           ;
+;  green[7] ; clk25      ; 11.586 ; 11.586 ; Rise       ; clk25           ;
+;  green[8] ; clk25      ; 11.596 ; 11.596 ; Rise       ; clk25           ;
+;  green[9] ; clk25      ; 11.596 ; 11.596 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ;        ; 6.593  ; Fall       ; clk25           ;
+; blank     ; hSyncOut   ; 13.368 ; 13.368 ; Rise       ; hSyncOut        ;
+; blue[*]   ; hSyncOut   ; 15.295 ; 15.295 ; Rise       ; hSyncOut        ;
+;  blue[0]  ; hSyncOut   ; 15.246 ; 15.246 ; Rise       ; hSyncOut        ;
+;  blue[1]  ; hSyncOut   ; 15.246 ; 15.246 ; Rise       ; hSyncOut        ;
+;  blue[2]  ; hSyncOut   ; 15.235 ; 15.235 ; Rise       ; hSyncOut        ;
+;  blue[3]  ; hSyncOut   ; 15.225 ; 15.225 ; Rise       ; hSyncOut        ;
+;  blue[4]  ; hSyncOut   ; 15.295 ; 15.295 ; Rise       ; hSyncOut        ;
+;  blue[5]  ; hSyncOut   ; 15.285 ; 15.285 ; Rise       ; hSyncOut        ;
+;  blue[6]  ; hSyncOut   ; 14.876 ; 14.876 ; Rise       ; hSyncOut        ;
+;  blue[7]  ; hSyncOut   ; 14.876 ; 14.876 ; Rise       ; hSyncOut        ;
+;  blue[8]  ; hSyncOut   ; 14.866 ; 14.866 ; Rise       ; hSyncOut        ;
+;  blue[9]  ; hSyncOut   ; 14.866 ; 14.866 ; Rise       ; hSyncOut        ;
+; green[*]  ; hSyncOut   ; 15.979 ; 15.979 ; Rise       ; hSyncOut        ;
+;  green[0] ; hSyncOut   ; 15.979 ; 15.979 ; Rise       ; hSyncOut        ;
+;  green[1] ; hSyncOut   ; 15.979 ; 15.979 ; Rise       ; hSyncOut        ;
+;  green[2] ; hSyncOut   ; 15.634 ; 15.634 ; Rise       ; hSyncOut        ;
+;  green[3] ; hSyncOut   ; 15.634 ; 15.634 ; Rise       ; hSyncOut        ;
+;  green[4] ; hSyncOut   ; 15.644 ; 15.644 ; Rise       ; hSyncOut        ;
+;  green[5] ; hSyncOut   ; 15.644 ; 15.644 ; Rise       ; hSyncOut        ;
+;  green[6] ; hSyncOut   ; 15.601 ; 15.601 ; Rise       ; hSyncOut        ;
+;  green[7] ; hSyncOut   ; 15.621 ; 15.621 ; Rise       ; hSyncOut        ;
+;  green[8] ; hSyncOut   ; 15.631 ; 15.631 ; Rise       ; hSyncOut        ;
+;  green[9] ; hSyncOut   ; 15.631 ; 15.631 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ; 5.179  ;        ; Rise       ; hSyncOut        ;
+; vsync     ; hSyncOut   ; 10.668 ; 10.668 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ;        ; 5.179  ; Fall       ; hSyncOut        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; blank     ; clk25      ; 9.924  ; 9.924  ; Rise       ; clk25           ;
+; blue[*]   ; clk25      ; 8.608  ; 8.608  ; Rise       ; clk25           ;
+;  blue[0]  ; clk25      ; 8.988  ; 8.988  ; Rise       ; clk25           ;
+;  blue[1]  ; clk25      ; 8.988  ; 8.988  ; Rise       ; clk25           ;
+;  blue[2]  ; clk25      ; 8.977  ; 8.977  ; Rise       ; clk25           ;
+;  blue[3]  ; clk25      ; 8.967  ; 8.967  ; Rise       ; clk25           ;
+;  blue[4]  ; clk25      ; 9.037  ; 9.037  ; Rise       ; clk25           ;
+;  blue[5]  ; clk25      ; 9.027  ; 9.027  ; Rise       ; clk25           ;
+;  blue[6]  ; clk25      ; 8.618  ; 8.618  ; Rise       ; clk25           ;
+;  blue[7]  ; clk25      ; 8.618  ; 8.618  ; Rise       ; clk25           ;
+;  blue[8]  ; clk25      ; 8.608  ; 8.608  ; Rise       ; clk25           ;
+;  blue[9]  ; clk25      ; 8.608  ; 8.608  ; Rise       ; clk25           ;
+; clockOut  ; clk25      ; 6.593  ;        ; Rise       ; clk25           ;
+; green[*]  ; clk25      ; 9.343  ; 9.343  ; Rise       ; clk25           ;
+;  green[0] ; clk25      ; 9.721  ; 9.721  ; Rise       ; clk25           ;
+;  green[1] ; clk25      ; 9.721  ; 9.721  ; Rise       ; clk25           ;
+;  green[2] ; clk25      ; 9.376  ; 9.376  ; Rise       ; clk25           ;
+;  green[3] ; clk25      ; 9.376  ; 9.376  ; Rise       ; clk25           ;
+;  green[4] ; clk25      ; 9.386  ; 9.386  ; Rise       ; clk25           ;
+;  green[5] ; clk25      ; 9.386  ; 9.386  ; Rise       ; clk25           ;
+;  green[6] ; clk25      ; 9.343  ; 9.343  ; Rise       ; clk25           ;
+;  green[7] ; clk25      ; 9.363  ; 9.363  ; Rise       ; clk25           ;
+;  green[8] ; clk25      ; 9.373  ; 9.373  ; Rise       ; clk25           ;
+;  green[9] ; clk25      ; 9.373  ; 9.373  ; Rise       ; clk25           ;
+; clockOut  ; clk25      ;        ; 6.593  ; Fall       ; clk25           ;
+; blank     ; hSyncOut   ; 13.368 ; 13.368 ; Rise       ; hSyncOut        ;
+; blue[*]   ; hSyncOut   ; 12.893 ; 12.893 ; Rise       ; hSyncOut        ;
+;  blue[0]  ; hSyncOut   ; 13.273 ; 13.273 ; Rise       ; hSyncOut        ;
+;  blue[1]  ; hSyncOut   ; 13.273 ; 13.273 ; Rise       ; hSyncOut        ;
+;  blue[2]  ; hSyncOut   ; 13.262 ; 13.262 ; Rise       ; hSyncOut        ;
+;  blue[3]  ; hSyncOut   ; 13.252 ; 13.252 ; Rise       ; hSyncOut        ;
+;  blue[4]  ; hSyncOut   ; 13.322 ; 13.322 ; Rise       ; hSyncOut        ;
+;  blue[5]  ; hSyncOut   ; 13.312 ; 13.312 ; Rise       ; hSyncOut        ;
+;  blue[6]  ; hSyncOut   ; 12.903 ; 12.903 ; Rise       ; hSyncOut        ;
+;  blue[7]  ; hSyncOut   ; 12.903 ; 12.903 ; Rise       ; hSyncOut        ;
+;  blue[8]  ; hSyncOut   ; 12.893 ; 12.893 ; Rise       ; hSyncOut        ;
+;  blue[9]  ; hSyncOut   ; 12.893 ; 12.893 ; Rise       ; hSyncOut        ;
+; green[*]  ; hSyncOut   ; 13.628 ; 13.628 ; Rise       ; hSyncOut        ;
+;  green[0] ; hSyncOut   ; 14.006 ; 14.006 ; Rise       ; hSyncOut        ;
+;  green[1] ; hSyncOut   ; 14.006 ; 14.006 ; Rise       ; hSyncOut        ;
+;  green[2] ; hSyncOut   ; 13.661 ; 13.661 ; Rise       ; hSyncOut        ;
+;  green[3] ; hSyncOut   ; 13.661 ; 13.661 ; Rise       ; hSyncOut        ;
+;  green[4] ; hSyncOut   ; 13.671 ; 13.671 ; Rise       ; hSyncOut        ;
+;  green[5] ; hSyncOut   ; 13.671 ; 13.671 ; Rise       ; hSyncOut        ;
+;  green[6] ; hSyncOut   ; 13.628 ; 13.628 ; Rise       ; hSyncOut        ;
+;  green[7] ; hSyncOut   ; 13.648 ; 13.648 ; Rise       ; hSyncOut        ;
+;  green[8] ; hSyncOut   ; 13.658 ; 13.658 ; Rise       ; hSyncOut        ;
+;  green[9] ; hSyncOut   ; 13.658 ; 13.658 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ; 5.179  ;        ; Rise       ; hSyncOut        ;
+; vsync     ; hSyncOut   ; 10.668 ; 10.668 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ;        ; 5.179  ; Fall       ; hSyncOut        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------+
+; Fast Model Setup Summary          ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; clk25    ; -0.425 ; -2.570        ;
+; hSyncOut ; -0.305 ; -2.220        ;
+; clk      ; 1.353  ; 0.000         ;
++----------+--------+---------------+
+
+
++-----------------------------------+
+; Fast Model Hold Summary           ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; clk      ; -0.973 ; -0.973        ;
+; clk25    ; 0.252  ; 0.000         ;
+; hSyncOut ; 0.322  ; 0.000         ;
++----------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; clk      ; -1.380 ; -2.380             ;
+; clk25    ; -0.500 ; -12.000            ;
+; hSyncOut ; -0.500 ; -12.000            ;
++----------+--------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk25'                                                                                        ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; -0.425 ; hSyncCounter[2] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.457      ;
+; -0.425 ; hSyncCounter[2] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.457      ;
+; -0.420 ; hSyncCounter[9] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.452      ;
+; -0.420 ; hSyncCounter[9] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.452      ;
+; -0.400 ; hSyncCounter[1] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.432      ;
+; -0.400 ; hSyncCounter[1] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.432      ;
+; -0.337 ; hSyncCounter[0] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.369      ;
+; -0.337 ; hSyncCounter[0] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.369      ;
+; -0.322 ; hSyncCounter[6] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.354      ;
+; -0.322 ; hSyncCounter[6] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.354      ;
+; -0.315 ; hSyncCounter[7] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.347      ;
+; -0.315 ; hSyncCounter[7] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.347      ;
+; -0.305 ; hSyncCounter[3] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.337      ;
+; -0.305 ; hSyncCounter[3] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.337      ;
+; -0.276 ; hSyncCounter[8] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.308      ;
+; -0.276 ; hSyncCounter[8] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.308      ;
+; -0.244 ; hSyncCounter[4] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.276      ;
+; -0.244 ; hSyncCounter[4] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.276      ;
+; -0.191 ; hSyncCounter[5] ; hSyncOut        ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.223      ;
+; -0.191 ; hSyncCounter[5] ; hBlank          ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.223      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.172 ; hSyncCounter[2] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.204      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.167 ; hSyncCounter[9] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.199      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.147 ; hSyncCounter[1] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.179      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.084 ; hSyncCounter[0] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.116      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.069 ; hSyncCounter[6] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.101      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.062 ; hSyncCounter[7] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.094      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.052 ; hSyncCounter[3] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.084      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[0] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[1] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[2] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[3] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[4] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[5] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[6] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[7] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[8] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
+; -0.023 ; hSyncCounter[8] ; hSyncCounter[9] ; clk25        ; clk25       ; 1.000        ; 0.000      ; 1.055      ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'hSyncOut'                                                                                     ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; -0.305 ; vSyncCounter[8] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.336      ;
+; -0.305 ; vSyncCounter[8] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.336      ;
+; -0.267 ; vSyncCounter[4] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.298      ;
+; -0.267 ; vSyncCounter[4] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.298      ;
+; -0.252 ; vSyncCounter[2] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.283      ;
+; -0.252 ; vSyncCounter[2] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.283      ;
+; -0.232 ; vSyncCounter[7] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.263      ;
+; -0.232 ; vSyncCounter[7] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.263      ;
+; -0.203 ; vSyncCounter[5] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.234      ;
+; -0.203 ; vSyncCounter[5] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.234      ;
+; -0.198 ; vSyncCounter[9] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.229      ;
+; -0.198 ; vSyncCounter[9] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.229      ;
+; -0.191 ; vSyncCounter[1] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.222      ;
+; -0.191 ; vSyncCounter[1] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.222      ;
+; -0.183 ; vSyncCounter[3] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.214      ;
+; -0.183 ; vSyncCounter[3] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.214      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.161 ; vSyncCounter[2] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.193      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.143 ; vSyncCounter[4] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.175      ;
+; -0.142 ; vSyncCounter[6] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.173      ;
+; -0.142 ; vSyncCounter[6] ; vBlank          ; hSyncOut     ; hSyncOut    ; 1.000        ; -0.001     ; 1.173      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.100 ; vSyncCounter[1] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.132      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.092 ; vSyncCounter[3] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.124      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.016 ; vSyncCounter[5] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.048      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; -0.012 ; vSyncCounter[6] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 1.044      ;
+; 0.042  ; vSyncCounter[0] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.990      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.061  ; vSyncCounter[7] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.971      ;
+; 0.077  ; vSyncCounter[0] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.955      ;
+; 0.112  ; vSyncCounter[0] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
+; 0.112  ; vSyncCounter[8] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 1.000        ; 0.000      ; 0.920      ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                           ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; 1.353 ; clk25     ; clk25   ; clk25        ; clk         ; 0.500        ; 1.047      ; 0.367      ;
+; 1.853 ; clk25     ; clk25   ; clk25        ; clk         ; 1.000        ; 1.047      ; 0.367      ;
++-------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                             ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+; -0.973 ; clk25     ; clk25   ; clk25        ; clk         ; 0.000        ; 1.047      ; 0.367      ;
+; -0.473 ; clk25     ; clk25   ; clk25        ; clk         ; -0.500       ; 1.047      ; 0.367      ;
++--------+-----------+---------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk25'                                                                                        ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 0.252 ; hSyncCounter[9] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.404      ;
+; 0.358 ; hSyncCounter[1] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.510      ;
+; 0.360 ; hSyncCounter[3] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.512      ;
+; 0.362 ; hSyncCounter[5] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.514      ;
+; 0.371 ; hSyncCounter[7] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.523      ;
+; 0.374 ; hSyncCounter[0] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.526      ;
+; 0.374 ; hSyncCounter[8] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.526      ;
+; 0.375 ; hSyncCounter[2] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.527      ;
+; 0.378 ; hSyncCounter[4] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; hSyncCounter[6] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.530      ;
+; 0.379 ; hSyncCounter[8] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.531      ;
+; 0.380 ; hSyncCounter[8] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.532      ;
+; 0.380 ; hSyncCounter[9] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.532      ;
+; 0.463 ; hSyncCounter[7] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.615      ;
+; 0.498 ; hSyncCounter[3] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.650      ;
+; 0.500 ; hSyncCounter[5] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.652      ;
+; 0.509 ; hSyncCounter[7] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.661      ;
+; 0.512 ; hSyncCounter[8] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.664      ;
+; 0.514 ; hSyncCounter[0] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.666      ;
+; 0.515 ; hSyncCounter[2] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.667      ;
+; 0.518 ; hSyncCounter[4] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.670      ;
+; 0.518 ; hSyncCounter[6] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.670      ;
+; 0.533 ; hSyncCounter[3] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.685      ;
+; 0.535 ; hSyncCounter[5] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.687      ;
+; 0.544 ; hSyncCounter[7] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.696      ;
+; 0.550 ; hSyncCounter[2] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.702      ;
+; 0.551 ; hSyncCounter[1] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.703      ;
+; 0.553 ; hSyncCounter[4] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.705      ;
+; 0.553 ; hSyncCounter[6] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.705      ;
+; 0.568 ; hSyncCounter[3] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.720      ;
+; 0.570 ; hSyncCounter[5] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.722      ;
+; 0.584 ; hSyncCounter[6] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.736      ;
+; 0.585 ; hSyncCounter[2] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.737      ;
+; 0.586 ; hSyncCounter[1] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.738      ;
+; 0.588 ; hSyncCounter[4] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.740      ;
+; 0.588 ; hSyncCounter[6] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.740      ;
+; 0.595 ; hSyncCounter[5] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.747      ;
+; 0.603 ; hSyncCounter[3] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.755      ;
+; 0.605 ; hSyncCounter[5] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.757      ;
+; 0.608 ; hSyncCounter[0] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.760      ;
+; 0.620 ; hSyncCounter[2] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.772      ;
+; 0.621 ; hSyncCounter[1] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.773      ;
+; 0.623 ; hSyncCounter[4] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.775      ;
+; 0.638 ; hSyncCounter[3] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.790      ;
+; 0.643 ; hSyncCounter[0] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.795      ;
+; 0.655 ; hSyncCounter[2] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.807      ;
+; 0.656 ; hSyncCounter[1] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.808      ;
+; 0.658 ; hSyncCounter[4] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.810      ;
+; 0.673 ; hSyncCounter[3] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.825      ;
+; 0.678 ; hSyncCounter[0] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.830      ;
+; 0.690 ; hSyncCounter[7] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.842      ;
+; 0.690 ; hSyncCounter[2] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.842      ;
+; 0.691 ; hSyncCounter[1] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.843      ;
+; 0.709 ; hSyncCounter[5] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.861      ;
+; 0.713 ; hSyncCounter[0] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.865      ;
+; 0.725 ; hSyncCounter[2] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.877      ;
+; 0.726 ; hSyncCounter[1] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.878      ;
+; 0.746 ; hSyncCounter[9] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.898      ;
+; 0.748 ; hSyncCounter[0] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.900      ;
+; 0.761 ; hSyncCounter[1] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.913      ;
+; 0.783 ; hSyncCounter[0] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.935      ;
+; 0.796 ; hSyncCounter[1] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.948      ;
+; 0.805 ; hSyncCounter[4] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.957      ;
+; 0.808 ; hSyncCounter[3] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.960      ;
+; 0.813 ; hSyncCounter[3] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.965      ;
+; 0.815 ; hSyncCounter[5] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.815 ; hSyncCounter[5] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.815 ; hSyncCounter[5] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.815 ; hSyncCounter[5] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.815 ; hSyncCounter[5] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.815 ; hSyncCounter[4] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.967      ;
+; 0.818 ; hSyncCounter[0] ; hSyncCounter[8] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.970      ;
+; 0.840 ; hSyncCounter[0] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.992      ;
+; 0.845 ; hSyncCounter[0] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.997      ;
+; 0.846 ; hSyncCounter[6] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 0.998      ;
+; 0.853 ; hSyncCounter[0] ; hSyncCounter[9] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.005      ;
+; 0.871 ; hSyncCounter[4] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.023      ;
+; 0.871 ; hSyncCounter[4] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.023      ;
+; 0.871 ; hSyncCounter[4] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.023      ;
+; 0.871 ; hSyncCounter[4] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.023      ;
+; 0.903 ; hSyncCounter[1] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.903 ; hSyncCounter[8] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.903 ; hSyncCounter[8] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.903 ; hSyncCounter[8] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.903 ; hSyncCounter[8] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.903 ; hSyncCounter[8] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.903 ; hSyncCounter[8] ; hSyncCounter[5] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.903 ; hSyncCounter[8] ; hSyncCounter[6] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.903 ; hSyncCounter[8] ; hSyncCounter[7] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.055      ;
+; 0.908 ; hSyncCounter[1] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.060      ;
+; 0.928 ; hSyncCounter[2] ; hBlank          ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.080      ;
+; 0.932 ; hSyncCounter[3] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; hSyncCounter[3] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.084      ;
+; 0.932 ; hSyncCounter[3] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.084      ;
+; 0.933 ; hSyncCounter[2] ; hSyncOut        ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.085      ;
+; 0.942 ; hSyncCounter[7] ; hSyncCounter[0] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.094      ;
+; 0.942 ; hSyncCounter[7] ; hSyncCounter[1] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.094      ;
+; 0.942 ; hSyncCounter[7] ; hSyncCounter[2] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.094      ;
+; 0.942 ; hSyncCounter[7] ; hSyncCounter[3] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.094      ;
+; 0.942 ; hSyncCounter[7] ; hSyncCounter[4] ; clk25        ; clk25       ; 0.000        ; 0.000      ; 1.094      ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'hSyncOut'                                                                                     ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 0.322 ; vSyncCounter[9] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.474      ;
+; 0.361 ; vSyncCounter[0] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.513      ;
+; 0.367 ; vSyncCounter[8] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.519      ;
+; 0.372 ; vSyncCounter[1] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; vSyncCounter[3] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.375 ; vSyncCounter[7] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.527      ;
+; 0.381 ; vSyncCounter[4] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.533      ;
+; 0.384 ; vSyncCounter[2] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.536      ;
+; 0.385 ; vSyncCounter[5] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.537      ;
+; 0.453 ; vSyncCounter[6] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.605      ;
+; 0.480 ; vSyncCounter[9] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.631      ;
+; 0.481 ; vSyncCounter[9] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.632      ;
+; 0.499 ; vSyncCounter[0] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.651      ;
+; 0.505 ; vSyncCounter[8] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.507 ; vSyncCounter[2] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.658      ;
+; 0.510 ; vSyncCounter[3] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.662      ;
+; 0.510 ; vSyncCounter[1] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.662      ;
+; 0.515 ; vSyncCounter[7] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.667      ;
+; 0.521 ; vSyncCounter[4] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.673      ;
+; 0.524 ; vSyncCounter[2] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.676      ;
+; 0.525 ; vSyncCounter[5] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.677      ;
+; 0.534 ; vSyncCounter[0] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.686      ;
+; 0.545 ; vSyncCounter[3] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.697      ;
+; 0.545 ; vSyncCounter[1] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.697      ;
+; 0.550 ; vSyncCounter[7] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.702      ;
+; 0.556 ; vSyncCounter[4] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.708      ;
+; 0.559 ; vSyncCounter[2] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.711      ;
+; 0.569 ; vSyncCounter[0] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.721      ;
+; 0.580 ; vSyncCounter[3] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.732      ;
+; 0.580 ; vSyncCounter[1] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.732      ;
+; 0.594 ; vSyncCounter[2] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.746      ;
+; 0.604 ; vSyncCounter[0] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.756      ;
+; 0.615 ; vSyncCounter[1] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.767      ;
+; 0.616 ; vSyncCounter[4] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.767      ;
+; 0.619 ; vSyncCounter[5] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.771      ;
+; 0.629 ; vSyncCounter[2] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.781      ;
+; 0.639 ; vSyncCounter[0] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.791      ;
+; 0.642 ; vSyncCounter[8] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.793      ;
+; 0.643 ; vSyncCounter[8] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.794      ;
+; 0.647 ; vSyncCounter[6] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.799      ;
+; 0.650 ; vSyncCounter[4] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.802      ;
+; 0.650 ; vSyncCounter[1] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.802      ;
+; 0.654 ; vSyncCounter[5] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.806      ;
+; 0.657 ; vSyncCounter[2] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.808      ;
+; 0.674 ; vSyncCounter[3] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.826      ;
+; 0.674 ; vSyncCounter[0] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.826      ;
+; 0.682 ; vSyncCounter[6] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.834      ;
+; 0.685 ; vSyncCounter[4] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.837      ;
+; 0.689 ; vSyncCounter[5] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.841      ;
+; 0.693 ; vSyncCounter[3] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.844      ;
+; 0.693 ; vSyncCounter[7] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.844      ;
+; 0.694 ; vSyncCounter[7] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.845      ;
+; 0.705 ; vSyncCounter[1] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.856      ;
+; 0.709 ; vSyncCounter[3] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.861      ;
+; 0.717 ; vSyncCounter[5] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.868      ;
+; 0.717 ; vSyncCounter[6] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.869      ;
+; 0.720 ; vSyncCounter[5] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.871      ;
+; 0.720 ; vSyncCounter[4] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.872      ;
+; 0.723 ; vSyncCounter[2] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.875      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.739 ; vSyncCounter[9] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.891      ;
+; 0.744 ; vSyncCounter[3] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.896      ;
+; 0.744 ; vSyncCounter[1] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.896      ;
+; 0.758 ; vSyncCounter[2] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.910      ;
+; 0.766 ; vSyncCounter[6] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.917      ;
+; 0.767 ; vSyncCounter[6] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.918      ;
+; 0.768 ; vSyncCounter[8] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.768 ; vSyncCounter[8] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.768 ; vSyncCounter[8] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.768 ; vSyncCounter[8] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.768 ; vSyncCounter[8] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.768 ; vSyncCounter[8] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.768 ; vSyncCounter[8] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.768 ; vSyncCounter[8] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.768 ; vSyncCounter[0] ; vSyncCounter[7] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.920      ;
+; 0.773 ; vSyncCounter[3] ; vBlank          ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.924      ;
+; 0.779 ; vSyncCounter[1] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.931      ;
+; 0.793 ; vSyncCounter[2] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.945      ;
+; 0.803 ; vSyncCounter[0] ; vSyncCounter[8] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.955      ;
+; 0.814 ; vSyncCounter[1] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.966      ;
+; 0.819 ; vSyncCounter[7] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.971      ;
+; 0.819 ; vSyncCounter[7] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.971      ;
+; 0.819 ; vSyncCounter[7] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.971      ;
+; 0.819 ; vSyncCounter[7] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.971      ;
+; 0.819 ; vSyncCounter[7] ; vSyncCounter[5] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.971      ;
+; 0.819 ; vSyncCounter[7] ; vSyncCounter[6] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.971      ;
+; 0.819 ; vSyncCounter[7] ; vSyncCounter[0] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.971      ;
+; 0.838 ; vSyncCounter[0] ; vSyncCounter[9] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 0.990      ;
+; 0.847 ; vSyncCounter[4] ; vSyncOut        ; hSyncOut     ; hSyncOut    ; 0.000        ; -0.001     ; 0.998      ;
+; 0.892 ; vSyncCounter[6] ; vSyncCounter[1] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.044      ;
+; 0.892 ; vSyncCounter[6] ; vSyncCounter[2] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.044      ;
+; 0.892 ; vSyncCounter[6] ; vSyncCounter[3] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.044      ;
+; 0.892 ; vSyncCounter[6] ; vSyncCounter[4] ; hSyncOut     ; hSyncOut    ; 0.000        ; 0.000      ; 1.044      ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                        ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target      ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clk25       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clk25       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk25|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk25|clk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk25'                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                 ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hBlank                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hBlank                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[8]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[8]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[9]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[9]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncOut               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncOut               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; clk25|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; clk25|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; clk25~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; clk25~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; clk25~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; clk25~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hBlank|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hBlank|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[0]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[0]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[1]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[1]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[2]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[2]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[3]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[3]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[4]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[4]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[5]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[5]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[6]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[6]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[7]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[7]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[8]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[8]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncCounter[9]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncCounter[9]|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk25 ; Rise       ; hSyncOut|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk25 ; Rise       ; hSyncOut|clk           ;
++--------+--------------+----------------+------------------+-------+------------+------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'hSyncOut'                                                                    ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                    ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vBlank                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vBlank                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[0]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[0]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[1]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[1]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[2]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[2]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[3]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[3]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[4]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[4]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[5]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[5]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[6]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[6]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[7]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[7]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[8]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[8]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[9]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[9]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncOut                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncOut                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; hSyncOut|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; hSyncOut|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; hSyncOut~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; hSyncOut~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; hSyncOut~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; hSyncOut~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vBlank|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vBlank|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[0]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[0]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[1]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[1]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[2]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[2]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[3]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[3]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[4]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[4]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[5]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[5]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[6]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[6]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[7]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[7]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[8]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[8]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncCounter[9]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncCounter[9]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; hSyncOut ; Rise       ; vSyncOut|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; hSyncOut ; Rise       ; vSyncOut|clk              ;
++--------+--------------+----------------+------------------+----------+------------+---------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; clk25      ; 3.150 ; 3.150 ; Rise       ; clk25           ;
+; reset     ; hSyncOut   ; 3.087 ; 3.087 ; Rise       ; hSyncOut        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; clk25      ; -3.030 ; -3.030 ; Rise       ; clk25           ;
+; reset     ; hSyncOut   ; -2.967 ; -2.967 ; Rise       ; hSyncOut        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; blank     ; clk25      ; 4.203 ; 4.203 ; Rise       ; clk25           ;
+; blue[*]   ; clk25      ; 4.582 ; 4.582 ; Rise       ; clk25           ;
+;  blue[0]  ; clk25      ; 4.541 ; 4.541 ; Rise       ; clk25           ;
+;  blue[1]  ; clk25      ; 4.541 ; 4.541 ; Rise       ; clk25           ;
+;  blue[2]  ; clk25      ; 4.522 ; 4.522 ; Rise       ; clk25           ;
+;  blue[3]  ; clk25      ; 4.512 ; 4.512 ; Rise       ; clk25           ;
+;  blue[4]  ; clk25      ; 4.582 ; 4.582 ; Rise       ; clk25           ;
+;  blue[5]  ; clk25      ; 4.572 ; 4.572 ; Rise       ; clk25           ;
+;  blue[6]  ; clk25      ; 4.433 ; 4.433 ; Rise       ; clk25           ;
+;  blue[7]  ; clk25      ; 4.433 ; 4.433 ; Rise       ; clk25           ;
+;  blue[8]  ; clk25      ; 4.423 ; 4.423 ; Rise       ; clk25           ;
+;  blue[9]  ; clk25      ; 4.423 ; 4.423 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ; 2.707 ;       ; Rise       ; clk25           ;
+; green[*]  ; clk25      ; 4.769 ; 4.769 ; Rise       ; clk25           ;
+;  green[0] ; clk25      ; 4.769 ; 4.769 ; Rise       ; clk25           ;
+;  green[1] ; clk25      ; 4.769 ; 4.769 ; Rise       ; clk25           ;
+;  green[2] ; clk25      ; 4.667 ; 4.667 ; Rise       ; clk25           ;
+;  green[3] ; clk25      ; 4.667 ; 4.667 ; Rise       ; clk25           ;
+;  green[4] ; clk25      ; 4.677 ; 4.677 ; Rise       ; clk25           ;
+;  green[5] ; clk25      ; 4.677 ; 4.677 ; Rise       ; clk25           ;
+;  green[6] ; clk25      ; 4.633 ; 4.633 ; Rise       ; clk25           ;
+;  green[7] ; clk25      ; 4.653 ; 4.653 ; Rise       ; clk25           ;
+;  green[8] ; clk25      ; 4.663 ; 4.663 ; Rise       ; clk25           ;
+;  green[9] ; clk25      ; 4.663 ; 4.663 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ;       ; 2.707 ; Fall       ; clk25           ;
+; blank     ; hSyncOut   ; 5.234 ; 5.234 ; Rise       ; hSyncOut        ;
+; blue[*]   ; hSyncOut   ; 5.893 ; 5.893 ; Rise       ; hSyncOut        ;
+;  blue[0]  ; hSyncOut   ; 5.852 ; 5.852 ; Rise       ; hSyncOut        ;
+;  blue[1]  ; hSyncOut   ; 5.852 ; 5.852 ; Rise       ; hSyncOut        ;
+;  blue[2]  ; hSyncOut   ; 5.833 ; 5.833 ; Rise       ; hSyncOut        ;
+;  blue[3]  ; hSyncOut   ; 5.823 ; 5.823 ; Rise       ; hSyncOut        ;
+;  blue[4]  ; hSyncOut   ; 5.893 ; 5.893 ; Rise       ; hSyncOut        ;
+;  blue[5]  ; hSyncOut   ; 5.883 ; 5.883 ; Rise       ; hSyncOut        ;
+;  blue[6]  ; hSyncOut   ; 5.744 ; 5.744 ; Rise       ; hSyncOut        ;
+;  blue[7]  ; hSyncOut   ; 5.744 ; 5.744 ; Rise       ; hSyncOut        ;
+;  blue[8]  ; hSyncOut   ; 5.734 ; 5.734 ; Rise       ; hSyncOut        ;
+;  blue[9]  ; hSyncOut   ; 5.734 ; 5.734 ; Rise       ; hSyncOut        ;
+; green[*]  ; hSyncOut   ; 6.080 ; 6.080 ; Rise       ; hSyncOut        ;
+;  green[0] ; hSyncOut   ; 6.080 ; 6.080 ; Rise       ; hSyncOut        ;
+;  green[1] ; hSyncOut   ; 6.080 ; 6.080 ; Rise       ; hSyncOut        ;
+;  green[2] ; hSyncOut   ; 5.978 ; 5.978 ; Rise       ; hSyncOut        ;
+;  green[3] ; hSyncOut   ; 5.978 ; 5.978 ; Rise       ; hSyncOut        ;
+;  green[4] ; hSyncOut   ; 5.988 ; 5.988 ; Rise       ; hSyncOut        ;
+;  green[5] ; hSyncOut   ; 5.988 ; 5.988 ; Rise       ; hSyncOut        ;
+;  green[6] ; hSyncOut   ; 5.944 ; 5.944 ; Rise       ; hSyncOut        ;
+;  green[7] ; hSyncOut   ; 5.964 ; 5.964 ; Rise       ; hSyncOut        ;
+;  green[8] ; hSyncOut   ; 5.974 ; 5.974 ; Rise       ; hSyncOut        ;
+;  green[9] ; hSyncOut   ; 5.974 ; 5.974 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ; 2.223 ;       ; Rise       ; hSyncOut        ;
+; vsync     ; hSyncOut   ; 4.507 ; 4.507 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ;       ; 2.223 ; Fall       ; hSyncOut        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; blank     ; clk25      ; 4.203 ; 4.203 ; Rise       ; clk25           ;
+; blue[*]   ; clk25      ; 3.791 ; 3.791 ; Rise       ; clk25           ;
+;  blue[0]  ; clk25      ; 3.909 ; 3.909 ; Rise       ; clk25           ;
+;  blue[1]  ; clk25      ; 3.909 ; 3.909 ; Rise       ; clk25           ;
+;  blue[2]  ; clk25      ; 3.890 ; 3.890 ; Rise       ; clk25           ;
+;  blue[3]  ; clk25      ; 3.880 ; 3.880 ; Rise       ; clk25           ;
+;  blue[4]  ; clk25      ; 3.950 ; 3.950 ; Rise       ; clk25           ;
+;  blue[5]  ; clk25      ; 3.940 ; 3.940 ; Rise       ; clk25           ;
+;  blue[6]  ; clk25      ; 3.801 ; 3.801 ; Rise       ; clk25           ;
+;  blue[7]  ; clk25      ; 3.801 ; 3.801 ; Rise       ; clk25           ;
+;  blue[8]  ; clk25      ; 3.791 ; 3.791 ; Rise       ; clk25           ;
+;  blue[9]  ; clk25      ; 3.791 ; 3.791 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ; 2.707 ;       ; Rise       ; clk25           ;
+; green[*]  ; clk25      ; 4.001 ; 4.001 ; Rise       ; clk25           ;
+;  green[0] ; clk25      ; 4.137 ; 4.137 ; Rise       ; clk25           ;
+;  green[1] ; clk25      ; 4.137 ; 4.137 ; Rise       ; clk25           ;
+;  green[2] ; clk25      ; 4.035 ; 4.035 ; Rise       ; clk25           ;
+;  green[3] ; clk25      ; 4.035 ; 4.035 ; Rise       ; clk25           ;
+;  green[4] ; clk25      ; 4.045 ; 4.045 ; Rise       ; clk25           ;
+;  green[5] ; clk25      ; 4.045 ; 4.045 ; Rise       ; clk25           ;
+;  green[6] ; clk25      ; 4.001 ; 4.001 ; Rise       ; clk25           ;
+;  green[7] ; clk25      ; 4.021 ; 4.021 ; Rise       ; clk25           ;
+;  green[8] ; clk25      ; 4.031 ; 4.031 ; Rise       ; clk25           ;
+;  green[9] ; clk25      ; 4.031 ; 4.031 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ;       ; 2.707 ; Fall       ; clk25           ;
+; blank     ; hSyncOut   ; 5.234 ; 5.234 ; Rise       ; hSyncOut        ;
+; blue[*]   ; hSyncOut   ; 5.102 ; 5.102 ; Rise       ; hSyncOut        ;
+;  blue[0]  ; hSyncOut   ; 5.220 ; 5.220 ; Rise       ; hSyncOut        ;
+;  blue[1]  ; hSyncOut   ; 5.220 ; 5.220 ; Rise       ; hSyncOut        ;
+;  blue[2]  ; hSyncOut   ; 5.201 ; 5.201 ; Rise       ; hSyncOut        ;
+;  blue[3]  ; hSyncOut   ; 5.191 ; 5.191 ; Rise       ; hSyncOut        ;
+;  blue[4]  ; hSyncOut   ; 5.261 ; 5.261 ; Rise       ; hSyncOut        ;
+;  blue[5]  ; hSyncOut   ; 5.251 ; 5.251 ; Rise       ; hSyncOut        ;
+;  blue[6]  ; hSyncOut   ; 5.112 ; 5.112 ; Rise       ; hSyncOut        ;
+;  blue[7]  ; hSyncOut   ; 5.112 ; 5.112 ; Rise       ; hSyncOut        ;
+;  blue[8]  ; hSyncOut   ; 5.102 ; 5.102 ; Rise       ; hSyncOut        ;
+;  blue[9]  ; hSyncOut   ; 5.102 ; 5.102 ; Rise       ; hSyncOut        ;
+; green[*]  ; hSyncOut   ; 5.312 ; 5.312 ; Rise       ; hSyncOut        ;
+;  green[0] ; hSyncOut   ; 5.448 ; 5.448 ; Rise       ; hSyncOut        ;
+;  green[1] ; hSyncOut   ; 5.448 ; 5.448 ; Rise       ; hSyncOut        ;
+;  green[2] ; hSyncOut   ; 5.346 ; 5.346 ; Rise       ; hSyncOut        ;
+;  green[3] ; hSyncOut   ; 5.346 ; 5.346 ; Rise       ; hSyncOut        ;
+;  green[4] ; hSyncOut   ; 5.356 ; 5.356 ; Rise       ; hSyncOut        ;
+;  green[5] ; hSyncOut   ; 5.356 ; 5.356 ; Rise       ; hSyncOut        ;
+;  green[6] ; hSyncOut   ; 5.312 ; 5.312 ; Rise       ; hSyncOut        ;
+;  green[7] ; hSyncOut   ; 5.332 ; 5.332 ; Rise       ; hSyncOut        ;
+;  green[8] ; hSyncOut   ; 5.342 ; 5.342 ; Rise       ; hSyncOut        ;
+;  green[9] ; hSyncOut   ; 5.342 ; 5.342 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ; 2.223 ;       ; Rise       ; hSyncOut        ;
+; vsync     ; hSyncOut   ; 4.507 ; 4.507 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ;       ; 2.223 ; Fall       ; hSyncOut        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+---------+--------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+--------+----------+---------+---------------------+
+; Worst-case Slack ; -3.248  ; -2.103 ; N/A      ; N/A     ; -1.941              ;
+;  clk             ; 1.353   ; -2.103 ; N/A      ; N/A     ; -1.941              ;
+;  clk25           ; -3.248  ; 0.252  ; N/A      ; N/A     ; -0.742              ;
+;  hSyncOut        ; -2.797  ; 0.322  ; N/A      ; N/A     ; -0.742              ;
+; Design-wide TNS  ; -61.08  ; -2.103 ; 0.0      ; 0.0     ; -39.041             ;
+;  clk             ; 0.000   ; -2.103 ; N/A      ; N/A     ; -3.425              ;
+;  clk25           ; -31.346 ; 0.000  ; N/A      ; N/A     ; -17.808             ;
+;  hSyncOut        ; -29.734 ; 0.000  ; N/A      ; N/A     ; -17.808             ;
++------------------+---------+--------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; clk25      ; 7.152 ; 7.152 ; Rise       ; clk25           ;
+; reset     ; hSyncOut   ; 7.121 ; 7.121 ; Rise       ; hSyncOut        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; clk25      ; -3.030 ; -3.030 ; Rise       ; clk25           ;
+; reset     ; hSyncOut   ; -2.967 ; -2.967 ; Rise       ; hSyncOut        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; blank     ; clk25      ; 9.924  ; 9.924  ; Rise       ; clk25           ;
+; blue[*]   ; clk25      ; 11.260 ; 11.260 ; Rise       ; clk25           ;
+;  blue[0]  ; clk25      ; 11.211 ; 11.211 ; Rise       ; clk25           ;
+;  blue[1]  ; clk25      ; 11.211 ; 11.211 ; Rise       ; clk25           ;
+;  blue[2]  ; clk25      ; 11.200 ; 11.200 ; Rise       ; clk25           ;
+;  blue[3]  ; clk25      ; 11.190 ; 11.190 ; Rise       ; clk25           ;
+;  blue[4]  ; clk25      ; 11.260 ; 11.260 ; Rise       ; clk25           ;
+;  blue[5]  ; clk25      ; 11.250 ; 11.250 ; Rise       ; clk25           ;
+;  blue[6]  ; clk25      ; 10.841 ; 10.841 ; Rise       ; clk25           ;
+;  blue[7]  ; clk25      ; 10.841 ; 10.841 ; Rise       ; clk25           ;
+;  blue[8]  ; clk25      ; 10.831 ; 10.831 ; Rise       ; clk25           ;
+;  blue[9]  ; clk25      ; 10.831 ; 10.831 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ; 6.593  ;        ; Rise       ; clk25           ;
+; green[*]  ; clk25      ; 11.944 ; 11.944 ; Rise       ; clk25           ;
+;  green[0] ; clk25      ; 11.944 ; 11.944 ; Rise       ; clk25           ;
+;  green[1] ; clk25      ; 11.944 ; 11.944 ; Rise       ; clk25           ;
+;  green[2] ; clk25      ; 11.599 ; 11.599 ; Rise       ; clk25           ;
+;  green[3] ; clk25      ; 11.599 ; 11.599 ; Rise       ; clk25           ;
+;  green[4] ; clk25      ; 11.609 ; 11.609 ; Rise       ; clk25           ;
+;  green[5] ; clk25      ; 11.609 ; 11.609 ; Rise       ; clk25           ;
+;  green[6] ; clk25      ; 11.566 ; 11.566 ; Rise       ; clk25           ;
+;  green[7] ; clk25      ; 11.586 ; 11.586 ; Rise       ; clk25           ;
+;  green[8] ; clk25      ; 11.596 ; 11.596 ; Rise       ; clk25           ;
+;  green[9] ; clk25      ; 11.596 ; 11.596 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ;        ; 6.593  ; Fall       ; clk25           ;
+; blank     ; hSyncOut   ; 13.368 ; 13.368 ; Rise       ; hSyncOut        ;
+; blue[*]   ; hSyncOut   ; 15.295 ; 15.295 ; Rise       ; hSyncOut        ;
+;  blue[0]  ; hSyncOut   ; 15.246 ; 15.246 ; Rise       ; hSyncOut        ;
+;  blue[1]  ; hSyncOut   ; 15.246 ; 15.246 ; Rise       ; hSyncOut        ;
+;  blue[2]  ; hSyncOut   ; 15.235 ; 15.235 ; Rise       ; hSyncOut        ;
+;  blue[3]  ; hSyncOut   ; 15.225 ; 15.225 ; Rise       ; hSyncOut        ;
+;  blue[4]  ; hSyncOut   ; 15.295 ; 15.295 ; Rise       ; hSyncOut        ;
+;  blue[5]  ; hSyncOut   ; 15.285 ; 15.285 ; Rise       ; hSyncOut        ;
+;  blue[6]  ; hSyncOut   ; 14.876 ; 14.876 ; Rise       ; hSyncOut        ;
+;  blue[7]  ; hSyncOut   ; 14.876 ; 14.876 ; Rise       ; hSyncOut        ;
+;  blue[8]  ; hSyncOut   ; 14.866 ; 14.866 ; Rise       ; hSyncOut        ;
+;  blue[9]  ; hSyncOut   ; 14.866 ; 14.866 ; Rise       ; hSyncOut        ;
+; green[*]  ; hSyncOut   ; 15.979 ; 15.979 ; Rise       ; hSyncOut        ;
+;  green[0] ; hSyncOut   ; 15.979 ; 15.979 ; Rise       ; hSyncOut        ;
+;  green[1] ; hSyncOut   ; 15.979 ; 15.979 ; Rise       ; hSyncOut        ;
+;  green[2] ; hSyncOut   ; 15.634 ; 15.634 ; Rise       ; hSyncOut        ;
+;  green[3] ; hSyncOut   ; 15.634 ; 15.634 ; Rise       ; hSyncOut        ;
+;  green[4] ; hSyncOut   ; 15.644 ; 15.644 ; Rise       ; hSyncOut        ;
+;  green[5] ; hSyncOut   ; 15.644 ; 15.644 ; Rise       ; hSyncOut        ;
+;  green[6] ; hSyncOut   ; 15.601 ; 15.601 ; Rise       ; hSyncOut        ;
+;  green[7] ; hSyncOut   ; 15.621 ; 15.621 ; Rise       ; hSyncOut        ;
+;  green[8] ; hSyncOut   ; 15.631 ; 15.631 ; Rise       ; hSyncOut        ;
+;  green[9] ; hSyncOut   ; 15.631 ; 15.631 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ; 5.179  ;        ; Rise       ; hSyncOut        ;
+; vsync     ; hSyncOut   ; 10.668 ; 10.668 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ;        ; 5.179  ; Fall       ; hSyncOut        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; blank     ; clk25      ; 4.203 ; 4.203 ; Rise       ; clk25           ;
+; blue[*]   ; clk25      ; 3.791 ; 3.791 ; Rise       ; clk25           ;
+;  blue[0]  ; clk25      ; 3.909 ; 3.909 ; Rise       ; clk25           ;
+;  blue[1]  ; clk25      ; 3.909 ; 3.909 ; Rise       ; clk25           ;
+;  blue[2]  ; clk25      ; 3.890 ; 3.890 ; Rise       ; clk25           ;
+;  blue[3]  ; clk25      ; 3.880 ; 3.880 ; Rise       ; clk25           ;
+;  blue[4]  ; clk25      ; 3.950 ; 3.950 ; Rise       ; clk25           ;
+;  blue[5]  ; clk25      ; 3.940 ; 3.940 ; Rise       ; clk25           ;
+;  blue[6]  ; clk25      ; 3.801 ; 3.801 ; Rise       ; clk25           ;
+;  blue[7]  ; clk25      ; 3.801 ; 3.801 ; Rise       ; clk25           ;
+;  blue[8]  ; clk25      ; 3.791 ; 3.791 ; Rise       ; clk25           ;
+;  blue[9]  ; clk25      ; 3.791 ; 3.791 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ; 2.707 ;       ; Rise       ; clk25           ;
+; green[*]  ; clk25      ; 4.001 ; 4.001 ; Rise       ; clk25           ;
+;  green[0] ; clk25      ; 4.137 ; 4.137 ; Rise       ; clk25           ;
+;  green[1] ; clk25      ; 4.137 ; 4.137 ; Rise       ; clk25           ;
+;  green[2] ; clk25      ; 4.035 ; 4.035 ; Rise       ; clk25           ;
+;  green[3] ; clk25      ; 4.035 ; 4.035 ; Rise       ; clk25           ;
+;  green[4] ; clk25      ; 4.045 ; 4.045 ; Rise       ; clk25           ;
+;  green[5] ; clk25      ; 4.045 ; 4.045 ; Rise       ; clk25           ;
+;  green[6] ; clk25      ; 4.001 ; 4.001 ; Rise       ; clk25           ;
+;  green[7] ; clk25      ; 4.021 ; 4.021 ; Rise       ; clk25           ;
+;  green[8] ; clk25      ; 4.031 ; 4.031 ; Rise       ; clk25           ;
+;  green[9] ; clk25      ; 4.031 ; 4.031 ; Rise       ; clk25           ;
+; clockOut  ; clk25      ;       ; 2.707 ; Fall       ; clk25           ;
+; blank     ; hSyncOut   ; 5.234 ; 5.234 ; Rise       ; hSyncOut        ;
+; blue[*]   ; hSyncOut   ; 5.102 ; 5.102 ; Rise       ; hSyncOut        ;
+;  blue[0]  ; hSyncOut   ; 5.220 ; 5.220 ; Rise       ; hSyncOut        ;
+;  blue[1]  ; hSyncOut   ; 5.220 ; 5.220 ; Rise       ; hSyncOut        ;
+;  blue[2]  ; hSyncOut   ; 5.201 ; 5.201 ; Rise       ; hSyncOut        ;
+;  blue[3]  ; hSyncOut   ; 5.191 ; 5.191 ; Rise       ; hSyncOut        ;
+;  blue[4]  ; hSyncOut   ; 5.261 ; 5.261 ; Rise       ; hSyncOut        ;
+;  blue[5]  ; hSyncOut   ; 5.251 ; 5.251 ; Rise       ; hSyncOut        ;
+;  blue[6]  ; hSyncOut   ; 5.112 ; 5.112 ; Rise       ; hSyncOut        ;
+;  blue[7]  ; hSyncOut   ; 5.112 ; 5.112 ; Rise       ; hSyncOut        ;
+;  blue[8]  ; hSyncOut   ; 5.102 ; 5.102 ; Rise       ; hSyncOut        ;
+;  blue[9]  ; hSyncOut   ; 5.102 ; 5.102 ; Rise       ; hSyncOut        ;
+; green[*]  ; hSyncOut   ; 5.312 ; 5.312 ; Rise       ; hSyncOut        ;
+;  green[0] ; hSyncOut   ; 5.448 ; 5.448 ; Rise       ; hSyncOut        ;
+;  green[1] ; hSyncOut   ; 5.448 ; 5.448 ; Rise       ; hSyncOut        ;
+;  green[2] ; hSyncOut   ; 5.346 ; 5.346 ; Rise       ; hSyncOut        ;
+;  green[3] ; hSyncOut   ; 5.346 ; 5.346 ; Rise       ; hSyncOut        ;
+;  green[4] ; hSyncOut   ; 5.356 ; 5.356 ; Rise       ; hSyncOut        ;
+;  green[5] ; hSyncOut   ; 5.356 ; 5.356 ; Rise       ; hSyncOut        ;
+;  green[6] ; hSyncOut   ; 5.312 ; 5.312 ; Rise       ; hSyncOut        ;
+;  green[7] ; hSyncOut   ; 5.332 ; 5.332 ; Rise       ; hSyncOut        ;
+;  green[8] ; hSyncOut   ; 5.342 ; 5.342 ; Rise       ; hSyncOut        ;
+;  green[9] ; hSyncOut   ; 5.342 ; 5.342 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ; 2.223 ;       ; Rise       ; hSyncOut        ;
+; vsync     ; hSyncOut   ; 4.507 ; 4.507 ; Rise       ; hSyncOut        ;
+; hsync     ; hSyncOut   ;       ; 2.223 ; Fall       ; hSyncOut        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk25      ; clk      ; 1        ; 1        ; 0        ; 0        ;
+; clk25      ; clk25    ; 208      ; 0        ; 0        ; 0        ;
+; hSyncOut   ; hSyncOut ; 187      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk25      ; clk      ; 1        ; 1        ; 0        ; 0        ;
+; clk25      ; clk25    ; 208      ; 0        ; 0        ; 0        ;
+; hSyncOut   ; hSyncOut ; 187      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 25    ; 25   ;
+; Unconstrained Output Ports      ; 24    ; 24   ;
+; Unconstrained Output Port Paths ; 405   ; 405  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
+    Info: Processing started: Wed Dec 04 15:31:09 2013
+Info: Command: quartus_sta vga -c vga
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'vga.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name hSyncOut hSyncOut
+    Info (332105): create_clock -period 1.000 -name clk25 clk25
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.248
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.248       -31.346 clk25 
+    Info (332119):    -2.797       -29.734 hSyncOut 
+    Info (332119):     2.337         0.000 clk 
+Info (332146): Worst-case hold slack is -2.103
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.103        -2.103 clk 
+    Info (332119):     0.773         0.000 clk25 
+    Info (332119):     1.052         0.000 hSyncOut 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.941
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.941        -3.425 clk 
+    Info (332119):    -0.742       -17.808 clk25 
+    Info (332119):    -0.742       -17.808 hSyncOut 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.425
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.425        -2.570 clk25 
+    Info (332119):    -0.305        -2.220 hSyncOut 
+    Info (332119):     1.353         0.000 clk 
+Info (332146): Worst-case hold slack is -0.973
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.973        -0.973 clk 
+    Info (332119):     0.252         0.000 clk25 
+    Info (332119):     0.322         0.000 hSyncOut 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -2.380 clk 
+    Info (332119):    -0.500       -12.000 clk25 
+    Info (332119):    -0.500       -12.000 hSyncOut 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 430 megabytes
+    Info: Processing ended: Wed Dec 04 15:31:13 2013
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Skeen/Dropbox/DSD/FullAdder/Exercise2Behavior/Exercise2Behavior.vhd
+source_file = 1, ../../../../../Andreas Portable/Dropbox/DSD/Exercise2Behavior/Waveform.vwf
+source_file = 1, C:/Users/Skeen/Dropbox/DSD/FullAdder/Exercise2Behavior/db/Exercise2Behavior.cbx.xml
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Exercise2Behavior
+instance = comp, \INPUT2~I\, INPUT2, Exercise2Behavior, 1
+instance = comp, \INPUT1~I\, INPUT1, Exercise2Behavior, 1
+instance = comp, \CARRY_IN~I\, CARRY_IN, Exercise2Behavior, 1
+instance = comp, \SUM~0\, SUM~0, Exercise2Behavior, 1
+instance = comp, \CARRY_OUT~0\, CARRY_OUT~0, Exercise2Behavior, 1
+instance = comp, \SUM~I\, SUM, Exercise2Behavior, 1
+instance = comp, \CARRY_OUT~I\, CARRY_OUT, Exercise2Behavior, 1

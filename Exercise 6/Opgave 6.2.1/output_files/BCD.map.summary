@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 06 16:44:08 2013
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Full Version
+Revision Name : BCD
+Top-level Entity Name : watch
+Family : Cyclone II
+Total logic elements : 87
+    Total combinational functions : 87
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,11 @@
+Exercise2
+CARRY,output,user_entered
+CARRY~0,comb,compiler_generated
+INPUT1,input,user_entered
+INPUT2,input,user_entered
+SUM,output,user_entered
+SUM~0,comb,compiler_generated
+~ASDO~,input,compiler_generated
+~LVDS150p/nCEO~,output,compiler_generated
+~nCSO~,input,compiler_generated
+,hierarchy,user_entered

@@ -1,0 +1,12 @@
+Opgave12
+a,input,user_entered
+b,input,user_entered
+c,input,user_entered
+x,output,user_entered
+x~0,comb,compiler_generated
+y,output,user_entered
+y~0,comb,compiler_generated
+~ASDO~,input,compiler_generated
+~LVDS150p/nCEO~,output,compiler_generated
+~nCSO~,input,compiler_generated
+,hierarchy,user_entered
